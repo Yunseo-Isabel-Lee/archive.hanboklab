@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HanbokLab Archive · 한복 아카이브 모음</title>
+<meta name="description" content="HanbokLab의 한국 복식 아카이브 모음 — 조선 흉배 아카이브, ‘깃’든 ‘무’늬 아카이브.">
+<link rel="canonical" href="https://archive.hanboklab.com/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500&family=Noto+Serif+KR:wght@200;300;400&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#0b0a0c;
+    --bg2:#121013;
+    --ivory:#eee8db;
+    --muted:#b3ab9e;
+    --dim:#8f887c;
+    --gold:#c8a464;
+    --gold-2:#e6d3a8;
+    --line:rgba(200,164,100,.26);
+    --red:#c4452b;
+    --abalone:url(https://hanboklab.com/images/nacre-cloud.jpg);
+    --pearl:url(https://hanboklab.com/images/nacre-fur.jpg);
+    --display:"Bodoni Moda","Noto Serif KR",serif;
+    --serif:"Noto Serif KR",serif;
+    --sans:"Noto Sans KR",system-ui,sans-serif;
+    --geo:"Jost","Noto Sans KR",sans-serif;
+    --gutter:clamp(20px,5vw,64px);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ivory);font-family:var(--sans);font-weight:300;line-height:1.8;font-size:16px;word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
+  a{color:var(--gold-2);text-decoration:none}
+  a:hover{color:#fff}
+  img{display:block;max-width:100%}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 var(--gutter)}
+
+  .nacre{background-image:var(--abalone);background-size:300px auto;background-position:0 50%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 18s linear infinite alternate}
+  .inlay{display:block;height:3px;background:var(--abalone) 0 50%/260% auto;animation:shimmer 12s ease-in-out infinite alternate}
+  @keyframes shimmer{to{background-position:100% 50%}}
+
+  .eaves{height:clamp(72px,8.5vw,122px);background:#1c2554 url(https://hanboklab.com/images/eaves-band.jpg) 0 0/auto 100% repeat-x;border-bottom:2px solid var(--red)}
+  .eaves.bottom{border-bottom:0;border-top:2px solid var(--red)}
+
+  .top{position:sticky;top:0;z-index:30;background:rgba(11,10,12,.86);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:72px}
+  .mark{font-family:var(--geo);font-weight:500;font-size:20px;letter-spacing:.02em;color:var(--ivory)}
+  .mark em{font-style:normal;font-weight:300;color:var(--gold)}
+  .mark span{margin-left:10px;font-weight:300;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+  nav{display:flex;gap:44px;margin-right:-.28em;font-family:var(--geo);font-size:12px;letter-spacing:.28em;text-transform:uppercase}
+  nav a{color:var(--muted)}
+  nav a:hover{color:var(--ivory)}
+
+  .kicker{display:flex;align-items:center;gap:14px;font-family:var(--geo);font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+  .kicker .inlay{width:40px}
+
+  .intro{padding-top:clamp(56px,8vw,104px);padding-bottom:clamp(40px,5vw,64px)}
+  .intro h1{margin:22px 0 0;font-family:var(--serif);font-weight:200;font-size:clamp(40px,5.4vw,72px);line-height:1.2;letter-spacing:.1em}
+  .intro p{max-width:560px;margin:24px 0 0;color:var(--muted)}
+
+  .list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;padding-bottom:clamp(80px,10vw,140px)}
+  .arc{display:flex;flex-direction:column;background:var(--bg2);border:1px solid var(--line);color:inherit}
+  a.arc:hover{color:inherit;border-color:var(--gold)}
+  .arc .ph{position:relative;aspect-ratio:16/10;overflow:hidden;background:#1a1712}
+  .arc .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1s ease}
+  a.arc:hover .ph img{transform:scale(1.04)}
+  .temp{position:absolute;left:12px;top:12px;padding:3px 10px;font-size:11px;letter-spacing:.06em;line-height:1.6;color:var(--gold-2);background:rgba(11,10,12,.8);border:1px solid rgba(200,164,100,.5)}
+  .arc .tx{display:flex;flex-direction:column;gap:8px;padding:26px 28px 32px}
+  .arc .row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .no{font-family:var(--display);font-style:italic;font-weight:600;font-size:40px;line-height:1}
+  .pill{font-size:12px;padding:2px 12px;border:1px solid rgba(200,164,100,.6);border-radius:999px;color:var(--gold-2)}
+  .arc h2{margin:6px 0 0;font-family:var(--serif);font-weight:400;font-size:24px}
+  .arc .sub{font-family:var(--display);font-size:13px;color:var(--dim)}
+  .arc p{margin:4px 0 0;font-size:15px;color:var(--muted)}
+  .arc .go{margin-top:10px;font-size:14px;color:var(--gold-2)}
+
+  footer{overflow:hidden;border-top:1px solid var(--line)}
+  footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 24px;padding-top:20px;padding-bottom:22px;font-size:13px;color:var(--dim)}
+  footer a{color:#d9c79f}
+  footer .sep{margin:0 10px}
+  .giant{margin:0 0 -.08em;font-family:var(--display);font-weight:600;font-size:clamp(72px,17vw,250px);line-height:.82;text-align:center;white-space:nowrap;user-select:none;pointer-events:none}
+
+  @media (prefers-reduced-motion:reduce){.nacre,.inlay{animation:none}}
+  @media (max-width:860px){.list{grid-template-columns:1fr}}
+  @media (max-width:720px){
+    .top .wrap{height:auto;flex-wrap:wrap;gap:0;padding-top:12px;padding-bottom:10px}
+    .mark{font-size:17px}
+    nav{width:100%;justify-content:space-between;gap:0;margin:8px -.14em 0 0;font-size:10.5px;letter-spacing:.14em}
+  }
+</style>
+</head>
+<body>
+
+<div class="eaves" role="img" aria-label="붉은 단청 처마 무늬"></div>
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="/">Hanbok<em>Lab</em><span>Archive</span></a>
+    <nav>
+      <a href="/hyungbae/">Hyungbae</a>
+      <a href="https://hanboklab.com/#projects">Projects</a>
+      <a href="https://hanboklab.com/ontology/">Ontology</a>
+      <a href="https://hanboklab.com/">HanbokLab</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="intro">
+    <div class="kicker"><i class="inlay"></i>Archives · 韓服</div>
+    <h1>아카이브</h1>
+    <p>여러 소장처에 흩어진 한국 복식 유물을 모아 직접 찾아보고 비교할 수 있게 만든 아카이브들입니다. 연구 소개와 데이터 구조는 <a href="https://hanboklab.com/">hanboklab.com</a>에 있습니다.</p>
+  </section>
+
+  <section class="list">
+    <a class="arc" href="/hyungbae/">
+      <div class="ph"><span class="temp">임시 이미지</span><img src="https://hanboklab.com/images/hyungbae-crane.jpg" alt="학 한 마리를 수놓은 흉배" style="object-position:center 38%"></div>
+      <div class="tx">
+        <div class="row"><span class="no nacre">01</span><span class="pill">시제품</span></div>
+        <h2>조선 흉배 아카이브</h2>
+        <div class="sub">Joseon Rank Badge Archive</div>
+        <p>국립중앙박물관·메트로폴리탄 미술관의 한국 흉배 52점을 문양·시기로 찾아보는 시제품.</p>
+        <span class="go">아카이브 열기 →</span>
+      </div>
+    </a>
+    <div class="arc">
+      <div class="ph"><span class="temp">임시 이미지</span><img src="https://hanboklab.com/images/genre-women.jpg" alt="저고리와 치마 위에 장옷을 걸친 여인들을 그린 풍속화" style="object-position:center 58%"></div>
+      <div class="tx">
+        <div class="row"><span class="no nacre">02</span><span class="pill">2026</span></div>
+        <h2>‘깃’든 ‘무’늬 아카이브</h2>
+        <div class="sub">Omeka S</div>
+        <p>조선시대 출토 여자 저고리류의 깃과 무 유형을 정리한 아카이브.</p>
+        <span class="go" style="color:var(--dim)">이곳으로 옮기는 중</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 이윤서 Yunseo Isabel Lee</span>
+    <span><a href="mailto:lisabelys@gmail.com">lisabelys@gmail.com</a><span class="sep">·</span><a href="https://hanboklab.com/">hanboklab.com</a></span>
+  </div>
+  <div class="giant nacre" aria-hidden="true">Archive</div>
+  <div class="eaves bottom" aria-hidden="true"></div>
+</footer>
+
+</body>
+</html>
