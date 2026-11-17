@@ -1,0 +1,759 @@
+﻿objectID,명칭,속성,속성 라벨,값,값 종류,근거 유형,근거 레코드,근거 칸,근거 발췌,비고
+hb0041,쌍학흉배,dcterms:title,명칭,쌍학흉배@ko,텍스트,recordStated,e뮤지엄-PS0100100400105336100000,한글명,쌍학흉배,
+hb0041,쌍학흉배,dcterms:title,명칭,雙鶴胸背@ko-Hani,텍스트(한자),recordStated,e뮤지엄-PS0100100400105336100000,한자명,雙鶴胸背,
+hb0041,쌍학흉배,dcterms:identifier,소장처 유물번호,공주53361,텍스트,recordStated,e뮤지엄-PS0100100400105336100000,소장처유물번호,공주53361,
+hb0041,쌍학흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,e뮤지엄-PS0100100400105336100000,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0041,쌍학흉배,crm:P2_has_type,자료 구분·문양,hanbokc:ssanghak,개념 링크,ruleDerived,e뮤지엄-PS0100100400105336100000,한글명,쌍학흉배,명칭에서 주문양을 찾음(문양 규칙)
+hb0041,쌍학흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-k01,기관 링크,recordStated,e뮤지엄-PS0100100400105336100000,소장처,국립공주박물관,
+hb0041,쌍학흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,e뮤지엄-PS0100100400105336100000,국적/시대,한국-대한제국,국적 규칙
+hb0041,쌍학흉배,dcterms:temporal,시기,hanbokc:daehan,개념 링크,ruleDerived,e뮤지엄-PS0100100400105336100000,국적/시대,한국-대한제국,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0041,쌍학흉배,schema:height,세로,16.5,숫자(cm),ruleDerived,e뮤지엄-PS0100100400105336100000,크기,"세로 16.5cm, 가로 15.5cm",크기 규칙
+hb0041,쌍학흉배,schema:width,가로,15.5,숫자(cm),ruleDerived,e뮤지엄-PS0100100400105336100000,크기,"세로 16.5cm, 가로 15.5cm",크기 규칙
+hb0041,쌍학흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,,,,기관 기록에 이용조건 칸이 없거나 비어 있어 「확인 중」
+hb0041,쌍학흉배,foaf:depiction,이미지,http://www.emuseum.go.kr/openapi/img?imageId=bmlndWhOb1YzSTFPd2ZzazR4aE5WblN6b3QxTTE1SlhSRjAzcVgxTzBaUkFNUm9xWHJsYmZWZ29GUkhTT3k2VFpXczlBclAyM0NROEkwY2luR2pUMnc9PQ%3D%3D,URI,recordStated,e뮤지엄-PS0100100400105336100000,원본이미지URL(이미지_통합),imageId=bmlndWhOb1YzSTFPd2ZzazR4aE5WblN6b3QxTTE1SlhSRjAzcVgxTzBaUkFNUm9xWHJsYmZWZ29GUkhTT3k2VFpXczlBclAyM0NROEkwY2luR2pUMnc9PQ%3D%3D,e뮤지엄 인증키(serviceKey)를 지운 주소
+hb0098,단학흉배,dcterms:title,명칭,단학흉배@ko,텍스트,recordStated,e뮤지엄-PS0100200100107510200000,한글명,단학흉배(單鶴胸背),괄호 속 한자를 떼어 한자명으로 옮김
+hb0098,단학흉배,dcterms:title,명칭,單鶴胸背@ko-Hani,텍스트(한자),ruleDerived,e뮤지엄-PS0100200100107510200000,한글명,단학흉배(單鶴胸背),한글명 괄호 속 한자
+hb0098,단학흉배,dcterms:identifier,소장처 유물번호,민속75102,텍스트,recordStated,e뮤지엄-PS0100200100107510200000,소장처유물번호,민속75102,
+hb0098,단학흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,e뮤지엄-PS0100200100107510200000,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0098,단학흉배,crm:P2_has_type,자료 구분·문양,hanbokc:danhak,개념 링크,ruleDerived,e뮤지엄-PS0100200100107510200000,한글명,단학흉배(單鶴胸背),명칭에서 주문양을 찾음(문양 규칙)
+hb0098,단학흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-nfm,기관 링크,recordStated,e뮤지엄-PS0100200100107510200000,소장처,국립민속박물관,
+hb0098,단학흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,e뮤지엄-PS0100200100107510200000,국적/시대,한국-대한제국,국적 규칙
+hb0098,단학흉배,dcterms:temporal,시기,hanbokc:daehan,개념 링크,ruleDerived,e뮤지엄-PS0100200100107510200000,국적/시대,한국-대한제국,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0098,단학흉배,schema:height,세로,19.8,숫자(cm),ruleDerived,e뮤지엄-PS0100200100107510200000,크기,"세로 19.8cm, 가로 18cm",크기 규칙
+hb0098,단학흉배,schema:width,가로,18.0,숫자(cm),ruleDerived,e뮤지엄-PS0100200100107510200000,크기,"세로 19.8cm, 가로 18cm",크기 규칙
+hb0098,단학흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,,,,기관 기록에 이용조건 칸이 없거나 비어 있어 「확인 중」
+hb0098,단학흉배,foaf:depiction,이미지,http://www.emuseum.go.kr/openapi/img?imageId=NERxV0ZQRTV0TVlneFJuZE1MbjNMeXdsUWlnYXp1dHNQK2dXZFhvMFU0dm9INEJXcTg2T1gzcHBBeHJsU2RobkFvK0luNEt4Mld6aUVpQk5oS2xKTkE9PQ%3D%3D,URI,recordStated,e뮤지엄-PS0100200100107510200000,원본이미지URL(이미지_통합),imageId=NERxV0ZQRTV0TVlneFJuZE1MbjNMeXdsUWlnYXp1dHNQK2dXZFhvMFU0dm9INEJXcTg2T1gzcHBBeHJsU2RobkFvK0luNEt4Mld6aUVpQk5oS2xKTkE9PQ%3D%3D,e뮤지엄 인증키(serviceKey)를 지운 주소
+hb0301,자수 사자 무늬 흉배,dcterms:title,명칭,자수 사자 무늬 흉배@ko,텍스트,recordStated,서울공예-YSMCH24,한글명,자수 사자 무늬 흉배,
+hb0301,자수 사자 무늬 흉배,dcterms:identifier,소장처 유물번호,CR-DF-00-002552,텍스트,recordStated,서울공예-YSMCH24,소장처유물번호,CR-DF-00-002552,
+hb0301,자수 사자 무늬 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,서울공예-YSMCH24,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0301,자수 사자 무늬 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:saja,개념 링크,ruleDerived,서울공예-YSMCH24,한글명,자수 사자 무늬 흉배,명칭에서 주문양을 찾음(문양 규칙)
+hb0301,자수 사자 무늬 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-craftmuseum,기관 링크,recordStated,서울공예-YSMCH24,소장처,서울공예박물관,
+hb0301,자수 사자 무늬 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,서울공예-YSMCH24,국적시대분류,아시아 〉 한국 〉 19세기 말~20세기 전반,국적 규칙
+hb0301,자수 사자 무늬 흉배,dcterms:temporal,시기,hanbokc:c19late,개념 링크,ruleDerived,서울공예-YSMCH24,국적시대분류,아시아 〉 한국 〉 19세기 말~20세기 전반,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0301,자수 사자 무늬 흉배,dcterms:temporal,시기,hanbokc:c20early,개념 링크,ruleDerived,서울공예-YSMCH24,국적시대분류,아시아 〉 한국 〉 19세기 말~20세기 전반,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0301,자수 사자 무늬 흉배,schema:height,세로,31.5,숫자(cm),ruleDerived,서울공예-YSMCH24,크기,31.5*29.4,"크기 규칙: 단위·순서 표기 없음: cm, 세로 x 가로로 봄"
+hb0301,자수 사자 무늬 흉배,schema:width,가로,29.4,숫자(cm),ruleDerived,서울공예-YSMCH24,크기,31.5*29.4,"크기 규칙: 단위·순서 표기 없음: cm, 세로 x 가로로 봄"
+hb0301,자수 사자 무늬 흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,,,,기관 기록에 이용조건 칸이 없거나 비어 있어 「확인 중」
+hb0304,자수 봉황무늬 흉배,dcterms:title,명칭,자수 봉황무늬 흉배@ko,텍스트,recordStated,서울공예-YSMCH23,한글명,자수 봉황무늬 흉배,
+hb0304,자수 봉황무늬 흉배,dcterms:identifier,소장처 유물번호,CR-DF-00-002548,텍스트,recordStated,서울공예-YSMCH23,소장처유물번호,CR-DF-00-002548,
+hb0304,자수 봉황무늬 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,서울공예-YSMCH23,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0304,자수 봉황무늬 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:bonghwang,개념 링크,ruleDerived,서울공예-YSMCH23,한글명,자수 봉황무늬 흉배,명칭에서 주문양을 찾음(문양 규칙)
+hb0304,자수 봉황무늬 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-craftmuseum,기관 링크,recordStated,서울공예-YSMCH23,소장처,서울공예박물관,
+hb0304,자수 봉황무늬 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,서울공예-YSMCH23,국적시대분류,아시아 〉 한국 〉 19세기 말~20세기 전반,국적 규칙
+hb0304,자수 봉황무늬 흉배,dcterms:temporal,시기,hanbokc:c19late,개념 링크,ruleDerived,서울공예-YSMCH23,국적시대분류,아시아 〉 한국 〉 19세기 말~20세기 전반,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0304,자수 봉황무늬 흉배,dcterms:temporal,시기,hanbokc:c20early,개념 링크,ruleDerived,서울공예-YSMCH23,국적시대분류,아시아 〉 한국 〉 19세기 말~20세기 전반,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0304,자수 봉황무늬 흉배,schema:height,세로,24.5,숫자(cm),ruleDerived,서울공예-YSMCH23,크기,24.5*24.5,"크기 규칙: 단위·순서 표기 없음: cm, 세로 x 가로로 봄"
+hb0304,자수 봉황무늬 흉배,schema:width,가로,24.5,숫자(cm),ruleDerived,서울공예-YSMCH23,크기,24.5*24.5,"크기 규칙: 단위·순서 표기 없음: cm, 세로 x 가로로 봄"
+hb0304,자수 봉황무늬 흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,,,,기관 기록에 이용조건 칸이 없거나 비어 있어 「확인 중」
+hb0309,단학 흉배,dcterms:title,명칭,단학 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「단학」 + 흉배)
+hb0309,단학 흉배,dcterms:title,명칭,"Rank Square (Hyungbae) Depicting a Single Crane, One of Pair@en",텍스트,recordStated,브루클린-YBRMH01,영어명,"Rank Square (Hyungbae) Depicting a Single Crane, One of Pair",
+hb0309,단학 흉배,dcterms:identifier,소장처 유물번호,X960.2,텍스트,recordStated,브루클린-YBRMH01,소장처유물번호,X960.2,
+hb0309,단학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,브루클린-YBRMH01,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0309,단학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:danhak,개념 링크,ruleDerived,브루클린-YBRMH01,영어명,"Rank Square (Hyungbae) Depicting a Single Crane, One of Pair",명칭에서 주문양을 찾음(문양 규칙)
+hb0309,단학 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-brooklyn,기관 링크,ruleDerived,브루클린-YBRMH01,소장처,브루클린박물관,기관 표기를 「브루클린 미술관」로 통일
+hb0309,단학 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,브루클린-YBRMH01,Geography,Place made: Korea,국적 규칙
+hb0309,단학 흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,브루클린-YBRMH01,Date,19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0309,단학 흉배,schema:height,세로,23.0,숫자(cm),ruleDerived,브루클린-YBRMH01,Dimensions,9 1/16 x 8 1/2 in. (23 x 21.6 cm),크기 규칙
+hb0309,단학 흉배,schema:width,가로,21.6,숫자(cm),ruleDerived,브루클린-YBRMH01,Dimensions,9 1/16 x 8 1/2 in. (23 x 21.6 cm),크기 규칙
+hb0309,단학 흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,,,,기관 기록에 이용조건 칸이 없거나 비어 있어 「확인 중」
+hb0310,단학 흉배,dcterms:title,명칭,단학 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「단학」 + 흉배)
+hb0310,단학 흉배,dcterms:title,명칭,"Rank Square (Hyungbae) Depicting a Single Crane, One of Pair@en",텍스트,recordStated,브루클린-YBRMH02,영어명,"Rank Square (Hyungbae) Depicting a Single Crane, One of Pair",
+hb0310,단학 흉배,dcterms:identifier,소장처 유물번호,X960.1,텍스트,recordStated,브루클린-YBRMH02,소장처유물번호,X960.1,
+hb0310,단학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,브루클린-YBRMH02,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0310,단학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:danhak,개념 링크,ruleDerived,브루클린-YBRMH02,영어명,"Rank Square (Hyungbae) Depicting a Single Crane, One of Pair",명칭에서 주문양을 찾음(문양 규칙)
+hb0310,단학 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-brooklyn,기관 링크,ruleDerived,브루클린-YBRMH02,소장처,브루클린박물관,기관 표기를 「브루클린 미술관」로 통일
+hb0310,단학 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,브루클린-YBRMH02,Geography,Place made: Korea,국적 규칙
+hb0310,단학 흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,브루클린-YBRMH02,Date,19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0310,단학 흉배,schema:height,세로,23.0,숫자(cm),ruleDerived,브루클린-YBRMH02,Dimensions,9 1/16 x 8 1/2 in. (23 x 21.6 cm),크기 규칙
+hb0310,단학 흉배,schema:width,가로,21.6,숫자(cm),ruleDerived,브루클린-YBRMH02,Dimensions,9 1/16 x 8 1/2 in. (23 x 21.6 cm),크기 규칙
+hb0310,단학 흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,,,,기관 기록에 이용조건 칸이 없거나 비어 있어 「확인 중」
+hb0333,문관흉배,dcterms:title,명칭,문관흉배@ko,텍스트,recordStated,인천시립-1,한글명,문관흉배,
+hb0333,문관흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,인천시립-1,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0333,문관흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-incheon,기관 링크,recordStated,인천시립-1,소장처,인천광역시립박물관,
+hb0333,문관흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,인천시립-1,시대,조선후기,국적 규칙
+hb0333,문관흉배,dcterms:temporal,시기,hanbokc:joseonLate,개념 링크,ruleDerived,인천시립-1,시대,조선후기,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0333,문관흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,인천시립-1,공공누리유형,확인요망,이용조건 규칙
+hb0333,문관흉배,foaf:depiction,이미지,https://www.incheon.go.kr/data/editor/20190717/20190717131926.JPG,URI,recordStated,인천시립-1,원본이미지URL(이미지_통합),https://www.incheon.go.kr/data/editor/20190717/20190717131926.JPG,
+hb0335,기린 흉배,dcterms:title,명칭,기린 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「기린」 + 흉배)
+hb0335,기린 흉배,dcterms:title,명칭,Rank Badge (Hyungbae) with Mythical Animal (Girin)@en,텍스트,recordStated,LACMA-YLACMAH03,영어명,Rank Badge (Hyungbae) with Mythical Animal (Girin),
+hb0335,기린 흉배,dcterms:identifier,소장처 유물번호,M.2000.15.196a,텍스트,recordStated,LACMA-YLACMAH03,소장처유물번호,M.2000.15.196a,
+hb0335,기린 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,LACMA-YLACMAH03,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0335,기린 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:girin,개념 링크,ruleDerived,LACMA-YLACMAH03,영어명,Rank Badge (Hyungbae) with Mythical Animal (Girin),명칭에서 주문양을 찾음(문양 규칙)
+hb0335,기린 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-lacma,기관 링크,ruleDerived,LACMA-YLACMAH03,소장처,로스앤젤레스 카운티 미술관(LACMA),기관 표기를 「로스앤젤레스 카운티 미술관」로 통일
+hb0335,기린 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,LACMA-YLACMAH03,place_made,Korea,국적 규칙
+hb0335,기린 흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,LACMA-YLACMAH03,date,"Joseon dynasty, 1392-1910, 1864-1892",시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0335,기린 흉배,dcterms:date,연도,1864/1892,텍스트(EDTF),ruleDerived,LACMA-YLACMAH03,date,"Joseon dynasty, 1392-1910, 1864-1892",기관이 적은 연도를 EDTF로
+hb0335,기린 흉배,schema:height,세로,24.8,숫자(cm),ruleDerived,LACMA-YLACMAH03,dimensions,9 3/4 x 8 5/8 in. (24.77 x 21.91 cm),크기 규칙
+hb0335,기린 흉배,schema:width,가로,21.9,숫자(cm),ruleDerived,LACMA-YLACMAH03,dimensions,9 3/4 x 8 5/8 in. (24.77 x 21.91 cm),크기 규칙
+hb0335,기린 흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,LACMA-YLACMAH03,license_note,© Museum Associates/LACMA (건별 라이선스 확인 필요),이용조건 규칙
+hb0335,기린 흉배,foaf:depiction,이미지,https://collections-images.lacma.org/images/120730/120730-1-desktop.jpg,URI,recordStated,LACMA-YLACMAH03,image_urls,https://collections-images.lacma.org/images/120730/120730-1-desktop.jpg,
+hb0336,쌍학 흉배,dcterms:title,명칭,쌍학 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「쌍학」 + 흉배)
+hb0336,쌍학 흉배,dcterms:title,명칭,Rank Badge (Hyungbae) of Civil Official with Two Cranes amidst Clouds@en,텍스트,recordStated,LACMA-YLACMAH04,영어명,Rank Badge (Hyungbae) of Civil Official with Two Cranes amidst Clouds,
+hb0336,쌍학 흉배,dcterms:identifier,소장처 유물번호,M.2000.15.197b,텍스트,recordStated,LACMA-YLACMAH04,소장처유물번호,M.2000.15.197b,
+hb0336,쌍학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,LACMA-YLACMAH04,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0336,쌍학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:ssanghak,개념 링크,ruleDerived,LACMA-YLACMAH04,영어명,Rank Badge (Hyungbae) of Civil Official with Two Cranes amidst Clouds,명칭에서 주문양을 찾음(문양 규칙)
+hb0336,쌍학 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-lacma,기관 링크,ruleDerived,LACMA-YLACMAH04,소장처,로스앤젤레스 카운티 미술관(LACMA),기관 표기를 「로스앤젤레스 카운티 미술관」로 통일
+hb0336,쌍학 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,LACMA-YLACMAH04,place_made,Korea,국적 규칙
+hb0336,쌍학 흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,LACMA-YLACMAH04,date,"Joseon dynasty (1392-1910), 19th century",시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0336,쌍학 흉배,schema:height,세로,18.4,숫자(cm),ruleDerived,LACMA-YLACMAH04,dimensions,7 1/4 x 8 in. (18.42 x 20.32 cm),크기 규칙
+hb0336,쌍학 흉배,schema:width,가로,20.3,숫자(cm),ruleDerived,LACMA-YLACMAH04,dimensions,7 1/4 x 8 in. (18.42 x 20.32 cm),크기 규칙
+hb0336,쌍학 흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,LACMA-YLACMAH04,license_note,© Museum Associates/LACMA (건별 라이선스 확인 필요),이용조건 규칙
+hb0336,쌍학 흉배,foaf:depiction,이미지,https://collections-images.lacma.org/images/120700/120700-1-desktop.jpg,URI,recordStated,LACMA-YLACMAH04,image_urls,https://collections-images.lacma.org/images/120700/120700-1-desktop.jpg,
+hb0338,쌍호 흉배,dcterms:title,명칭,쌍호 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「쌍호」 + 흉배)
+hb0338,쌍호 흉배,dcterms:title,명칭,Rank Badge (Hyungbae) of the Upper Military Rank with Two Tigers@en,텍스트,recordStated,LACMA-YLACMAH06,영어명,Rank Badge (Hyungbae) of the Upper Military Rank with Two Tigers,
+hb0338,쌍호 흉배,dcterms:identifier,소장처 유물번호,M.2000.15.194,텍스트,recordStated,LACMA-YLACMAH06,소장처유물번호,M.2000.15.194,
+hb0338,쌍호 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,LACMA-YLACMAH06,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0338,쌍호 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:ssangho,개념 링크,ruleDerived,LACMA-YLACMAH06,영어명,Rank Badge (Hyungbae) of the Upper Military Rank with Two Tigers,명칭에서 주문양을 찾음(문양 규칙)
+hb0338,쌍호 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-lacma,기관 링크,ruleDerived,LACMA-YLACMAH06,소장처,로스앤젤레스 카운티 미술관(LACMA),기관 표기를 「로스앤젤레스 카운티 미술관」로 통일
+hb0338,쌍호 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,LACMA-YLACMAH06,place_made,Korea,국적 규칙
+hb0338,쌍호 흉배,dcterms:temporal,시기,hanbokc:c19late,개념 링크,ruleDerived,LACMA-YLACMAH06,date,"Joseon dynasty, 1392-1910, late 19th century",시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0338,쌍호 흉배,schema:height,세로,23.5,숫자(cm),ruleDerived,LACMA-YLACMAH06,dimensions,9 1/4 x 8 5/8 in. (23.49 x 21.91 cm),크기 규칙
+hb0338,쌍호 흉배,schema:width,가로,21.9,숫자(cm),ruleDerived,LACMA-YLACMAH06,dimensions,9 1/4 x 8 5/8 in. (23.49 x 21.91 cm),크기 규칙
+hb0338,쌍호 흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,LACMA-YLACMAH06,license_note,© Museum Associates/LACMA (건별 라이선스 확인 필요),이용조건 규칙
+hb0338,쌍호 흉배,foaf:depiction,이미지,https://collections-images.lacma.org/images/99735/99735-1-desktop.jpg,URI,recordStated,LACMA-YLACMAH06,image_urls,https://collections-images.lacma.org/images/99735/99735-1-desktop.jpg,
+hb0341,쌍학 흉배,dcterms:title,명칭,쌍학 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「쌍학」 + 흉배)
+hb0341,쌍학 흉배,dcterms:title,명칭,Badge (Hyungbae) of Upper Civil Rank with Two Cranes@en,텍스트,recordStated,LACMA-YLACMAH10,영어명,Badge (Hyungbae) of Upper Civil Rank with Two Cranes,
+hb0341,쌍학 흉배,dcterms:identifier,소장처 유물번호,M.2000.15.198,텍스트,recordStated,LACMA-YLACMAH10,소장처유물번호,M.2000.15.198,
+hb0341,쌍학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,LACMA-YLACMAH10,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0341,쌍학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:ssanghak,개념 링크,ruleDerived,LACMA-YLACMAH10,영어명,Badge (Hyungbae) of Upper Civil Rank with Two Cranes,명칭에서 주문양을 찾음(문양 규칙)
+hb0341,쌍학 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-lacma,기관 링크,ruleDerived,LACMA-YLACMAH10,소장처,로스앤젤레스 카운티 미술관(LACMA),기관 표기를 「로스앤젤레스 카운티 미술관」로 통일
+hb0341,쌍학 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,LACMA-YLACMAH10,place_made,Korea,국적 규칙
+hb0341,쌍학 흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,LACMA-YLACMAH10,date,"Joseon dynasty (1392-1910), second half of 19th century",시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0341,쌍학 흉배,schema:height,세로,24.1,숫자(cm),ruleDerived,LACMA-YLACMAH10,dimensions,9 1/2 x 8 1/2 in. (24.13 x 21.59 cm),크기 규칙
+hb0341,쌍학 흉배,schema:width,가로,21.6,숫자(cm),ruleDerived,LACMA-YLACMAH10,dimensions,9 1/2 x 8 1/2 in. (24.13 x 21.59 cm),크기 규칙
+hb0341,쌍학 흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,LACMA-YLACMAH10,license_note,© Museum Associates/LACMA (건별 라이선스 확인 필요),이용조건 규칙
+hb0341,쌍학 흉배,foaf:depiction,이미지,https://collections-images.lacma.org/images/99744/99744-1-desktop.jpg,URI,recordStated,LACMA-YLACMAH10,image_urls,https://collections-images.lacma.org/images/99744/99744-1-desktop.jpg,
+hb0345,쌍학 흉배,dcterms:title,명칭,쌍학 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「쌍학」 + 흉배)
+hb0345,쌍학 흉배,dcterms:title,명칭,Rank Badge (Hyungbae) of Civil Official with Two Cranes amidst Clouds@en,텍스트,recordStated,LACMA-YLACMAH07,영어명,Rank Badge (Hyungbae) of Civil Official with Two Cranes amidst Clouds,
+hb0345,쌍학 흉배,dcterms:identifier,소장처 유물번호,M.2000.15.197a,텍스트,recordStated,LACMA-YLACMAH07,소장처유물번호,M.2000.15.197a,
+hb0345,쌍학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,LACMA-YLACMAH07,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0345,쌍학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:ssanghak,개념 링크,ruleDerived,LACMA-YLACMAH07,영어명,Rank Badge (Hyungbae) of Civil Official with Two Cranes amidst Clouds,명칭에서 주문양을 찾음(문양 규칙)
+hb0345,쌍학 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-lacma,기관 링크,ruleDerived,LACMA-YLACMAH07,소장처,로스앤젤레스 카운티 미술관(LACMA),기관 표기를 「로스앤젤레스 카운티 미술관」로 통일
+hb0345,쌍학 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,LACMA-YLACMAH07,culture,['Korean'],국적 규칙
+hb0345,쌍학 흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,LACMA-YLACMAH07,date,"Joseon dynasty (1392-1910), 19th century",시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0345,쌍학 흉배,schema:height,세로,18.4,숫자(cm),ruleDerived,LACMA-YLACMAH07,dimensions,7 1/4 x 8 in. (18.42 x 20.32 cm),크기 규칙
+hb0345,쌍학 흉배,schema:width,가로,20.3,숫자(cm),ruleDerived,LACMA-YLACMAH07,dimensions,7 1/4 x 8 in. (18.42 x 20.32 cm),크기 규칙
+hb0345,쌍학 흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,LACMA-YLACMAH07,license_note,© Museum Associates/LACMA (건별 라이선스 확인 필요),이용조건 규칙
+hb0345,쌍학 흉배,foaf:depiction,이미지,https://collections-images.lacma.org/images/120804/120804-1-desktop.jpg,URI,recordStated,LACMA-YLACMAH07,image_urls,https://collections-images.lacma.org/images/120804/120804-1-desktop.jpg,
+hb0346,쌍학 흉배,dcterms:title,명칭,쌍학 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「쌍학」 + 흉배)
+hb0346,쌍학 흉배,dcterms:title,명칭,Pair of Rank Badges (Hyungbae) of the Upper Civil Rank with Two Cranes@en,텍스트,recordStated,LACMA-YLACMAH11,영어명,Pair of Rank Badges (Hyungbae) of the Upper Civil Rank with Two Cranes,
+hb0346,쌍학 흉배,dcterms:identifier,소장처 유물번호,M.2000.15.197a-b,텍스트,recordStated,LACMA-YLACMAH11,소장처유물번호,M.2000.15.197a-b,
+hb0346,쌍학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,LACMA-YLACMAH11,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0346,쌍학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:ssanghak,개념 링크,ruleDerived,LACMA-YLACMAH11,영어명,Pair of Rank Badges (Hyungbae) of the Upper Civil Rank with Two Cranes,명칭에서 주문양을 찾음(문양 규칙)
+hb0346,쌍학 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-lacma,기관 링크,ruleDerived,LACMA-YLACMAH11,소장처,로스앤젤레스 카운티 미술관(LACMA),기관 표기를 「로스앤젤레스 카운티 미술관」로 통일
+hb0346,쌍학 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,LACMA-YLACMAH11,place_made,Korea,국적 규칙
+hb0346,쌍학 흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,LACMA-YLACMAH11,date,"Joseon dynasty (1392-1910), circa 1900",시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0346,쌍학 흉배,dcterms:date,연도,1900~,텍스트(EDTF),ruleDerived,LACMA-YLACMAH11,date,"Joseon dynasty (1392-1910), circa 1900",기관이 적은 연도를 EDTF로
+hb0346,쌍학 흉배,schema:height,세로,21.0,숫자(cm),ruleDerived,LACMA-YLACMAH11,dimensions,b: 8 1/4 × 7 3/8 in. (20.96 × 18.73 cm),크기 규칙
+hb0346,쌍학 흉배,schema:width,가로,18.7,숫자(cm),ruleDerived,LACMA-YLACMAH11,dimensions,b: 8 1/4 × 7 3/8 in. (20.96 × 18.73 cm),크기 규칙
+hb0346,쌍학 흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,LACMA-YLACMAH11,license_note,© Museum Associates/LACMA (건별 라이선스 확인 필요),이용조건 규칙
+hb0346,쌍학 흉배,foaf:depiction,이미지,https://collections-images.lacma.org/images/99751/99751-1-desktop.jpg,URI,recordStated,LACMA-YLACMAH11,image_urls,https://collections-images.lacma.org/images/99751/99751-1-desktop.jpg,
+hb0346,쌍학 흉배,foaf:depiction,이미지,https://collections-images.lacma.org/images/99751/99751-2-desktop.jpg,URI,recordStated,LACMA-YLACMAH11,image_urls,https://collections-images.lacma.org/images/99751/99751-2-desktop.jpg,
+hb0347,기린 흉배,dcterms:title,명칭,기린 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「기린」 + 흉배)
+hb0347,기린 흉배,dcterms:title,명칭,Pair of Rank Badges (Hyungbae) with Mythical Animal (Girin)@en,텍스트,recordStated,LACMA-YLACMAH14,영어명,Pair of Rank Badges (Hyungbae) with Mythical Animal (Girin),
+hb0347,기린 흉배,dcterms:identifier,소장처 유물번호,M.2000.15.196a-b,텍스트,recordStated,LACMA-YLACMAH14,소장처유물번호,M.2000.15.196a-b,
+hb0347,기린 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,LACMA-YLACMAH14,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0347,기린 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:girin,개념 링크,ruleDerived,LACMA-YLACMAH14,영어명,Pair of Rank Badges (Hyungbae) with Mythical Animal (Girin),명칭에서 주문양을 찾음(문양 규칙)
+hb0347,기린 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-lacma,기관 링크,ruleDerived,LACMA-YLACMAH14,소장처,로스앤젤레스 카운티 미술관(LACMA),기관 표기를 「로스앤젤레스 카운티 미술관」로 통일
+hb0347,기린 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,LACMA-YLACMAH14,place_made,Korea,국적 규칙
+hb0347,기린 흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,LACMA-YLACMAH14,date,"Joseon dynasty (1392-1910), 1864-1892",시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0347,기린 흉배,dcterms:date,연도,1864/1892,텍스트(EDTF),ruleDerived,LACMA-YLACMAH14,date,"Joseon dynasty (1392-1910), 1864-1892",기관이 적은 연도를 EDTF로
+hb0347,기린 흉배,schema:height,세로,24.8,숫자(cm),ruleDerived,LACMA-YLACMAH14,dimensions,b: 9 3/4 × 8 5/8 in. (24.77 × 21.91 cm),크기 규칙
+hb0347,기린 흉배,schema:width,가로,21.9,숫자(cm),ruleDerived,LACMA-YLACMAH14,dimensions,b: 9 3/4 × 8 5/8 in. (24.77 × 21.91 cm),크기 규칙
+hb0347,기린 흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,LACMA-YLACMAH14,license_note,© Museum Associates/LACMA (건별 라이선스 확인 필요),이용조건 규칙
+hb0347,기린 흉배,foaf:depiction,이미지,https://collections-images.lacma.org/images/99758/99758-1-desktop.jpg,URI,recordStated,LACMA-YLACMAH14,image_urls,https://collections-images.lacma.org/images/99758/99758-1-desktop.jpg,
+hb0348,쌍호흉배,dcterms:title,명칭,쌍호흉배@ko,텍스트,recordStated,오죽헌-1,한글명,쌍호흉배,
+hb0348,쌍호흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,오죽헌-1,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0348,쌍호흉배,crm:P2_has_type,자료 구분·문양,hanbokc:ssangho,개념 링크,ruleDerived,오죽헌-1,한글명,쌍호흉배,명칭에서 주문양을 찾음(문양 규칙)
+hb0348,쌍호흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-ojukheon,기관 링크,recordStated,오죽헌-1,소장처,오죽헌시립박물관,
+hb0348,쌍호흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,오죽헌-1,국적/시대,조선후기,국적 규칙
+hb0348,쌍호흉배,dcterms:temporal,시기,hanbokc:joseonLate,개념 링크,ruleDerived,오죽헌-1,국적/시대,조선후기,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0348,쌍호흉배,schema:height,세로,26.0,숫자(cm),ruleDerived,오죽헌-1,크기,가로:24.3cm 세로:26cm,크기 규칙
+hb0348,쌍호흉배,schema:width,가로,24.3,숫자(cm),ruleDerived,오죽헌-1,크기,가로:24.3cm 세로:26cm,크기 규칙
+hb0348,쌍호흉배,dcterms:license,이용조건,hanbokc:kogl4,개념 링크,ruleDerived,오죽헌-1,공공누리유형,제4유형,이용조건 규칙
+hb0348,쌍호흉배,foaf:depiction,이미지,https://www.gn.go.kr/DATA/psgudRelic/P_967471F4-2133-FEE0-2C67-7DD38D8F1149.jpg,URI,recordStated,오죽헌-1,원본이미지URL(이미지_통합),https://www.gn.go.kr/DATA/psgudRelic/P_967471F4-2133-FEE0-2C67-7DD38D8F1149.jpg,
+hb0384,단호흉배,dcterms:title,명칭,단호흉배@ko,텍스트,recordStated,서울역사-4,한글명,단호흉배,
+hb0384,단호흉배,dcterms:identifier,소장처 유물번호,서울역사014180,텍스트,recordStated,서울역사-4,소장처유물번호,서울역사014180,
+hb0384,단호흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,서울역사-4,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0384,단호흉배,crm:P2_has_type,자료 구분·문양,hanbokc:danho,개념 링크,ruleDerived,서울역사-4,한글명,단호흉배,명칭에서 주문양을 찾음(문양 규칙)
+hb0384,단호흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-smh,기관 링크,recordStated,서울역사-4,소장처,서울역사박물관,
+hb0384,단호흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,서울역사-4,시대,한국(韓國) 조선(朝鮮) 후기(後期),국적 규칙
+hb0384,단호흉배,dcterms:temporal,시기,hanbokc:joseonLate,개념 링크,ruleDerived,서울역사-4,시대,한국(韓國) 조선(朝鮮) 후기(後期),시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0384,단호흉배,schema:height,세로,22.4,숫자(cm),ruleDerived,서울역사-4,크기,세로: 22.4cm 가로: 20.8cm,크기 규칙
+hb0384,단호흉배,schema:width,가로,20.8,숫자(cm),ruleDerived,서울역사-4,크기,세로: 22.4cm 가로: 20.8cm,크기 규칙
+hb0384,단호흉배,dcterms:license,이용조건,hanbokc:kogl1,개념 링크,ruleDerived,서울역사-4,공공누리유형,제1유형,이용조건 규칙
+hb0384,단호흉배,foaf:depiction,이미지,https://museum.seoul.go.kr/_repo/image/2017/11/e07132a2-f34a-4eb8-a5c9-5bad01b8827e-1510123643744.jpg,URI,recordStated,서울역사-4,원본이미지URL(이미지_통합),https://museum.seoul.go.kr/_repo/image/2017/11/e07132a2-f34a-4eb8-a5c9-5bad01b8827e-1510123643744.jpg,
+hb0384,단호흉배,foaf:depiction,이미지,https://museum.seoul.go.kr/_repo/image/2016/05/a6b2c16c-db77-43de-a34e-8af1c182cb08-1464143519679.jpg,URI,recordStated,서울역사-4,원본이미지URL(이미지_통합),https://museum.seoul.go.kr/_repo/image/2016/05/a6b2c16c-db77-43de-a34e-8af1c182cb08-1464143519679.jpg,
+hb0384,단호흉배,foaf:depiction,이미지,https://museum.seoul.go.kr/_repo/image/2016/05/c60b2c2b-3e7f-4622-a773-5d5b9ead6c31-1464143523979.jpg,URI,recordStated,서울역사-4,원본이미지URL(이미지_통합),https://museum.seoul.go.kr/_repo/image/2016/05/c60b2c2b-3e7f-4622-a773-5d5b9ead6c31-1464143523979.jpg,
+hb0384,단호흉배,foaf:depiction,이미지,https://museum.seoul.go.kr/_repo/image/2016/05/98600954-d5ef-46dd-97d3-fedc28c702c7-1464143497383.jpg,URI,recordStated,서울역사-4,원본이미지URL(이미지_통합),https://museum.seoul.go.kr/_repo/image/2016/05/98600954-d5ef-46dd-97d3-fedc28c702c7-1464143497383.jpg,
+hb0390,단학흉배,dcterms:title,명칭,단학흉배@ko,텍스트,recordStated,클리블랜드-YCMAH04,한글명,단학흉배,
+hb0390,단학흉배,dcterms:title,명칭,Rank Badge with Single Crane Motif@en,텍스트,recordStated,클리블랜드-YCMAH04,영어명,Rank Badge with Single Crane Motif,
+hb0390,단학흉배,dcterms:identifier,소장처 유물번호,2019.78.1,텍스트,recordStated,클리블랜드-YCMAH04,소장처유물번호,2019.78.1,
+hb0390,단학흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,클리블랜드-YCMAH04,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0390,단학흉배,crm:P2_has_type,자료 구분·문양,hanbokc:danhak,개념 링크,ruleDerived,클리블랜드-YCMAH04,한글명,단학흉배,명칭에서 주문양을 찾음(문양 규칙)
+hb0390,단학흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-cma,기관 링크,recordStated,클리블랜드-YCMAH04,소장처,클리블랜드미술관,
+hb0390,단학흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,클리블랜드-YCMAH04,culture,"Korea, Joseon dynasty (1392–1910)",국적 규칙
+hb0390,단학흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,클리블랜드-YCMAH04,date,1800s,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0390,단학흉배,schema:height,세로,25.4,숫자(cm),ruleDerived,클리블랜드-YCMAH04,measurements,25.4 x 25.4 cm (10 x 10 in.),크기 규칙
+hb0390,단학흉배,schema:width,가로,25.4,숫자(cm),ruleDerived,클리블랜드-YCMAH04,measurements,25.4 x 25.4 cm (10 x 10 in.),크기 규칙
+hb0390,단학흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,클리블랜드-YCMAH04,license_note,CC0,이용조건 규칙
+hb0390,단학흉배,foaf:depiction,이미지,https://openaccess-cdn.clevelandart.org/2019.78.1/2019.78.1_print.jpg,URI,recordStated,클리블랜드-YCMAH04,image_urls,https://openaccess-cdn.clevelandart.org/2019.78.1/2019.78.1_print.jpg,
+hb0391,단학흉배,dcterms:title,명칭,단학흉배@ko,텍스트,recordStated,클리블랜드-YCMAH05,한글명,단학흉배,
+hb0391,단학흉배,dcterms:title,명칭,Rank Badge with Single Crane Motif@en,텍스트,recordStated,클리블랜드-YCMAH05,영어명,Rank Badge with Single Crane Motif,
+hb0391,단학흉배,dcterms:identifier,소장처 유물번호,2019.78.2,텍스트,recordStated,클리블랜드-YCMAH05,소장처유물번호,2019.78.2,
+hb0391,단학흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,클리블랜드-YCMAH05,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0391,단학흉배,crm:P2_has_type,자료 구분·문양,hanbokc:danhak,개념 링크,ruleDerived,클리블랜드-YCMAH05,한글명,단학흉배,명칭에서 주문양을 찾음(문양 규칙)
+hb0391,단학흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-cma,기관 링크,recordStated,클리블랜드-YCMAH05,소장처,클리블랜드미술관,
+hb0391,단학흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,클리블랜드-YCMAH05,culture,"Korea, Joseon dynasty (1392–1910)",국적 규칙
+hb0391,단학흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,클리블랜드-YCMAH05,date,1800s,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0391,단학흉배,schema:height,세로,25.4,숫자(cm),ruleDerived,클리블랜드-YCMAH05,measurements,25.4 x 25.4 cm (10 x 10 in.),크기 규칙
+hb0391,단학흉배,schema:width,가로,25.4,숫자(cm),ruleDerived,클리블랜드-YCMAH05,measurements,25.4 x 25.4 cm (10 x 10 in.),크기 규칙
+hb0391,단학흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,클리블랜드-YCMAH05,license_note,CC0,이용조건 규칙
+hb0391,단학흉배,foaf:depiction,이미지,https://openaccess-cdn.clevelandart.org/2019.78.2/2019.78.2_print.jpg,URI,recordStated,클리블랜드-YCMAH05,image_urls,https://openaccess-cdn.clevelandart.org/2019.78.2/2019.78.2_print.jpg,
+hb0395,단학흉배,dcterms:title,명칭,단학흉배@ko,텍스트,recordStated,클리블랜드-YCMAH09,한글명,단학흉배,
+hb0395,단학흉배,dcterms:title,명칭,A Pair of Rank Badges with Single Crane Motif@en,텍스트,recordStated,클리블랜드-YCMAH09,영어명,A Pair of Rank Badges with Single Crane Motif,
+hb0395,단학흉배,dcterms:identifier,소장처 유물번호,2019.78,텍스트,recordStated,클리블랜드-YCMAH09,소장처유물번호,2019.78,
+hb0395,단학흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,클리블랜드-YCMAH09,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0395,단학흉배,crm:P2_has_type,자료 구분·문양,hanbokc:danhak,개념 링크,ruleDerived,클리블랜드-YCMAH09,한글명,단학흉배,명칭에서 주문양을 찾음(문양 규칙)
+hb0395,단학흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-cma,기관 링크,recordStated,클리블랜드-YCMAH09,소장처,클리블랜드미술관,
+hb0395,단학흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,클리블랜드-YCMAH09,culture,"Korea, Joseon dynasty (1392–1910)",국적 규칙
+hb0395,단학흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,클리블랜드-YCMAH09,date,1800s,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0395,단학흉배,schema:height,세로,25.4,숫자(cm),ruleDerived,클리블랜드-YCMAH09,measurements,object: 25.4 x 25.4 cm (10 x 10 in.); Mounted: 43.2 x 78.1 cm (17 x 30 3/4 in.),크기 규칙
+hb0395,단학흉배,schema:width,가로,25.4,숫자(cm),ruleDerived,클리블랜드-YCMAH09,measurements,object: 25.4 x 25.4 cm (10 x 10 in.); Mounted: 43.2 x 78.1 cm (17 x 30 3/4 in.),크기 규칙
+hb0395,단학흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,클리블랜드-YCMAH09,license_note,CC0,이용조건 규칙
+hb0395,단학흉배,foaf:depiction,이미지,https://openaccess-cdn.clevelandart.org/2019.78/2019.78_print.jpg,URI,recordStated,클리블랜드-YCMAH09,image_urls,https://openaccess-cdn.clevelandart.org/2019.78/2019.78_print.jpg,
+hb0407,흉배,dcterms:title,명칭,흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(기관 기록에 한글명 없음)
+hb0407,흉배,dcterms:title,명칭,Rank badge@en,텍스트,recordStated,V&A-YVAH11,영어명,Rank badge,
+hb0407,흉배,dcterms:identifier,소장처 유물번호,FE.272-1995,텍스트,recordStated,V&A-YVAH11,소장처유물번호,FE.272-1995,
+hb0407,흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,V&A-YVAH11,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0407,흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-vam,기관 링크,ruleDerived,V&A-YVAH11,소장처,빅토리아 앤 알버트 박물관,기관 표기를 「빅토리아 앤드 앨버트 박물관」로 통일
+hb0407,흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,V&A-YVAH11,place,Korea,국적 규칙
+hb0407,흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,V&A-YVAH11,date,1850-1900,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0407,흉배,dcterms:date,연도,1850/1900,텍스트(EDTF),ruleDerived,V&A-YVAH11,date,1850-1900,기관이 적은 연도를 EDTF로
+hb0407,흉배,schema:height,세로,21.5,숫자(cm),ruleDerived,V&A-YVAH11,dimensions,Height: 21.5cm; Width: 20.7cm,크기 규칙
+hb0407,흉배,schema:width,가로,20.7,숫자(cm),ruleDerived,V&A-YVAH11,dimensions,Height: 21.5cm; Width: 20.7cm,크기 규칙
+hb0407,흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,V&A-YVAH11,license_note,V&A Collections (건별 라이선스 확인 필요),이용조건 규칙
+hb0407,흉배,foaf:depiction,이미지,https://framemark.vam.ac.uk/collections/2006AT6574/full/full/0/default.jpg,URI,recordStated,V&A-YVAH11,image_urls,https://framemark.vam.ac.uk/collections/2006AT6574/full/full/0/default.jpg,
+hb0407,흉배,foaf:depiction,이미지,https://framemark.vam.ac.uk/collections/2006BD9850/full/full/0/default.jpg,URI,recordStated,V&A-YVAH11,image_urls,https://framemark.vam.ac.uk/collections/2006BD9850/full/full/0/default.jpg,
+hb0407,흉배,foaf:depiction,이미지,https://framemark.vam.ac.uk/collections/2014HG1175/full/full/0/default.jpg,URI,recordStated,V&A-YVAH11,image_urls,https://framemark.vam.ac.uk/collections/2014HG1175/full/full/0/default.jpg,
+hb0411,흉배,dcterms:title,명칭,흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(기관 기록에 한글명 없음)
+hb0411,흉배,dcterms:title,명칭,Rank badge@en,텍스트,recordStated,V&A-YVAH15,영어명,Rank badge,
+hb0411,흉배,dcterms:identifier,소장처 유물번호,FE.18A-1971,텍스트,recordStated,V&A-YVAH15,소장처유물번호,FE.18A-1971,
+hb0411,흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,V&A-YVAH15,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0411,흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-vam,기관 링크,ruleDerived,V&A-YVAH15,소장처,빅토리아 앤 알버트 박물관,기관 표기를 「빅토리아 앤드 앨버트 박물관」로 통일
+hb0411,흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,V&A-YVAH15,place,Korea,국적 규칙
+hb0411,흉배,dcterms:temporal,시기,hanbokc:c17,개념 링크,ruleDerived,V&A-YVAH15,date,1600-1700,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0411,흉배,dcterms:date,연도,1600/1700,텍스트(EDTF),ruleDerived,V&A-YVAH15,date,1600-1700,기관이 적은 연도를 EDTF로
+hb0411,흉배,schema:height,세로,26.7,숫자(cm),ruleDerived,V&A-YVAH15,dimensions,Height: 26.7cm; Width: 23.8cm,크기 규칙
+hb0411,흉배,schema:width,가로,23.8,숫자(cm),ruleDerived,V&A-YVAH15,dimensions,Height: 26.7cm; Width: 23.8cm,크기 규칙
+hb0411,흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,V&A-YVAH15,license_note,V&A Collections (건별 라이선스 확인 필요),이용조건 규칙
+hb0411,흉배,foaf:depiction,이미지,https://framemark.vam.ac.uk/collections/2006AL8198/full/full/0/default.jpg,URI,recordStated,V&A-YVAH15,image_urls,https://framemark.vam.ac.uk/collections/2006AL8198/full/full/0/default.jpg,
+hb0411,흉배,foaf:depiction,이미지,https://framemark.vam.ac.uk/collections/2006AU5061/full/full/0/default.jpg,URI,recordStated,V&A-YVAH15,image_urls,https://framemark.vam.ac.uk/collections/2006AU5061/full/full/0/default.jpg,
+hb0415,흉배,dcterms:title,명칭,흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(기관 기록에 한글명 없음)
+hb0415,흉배,dcterms:title,명칭,Rank badge@en,텍스트,recordStated,V&A-YVAH19,영어명,Rank badge,
+hb0415,흉배,dcterms:identifier,소장처 유물번호,1848-1888,텍스트,recordStated,V&A-YVAH19,소장처유물번호,1848-1888,
+hb0415,흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,V&A-YVAH19,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0415,흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-vam,기관 링크,ruleDerived,V&A-YVAH19,소장처,빅토리아 앤 알버트 박물관,기관 표기를 「빅토리아 앤드 앨버트 박물관」로 통일
+hb0415,흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,V&A-YVAH19,place,Korea,국적 규칙
+hb0415,흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,V&A-YVAH19,date,1800 - 1880,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0415,흉배,dcterms:date,연도,1800/1880,텍스트(EDTF),ruleDerived,V&A-YVAH19,date,1800 - 1880,기관이 적은 연도를 EDTF로
+hb0415,흉배,schema:height,세로,21.5,숫자(cm),ruleDerived,V&A-YVAH19,dimensions,Height: 21.5cm; Width: 20cm,크기 규칙
+hb0415,흉배,schema:width,가로,20.0,숫자(cm),ruleDerived,V&A-YVAH19,dimensions,Height: 21.5cm; Width: 20cm,크기 규칙
+hb0415,흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,V&A-YVAH19,license_note,V&A Collections (건별 라이선스 확인 필요),이용조건 규칙
+hb0415,흉배,foaf:depiction,이미지,https://framemark.vam.ac.uk/collections/2006AU5064/full/full/0/default.jpg,URI,recordStated,V&A-YVAH19,image_urls,https://framemark.vam.ac.uk/collections/2006AU5064/full/full/0/default.jpg,
+hb0415,흉배,foaf:depiction,이미지,https://framemark.vam.ac.uk/collections/2006BE3348/full/full/0/default.jpg,URI,recordStated,V&A-YVAH19,image_urls,https://framemark.vam.ac.uk/collections/2006BE3348/full/full/0/default.jpg,
+hb0415,흉배,foaf:depiction,이미지,https://framemark.vam.ac.uk/collections/2014HG1172/full/full/0/default.jpg,URI,recordStated,V&A-YVAH19,image_urls,https://framemark.vam.ac.uk/collections/2014HG1172/full/full/0/default.jpg,
+hb0422,흉배,dcterms:title,명칭,흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(기관 기록에 한글명 없음)
+hb0422,흉배,dcterms:title,명칭,Rank badge (hyungbae)@en,텍스트,recordStated,V&A-YVAH26,영어명,Rank badge (hyungbae),
+hb0422,흉배,dcterms:identifier,소장처 유물번호,1848A-1888,텍스트,recordStated,V&A-YVAH26,소장처유물번호,1848A-1888,
+hb0422,흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,V&A-YVAH26,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0422,흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-vam,기관 링크,ruleDerived,V&A-YVAH26,소장처,빅토리아 앤 알버트 박물관,기관 표기를 「빅토리아 앤드 앨버트 박물관」로 통일
+hb0422,흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,V&A-YVAH26,place,Korea,국적 규칙
+hb0422,흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,V&A-YVAH26,date,1800-1880,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0422,흉배,dcterms:date,연도,1800/1880,텍스트(EDTF),ruleDerived,V&A-YVAH26,date,1800-1880,기관이 적은 연도를 EDTF로
+hb0422,흉배,schema:height,세로,26.7,숫자(cm),ruleDerived,V&A-YVAH26,dimensions,Height: 26.7cm; Width: 23.8cm,크기 규칙
+hb0422,흉배,schema:width,가로,23.8,숫자(cm),ruleDerived,V&A-YVAH26,dimensions,Height: 26.7cm; Width: 23.8cm,크기 규칙
+hb0422,흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,V&A-YVAH26,license_note,V&A Collections (건별 라이선스 확인 필요),이용조건 규칙
+hb0422,흉배,foaf:depiction,이미지,https://framemark.vam.ac.uk/collections/2006AL8200/full/full/0/default.jpg,URI,recordStated,V&A-YVAH26,image_urls,https://framemark.vam.ac.uk/collections/2006AL8200/full/full/0/default.jpg,
+hb0422,흉배,foaf:depiction,이미지,https://framemark.vam.ac.uk/collections/2014HG1173/full/full/0/default.jpg,URI,recordStated,V&A-YVAH26,image_urls,https://framemark.vam.ac.uk/collections/2014HG1173/full/full/0/default.jpg,
+hb0427,흉배,dcterms:title,명칭,흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(기관 기록에 한글명 없음)
+hb0427,흉배,dcterms:title,명칭,Rank badge@en,텍스트,recordStated,V&A-YVAH31,영어명,Rank badge,
+hb0427,흉배,dcterms:identifier,소장처 유물번호,T.197-1920,텍스트,recordStated,V&A-YVAH31,소장처유물번호,T.197-1920,
+hb0427,흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,V&A-YVAH31,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0427,흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-vam,기관 링크,ruleDerived,V&A-YVAH31,소장처,빅토리아 앤 알버트 박물관,기관 표기를 「빅토리아 앤드 앨버트 박물관」로 통일
+hb0427,흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,V&A-YVAH31,place,Korea,국적 규칙
+hb0427,흉배,dcterms:temporal,시기,hanbokc:c17,개념 링크,ruleDerived,V&A-YVAH31,date,1600 - 1700,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0427,흉배,dcterms:date,연도,1600/1700,텍스트(EDTF),ruleDerived,V&A-YVAH31,date,1600 - 1700,기관이 적은 연도를 EDTF로
+hb0427,흉배,schema:height,세로,20.0,숫자(cm),ruleDerived,V&A-YVAH31,dimensions,Height: 20cm; Width: 22.8cm,크기 규칙
+hb0427,흉배,schema:width,가로,22.8,숫자(cm),ruleDerived,V&A-YVAH31,dimensions,Height: 20cm; Width: 22.8cm,크기 규칙
+hb0427,흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,V&A-YVAH31,license_note,V&A Collections (건별 라이선스 확인 필요),이용조건 규칙
+hb0427,흉배,foaf:depiction,이미지,https://framemark.vam.ac.uk/collections/2011ET1141/full/full/0/default.jpg,URI,recordStated,V&A-YVAH31,image_urls,https://framemark.vam.ac.uk/collections/2011ET1141/full/full/0/default.jpg,
+hb0427,흉배,foaf:depiction,이미지,https://framemark.vam.ac.uk/collections/2012FU6841/full/full/0/default.jpg,URI,recordStated,V&A-YVAH31,image_urls,https://framemark.vam.ac.uk/collections/2012FU6841/full/full/0/default.jpg,
+hb0436,흉배,dcterms:title,명칭,흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(기관 기록에 한글명 없음)
+hb0436,흉배,dcterms:title,명칭,Rank badge (Hyungbae)@en,텍스트,recordStated,V&A-YVAH40,영어명,Rank badge (Hyungbae),
+hb0436,흉배,dcterms:identifier,소장처 유물번호,T.198-1920,텍스트,recordStated,V&A-YVAH40,소장처유물번호,T.198-1920,
+hb0436,흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,V&A-YVAH40,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0436,흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-vam,기관 링크,ruleDerived,V&A-YVAH40,소장처,빅토리아 앤 알버트 박물관,기관 표기를 「빅토리아 앤드 앨버트 박물관」로 통일
+hb0436,흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,V&A-YVAH40,place,Korea,국적 규칙
+hb0436,흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,V&A-YVAH40,date,1800 - 1899,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0436,흉배,dcterms:date,연도,1800/1899,텍스트(EDTF),ruleDerived,V&A-YVAH40,date,1800 - 1899,기관이 적은 연도를 EDTF로
+hb0436,흉배,schema:height,세로,14.0,숫자(cm),ruleDerived,V&A-YVAH40,dimensions,Width: 9cm; Length: 14cm,크기 규칙
+hb0436,흉배,schema:width,가로,9.0,숫자(cm),ruleDerived,V&A-YVAH40,dimensions,Width: 9cm; Length: 14cm,크기 규칙
+hb0436,흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,V&A-YVAH40,license_note,V&A Collections (건별 라이선스 확인 필요),이용조건 규칙
+hb0436,흉배,foaf:depiction,이미지,https://framemark.vam.ac.uk/collections/2011ET1142/full/full/0/default.jpg,URI,recordStated,V&A-YVAH40,image_urls,https://framemark.vam.ac.uk/collections/2011ET1142/full/full/0/default.jpg,
+hb0437,백한흉배,dcterms:title,명칭,백한흉배@ko,텍스트,recordStated,경기도-1,한글명,백한흉배,
+hb0437,백한흉배,dcterms:identifier,소장처 유물번호,8201,텍스트,recordStated,경기도-1,소장처유물번호,8201,
+hb0437,백한흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,경기도-1,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0437,백한흉배,crm:P2_has_type,자료 구분·문양,hanbokc:baekhan,개념 링크,ruleDerived,경기도-1,한글명,백한흉배,명칭에서 주문양을 찾음(문양 규칙)
+hb0437,백한흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-ggmuseum,기관 링크,recordStated,경기도-1,소장처,경기도박물관,
+hb0437,백한흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,경기도-1,시대분류,조선,국적 규칙
+hb0437,백한흉배,dcterms:temporal,시기,hanbokc:c16late,개념 링크,ruleDerived,경기도-1,제작연도,16세기 말,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0437,백한흉배,schema:height,세로,29.0,숫자(cm),ruleDerived,경기도-1,크기,가로30 세로29㎝,크기 규칙
+hb0437,백한흉배,schema:width,가로,30.0,숫자(cm),ruleDerived,경기도-1,크기,가로30 세로29㎝,크기 규칙
+hb0437,백한흉배,dcterms:license,이용조건,hanbokc:kogl4,개념 링크,ruleDerived,경기도-1,공공누리유형,제4유형,이용조건 규칙
+hb0437,백한흉배,foaf:depiction,이미지,https://musenet.ggcf.kr/storage/upload/2023/02/14/PyRqwzogu5Q8gFeNFuMShnHvq7ZFPfpYGOPEfvq6.jpg,URI,recordStated,경기도-1,원본이미지URL(이미지_통합),https://musenet.ggcf.kr/storage/upload/2023/02/14/PyRqwzogu5Q8gFeNFuMShnHvq7ZFPfpYGOPEfvq6.jpg,
+hb0438,호표흉배,dcterms:title,명칭,호표흉배@ko,텍스트,recordStated,경기도-2,한글명,호표흉배,
+hb0438,호표흉배,dcterms:identifier,소장처 유물번호,6315,텍스트,recordStated,경기도-2,소장처유물번호,6315,
+hb0438,호표흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,경기도-2,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0438,호표흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hopyo,개념 링크,ruleDerived,경기도-2,한글명,호표흉배,명칭에서 주문양을 찾음(문양 규칙)
+hb0438,호표흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-ggmuseum,기관 링크,recordStated,경기도-2,소장처,경기도박물관,
+hb0438,호표흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,경기도-2,시대분류,조선,국적 규칙
+hb0438,호표흉배,dcterms:temporal,시기,hanbokc:c16late,개념 링크,ruleDerived,경기도-2,제작연도,16세기 말,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0438,호표흉배,schema:height,세로,36.2,숫자(cm),ruleDerived,경기도-2,크기,가로35.7 세로36.2㎝,크기 규칙
+hb0438,호표흉배,schema:width,가로,35.7,숫자(cm),ruleDerived,경기도-2,크기,가로35.7 세로36.2㎝,크기 규칙
+hb0438,호표흉배,dcterms:license,이용조건,hanbokc:kogl4,개념 링크,ruleDerived,경기도-2,공공누리유형,제4유형,이용조건 규칙
+hb0438,호표흉배,foaf:depiction,이미지,https://musenet.ggcf.kr/storage/upload/2023/02/14/hj74axSDnQz8m0FxiFS489m5ssslBhOHXSrRgNY0.jpg,URI,recordStated,경기도-2,원본이미지URL(이미지_통합),https://musenet.ggcf.kr/storage/upload/2023/02/14/hj74axSDnQz8m0FxiFS489m5ssslBhOHXSrRgNY0.jpg,
+hb0438,호표흉배,foaf:depiction,이미지,https://musenet.ggcf.kr/storage/upload/2023/02/14/1GXnwtzKTZVc6aRQ2l0O7i6wtO2TKvrgt4MLmOAU.jpg,URI,recordStated,경기도-2,원본이미지URL(이미지_통합),https://musenet.ggcf.kr/storage/upload/2023/02/14/1GXnwtzKTZVc6aRQ2l0O7i6wtO2TKvrgt4MLmOAU.jpg,
+hb0444,호표 흉배,dcterms:title,명칭,호표 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「호표」 + 흉배)
+hb0444,호표 흉배,dcterms:title,명칭,Rank badge with a pair of tiger-leopards@en,텍스트,recordStated,메트로폴리탄-YMETH006,영어명,Rank badge with a pair of tiger-leopards,
+hb0444,호표 흉배,dcterms:identifier,소장처 유물번호,51.40,텍스트,recordStated,메트로폴리탄-YMETH006,소장처유물번호,Met 51.40,앞의 기관 약칭(Met)을 뗌
+hb0444,호표 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,메트로폴리탄-YMETH006,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0444,호표 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hopyo,개념 링크,ruleDerived,메트로폴리탄-YMETH006,영어명,Rank badge with a pair of tiger-leopards,명칭에서 주문양을 찾음(문양 규칙)
+hb0444,호표 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-met,기관 링크,recordStated,메트로폴리탄-YMETH006,소장처,메트로폴리탄 미술관,
+hb0444,호표 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,메트로폴리탄-YMETH006,culture,Korea,국적 규칙
+hb0444,호표 흉배,dcterms:temporal,시기,hanbokc:c19early,개념 링크,ruleDerived,메트로폴리탄-YMETH006,date,early 19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0444,호표 흉배,schema:height,세로,27.3,숫자(cm),ruleDerived,메트로폴리탄-YMETH006,dimensions,10 3/4 x 10 in. (27.3 x 25.4 cm),크기 규칙
+hb0444,호표 흉배,schema:width,가로,25.4,숫자(cm),ruleDerived,메트로폴리탄-YMETH006,dimensions,10 3/4 x 10 in. (27.3 x 25.4 cm),크기 규칙
+hb0444,호표 흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,메트로폴리탄-YMETH006,license_note,Met Open Access (CC0),이용조건 규칙
+hb0444,호표 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_51_40-001.jpg,URI,recordStated,메트로폴리탄-YMETH006,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_51_40-001.jpg,
+hb0444,호표 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_51_40-002.jpg,URI,recordStated,메트로폴리탄-YMETH006,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_51_40-002.jpg,
+hb0445,쌍학 흉배,dcterms:title,명칭,쌍학 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「쌍학」 + 흉배)
+hb0445,쌍학 흉배,dcterms:title,명칭,Rank Badge with a Pair of Cranes@en,텍스트,recordStated,메트로폴리탄-YMETH007,영어명,Rank Badge with a Pair of Cranes,
+hb0445,쌍학 흉배,dcterms:identifier,소장처 유물번호,53.60.9,텍스트,recordStated,메트로폴리탄-YMETH007,소장처유물번호,Met 53.60.9,앞의 기관 약칭(Met)을 뗌
+hb0445,쌍학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,메트로폴리탄-YMETH007,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0445,쌍학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:ssanghak,개념 링크,ruleDerived,메트로폴리탄-YMETH007,영어명,Rank Badge with a Pair of Cranes,명칭에서 주문양을 찾음(문양 규칙)
+hb0445,쌍학 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-met,기관 링크,recordStated,메트로폴리탄-YMETH007,소장처,메트로폴리탄 미술관,
+hb0445,쌍학 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,메트로폴리탄-YMETH007,culture,Korea,국적 규칙
+hb0445,쌍학 흉배,dcterms:temporal,시기,hanbokc:c19late,개념 링크,ruleDerived,메트로폴리탄-YMETH007,date,late 19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0445,쌍학 흉배,schema:height,세로,21.0,숫자(cm),ruleDerived,메트로폴리탄-YMETH007,dimensions,Overall: 8 1/4 x 7 1/2 in. (21 x 19.1 cm),크기 규칙
+hb0445,쌍학 흉배,schema:width,가로,19.1,숫자(cm),ruleDerived,메트로폴리탄-YMETH007,dimensions,Overall: 8 1/4 x 7 1/2 in. (21 x 19.1 cm),크기 규칙
+hb0445,쌍학 흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,메트로폴리탄-YMETH007,license_note,Met Open Access (CC0),이용조건 규칙
+hb0445,쌍학 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/DP109338.jpg,URI,recordStated,메트로폴리탄-YMETH007,image_urls,https://images.metmuseum.org/CRDImages/as/original/DP109338.jpg,
+hb0445,쌍학 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_9-002.jpg,URI,recordStated,메트로폴리탄-YMETH007,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_9-002.jpg,
+hb0446,학 흉배,dcterms:title,명칭,학 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「학」 + 흉배)
+hb0446,학 흉배,dcterms:title,명칭,Rank badge with a crane (one of a pair)@en,텍스트,recordStated,메트로폴리탄-YMETH008,영어명,Rank badge with a crane (one of a pair),
+hb0446,학 흉배,dcterms:identifier,소장처 유물번호,53.60.18,텍스트,recordStated,메트로폴리탄-YMETH008,소장처유물번호,Met 53.60.18,앞의 기관 약칭(Met)을 뗌
+hb0446,학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,메트로폴리탄-YMETH008,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0446,학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hak,개념 링크,ruleDerived,메트로폴리탄-YMETH008,영어명,Rank badge with a crane (one of a pair),명칭에서 주문양을 찾음(문양 규칙)
+hb0446,학 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-met,기관 링크,recordStated,메트로폴리탄-YMETH008,소장처,메트로폴리탄 미술관,
+hb0446,학 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,메트로폴리탄-YMETH008,culture,Korea,국적 규칙
+hb0446,학 흉배,dcterms:temporal,시기,hanbokc:c19late,개념 링크,ruleDerived,메트로폴리탄-YMETH008,date,late 19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0446,학 흉배,schema:height,세로,24.8,숫자(cm),ruleDerived,메트로폴리탄-YMETH008,dimensions,9 3/4 x 9 in. (24.8 x 22.9 cm),크기 규칙
+hb0446,학 흉배,schema:width,가로,22.9,숫자(cm),ruleDerived,메트로폴리탄-YMETH008,dimensions,9 3/4 x 9 in. (24.8 x 22.9 cm),크기 규칙
+hb0446,학 흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,메트로폴리탄-YMETH008,license_note,Met Open Access (CC0),이용조건 규칙
+hb0446,학 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_18-001.jpg,URI,recordStated,메트로폴리탄-YMETH008,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_18-001.jpg,
+hb0446,학 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_18-002.jpg,URI,recordStated,메트로폴리탄-YMETH008,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_18-002.jpg,
+hb0447,학 흉배,dcterms:title,명칭,학 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「학」 + 흉배)
+hb0447,학 흉배,dcterms:title,명칭,Rank badge with a crane (one of a pair)@en,텍스트,recordStated,메트로폴리탄-YMETH009,영어명,Rank badge with a crane (one of a pair),
+hb0447,학 흉배,dcterms:identifier,소장처 유물번호,53.60.19,텍스트,recordStated,메트로폴리탄-YMETH009,소장처유물번호,Met 53.60.19,앞의 기관 약칭(Met)을 뗌
+hb0447,학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,메트로폴리탄-YMETH009,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0447,학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hak,개념 링크,ruleDerived,메트로폴리탄-YMETH009,영어명,Rank badge with a crane (one of a pair),명칭에서 주문양을 찾음(문양 규칙)
+hb0447,학 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-met,기관 링크,recordStated,메트로폴리탄-YMETH009,소장처,메트로폴리탄 미술관,
+hb0447,학 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,메트로폴리탄-YMETH009,culture,Korea,국적 규칙
+hb0447,학 흉배,dcterms:temporal,시기,hanbokc:c19late,개념 링크,ruleDerived,메트로폴리탄-YMETH009,date,late 19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0447,학 흉배,schema:height,세로,24.8,숫자(cm),ruleDerived,메트로폴리탄-YMETH009,dimensions,9 3/4 x 9 in. (24.8 x 22.9 cm),크기 규칙
+hb0447,학 흉배,schema:width,가로,22.9,숫자(cm),ruleDerived,메트로폴리탄-YMETH009,dimensions,9 3/4 x 9 in. (24.8 x 22.9 cm),크기 규칙
+hb0447,학 흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,메트로폴리탄-YMETH009,license_note,Met Open Access (CC0),이용조건 규칙
+hb0447,학 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_19-001.jpg,URI,recordStated,메트로폴리탄-YMETH009,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_19-001.jpg,
+hb0447,학 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_19-002.jpg,URI,recordStated,메트로폴리탄-YMETH009,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_19-002.jpg,
+hb0451,쌍학 흉배,dcterms:title,명칭,쌍학 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「쌍학」 + 흉배)
+hb0451,쌍학 흉배,dcterms:title,명칭,Rank Badge with Decoration of Two Cranes among Clouds@en,텍스트,recordStated,메트로폴리탄-YMETH013,영어명,Rank Badge with Decoration of Two Cranes among Clouds,
+hb0451,쌍학 흉배,dcterms:identifier,소장처 유물번호,53.60.3,텍스트,recordStated,메트로폴리탄-YMETH013,소장처유물번호,Met 53.60.3,앞의 기관 약칭(Met)을 뗌
+hb0451,쌍학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,메트로폴리탄-YMETH013,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0451,쌍학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:ssanghak,개념 링크,ruleDerived,메트로폴리탄-YMETH013,영어명,Rank Badge with Decoration of Two Cranes among Clouds,명칭에서 주문양을 찾음(문양 규칙)
+hb0451,쌍학 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-met,기관 링크,recordStated,메트로폴리탄-YMETH013,소장처,메트로폴리탄 미술관,
+hb0451,쌍학 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,메트로폴리탄-YMETH013,culture,Korea,국적 규칙
+hb0451,쌍학 흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,메트로폴리탄-YMETH013,date,19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0451,쌍학 흉배,schema:height,세로,19.1,숫자(cm),ruleDerived,메트로폴리탄-YMETH013,dimensions,7 1/2 x 6 3/4 in. (19.1 x 17.1 cm),크기 규칙
+hb0451,쌍학 흉배,schema:width,가로,17.1,숫자(cm),ruleDerived,메트로폴리탄-YMETH013,dimensions,7 1/2 x 6 3/4 in. (19.1 x 17.1 cm),크기 규칙
+hb0451,쌍학 흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,메트로폴리탄-YMETH013,license_note,Met Open Access (CC0),이용조건 규칙
+hb0451,쌍학 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/155289.jpg,URI,recordStated,메트로폴리탄-YMETH013,image_urls,https://images.metmuseum.org/CRDImages/as/original/155289.jpg,
+hb0452,쌍학 흉배,dcterms:title,명칭,쌍학 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「쌍학」 + 흉배)
+hb0452,쌍학 흉배,dcterms:title,명칭,Rank Badge with Decoration of Two Cranes among Clouds@en,텍스트,recordStated,메트로폴리탄-YMETH014,영어명,Rank Badge with Decoration of Two Cranes among Clouds,
+hb0452,쌍학 흉배,dcterms:identifier,소장처 유물번호,53.60.4,텍스트,recordStated,메트로폴리탄-YMETH014,소장처유물번호,Met 53.60.4,앞의 기관 약칭(Met)을 뗌
+hb0452,쌍학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,메트로폴리탄-YMETH014,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0452,쌍학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:ssanghak,개념 링크,ruleDerived,메트로폴리탄-YMETH014,영어명,Rank Badge with Decoration of Two Cranes among Clouds,명칭에서 주문양을 찾음(문양 규칙)
+hb0452,쌍학 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-met,기관 링크,recordStated,메트로폴리탄-YMETH014,소장처,메트로폴리탄 미술관,
+hb0452,쌍학 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,메트로폴리탄-YMETH014,culture,Korea,국적 규칙
+hb0452,쌍학 흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,메트로폴리탄-YMETH014,date,19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0452,쌍학 흉배,schema:height,세로,19.1,숫자(cm),ruleDerived,메트로폴리탄-YMETH014,dimensions,7 1/2 x 6 3/4 in. (19.1 x 17.1 cm),크기 규칙
+hb0452,쌍학 흉배,schema:width,가로,17.1,숫자(cm),ruleDerived,메트로폴리탄-YMETH014,dimensions,7 1/2 x 6 3/4 in. (19.1 x 17.1 cm),크기 규칙
+hb0452,쌍학 흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,메트로폴리탄-YMETH014,license_note,Met Open Access (CC0),이용조건 규칙
+hb0452,쌍학 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/155290.jpg,URI,recordStated,메트로폴리탄-YMETH014,image_urls,https://images.metmuseum.org/CRDImages/as/original/155290.jpg,
+hb0453,흉배,dcterms:title,명칭,흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(기관 기록에 한글명 없음)
+hb0453,흉배,dcterms:title,명칭,Civil-Official Hyungbae (Rank Badge)@en,텍스트,recordStated,메트로폴리탄-YMETH015,영어명,Civil-Official Hyungbae (Rank Badge),
+hb0453,흉배,dcterms:identifier,소장처 유물번호,53.60.10,텍스트,recordStated,메트로폴리탄-YMETH015,소장처유물번호,Met 53.60.10,앞의 기관 약칭(Met)을 뗌
+hb0453,흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,메트로폴리탄-YMETH015,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0453,흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-met,기관 링크,recordStated,메트로폴리탄-YMETH015,소장처,메트로폴리탄 미술관,
+hb0453,흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,메트로폴리탄-YMETH015,culture,Korea,국적 규칙
+hb0453,흉배,dcterms:temporal,시기,hanbokc:c19late,개념 링크,ruleDerived,메트로폴리탄-YMETH015,date,late 19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0453,흉배,schema:height,세로,19.1,숫자(cm),ruleDerived,메트로폴리탄-YMETH015,dimensions,7 1/2 x 6 3/4 in. (19.1 x 17.1 cm),크기 규칙
+hb0453,흉배,schema:width,가로,17.1,숫자(cm),ruleDerived,메트로폴리탄-YMETH015,dimensions,7 1/2 x 6 3/4 in. (19.1 x 17.1 cm),크기 규칙
+hb0453,흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,메트로폴리탄-YMETH015,license_note,Met Open Access (CC0),이용조건 규칙
+hb0453,흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_10-001.jpg,URI,recordStated,메트로폴리탄-YMETH015,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_10-001.jpg,
+hb0453,흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_10-002.jpg,URI,recordStated,메트로폴리탄-YMETH015,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_10-002.jpg,
+hb0454,흉배,dcterms:title,명칭,흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(기관 기록에 한글명 없음)
+hb0454,흉배,dcterms:title,명칭,Civil-Official Hyungbae (Rank Badge)@en,텍스트,recordStated,메트로폴리탄-YMETH016,영어명,Civil-Official Hyungbae (Rank Badge),
+hb0454,흉배,dcterms:identifier,소장처 유물번호,53.60.11,텍스트,recordStated,메트로폴리탄-YMETH016,소장처유물번호,Met 53.60.11,앞의 기관 약칭(Met)을 뗌
+hb0454,흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,메트로폴리탄-YMETH016,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0454,흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-met,기관 링크,recordStated,메트로폴리탄-YMETH016,소장처,메트로폴리탄 미술관,
+hb0454,흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,메트로폴리탄-YMETH016,culture,Korea,국적 규칙
+hb0454,흉배,dcterms:temporal,시기,hanbokc:c19late,개념 링크,ruleDerived,메트로폴리탄-YMETH016,date,late 19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0454,흉배,schema:height,세로,19.1,숫자(cm),ruleDerived,메트로폴리탄-YMETH016,dimensions,7 1/2 x 6 3/4 in. (19.1 x 17.1 cm),크기 규칙
+hb0454,흉배,schema:width,가로,17.1,숫자(cm),ruleDerived,메트로폴리탄-YMETH016,dimensions,7 1/2 x 6 3/4 in. (19.1 x 17.1 cm),크기 규칙
+hb0454,흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,메트로폴리탄-YMETH016,license_note,Met Open Access (CC0),이용조건 규칙
+hb0454,흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_11-001.jpg,URI,recordStated,메트로폴리탄-YMETH016,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_11-001.jpg,
+hb0454,흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_11-002.jpg,URI,recordStated,메트로폴리탄-YMETH016,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_11-002.jpg,
+hb0455,흉배,dcterms:title,명칭,흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(기관 기록에 한글명 없음)
+hb0455,흉배,dcterms:title,명칭,Civil-Official Hyungbae (Rank Badge)@en,텍스트,recordStated,메트로폴리탄-YMETH017,영어명,Civil-Official Hyungbae (Rank Badge),
+hb0455,흉배,dcterms:identifier,소장처 유물번호,53.60.12,텍스트,recordStated,메트로폴리탄-YMETH017,소장처유물번호,Met 53.60.12,앞의 기관 약칭(Met)을 뗌
+hb0455,흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,메트로폴리탄-YMETH017,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0455,흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-met,기관 링크,recordStated,메트로폴리탄-YMETH017,소장처,메트로폴리탄 미술관,
+hb0455,흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,메트로폴리탄-YMETH017,culture,Korea,국적 규칙
+hb0455,흉배,dcterms:temporal,시기,hanbokc:c19late,개념 링크,ruleDerived,메트로폴리탄-YMETH017,date,late 19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0455,흉배,schema:height,세로,19.7,숫자(cm),ruleDerived,메트로폴리탄-YMETH017,dimensions,7 3/4 x 7 in. (19.7 x 17.8 cm),크기 규칙
+hb0455,흉배,schema:width,가로,17.8,숫자(cm),ruleDerived,메트로폴리탄-YMETH017,dimensions,7 3/4 x 7 in. (19.7 x 17.8 cm),크기 규칙
+hb0455,흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,메트로폴리탄-YMETH017,license_note,Met Open Access (CC0),이용조건 규칙
+hb0455,흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_12-001.jpg,URI,recordStated,메트로폴리탄-YMETH017,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_12-001.jpg,
+hb0455,흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_12-002.jpg,URI,recordStated,메트로폴리탄-YMETH017,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_12-002.jpg,
+hb0456,흉배,dcterms:title,명칭,흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(기관 기록에 한글명 없음)
+hb0456,흉배,dcterms:title,명칭,Civil-Official Hyungbae (Rank Badge)@en,텍스트,recordStated,메트로폴리탄-YMETH018,영어명,Civil-Official Hyungbae (Rank Badge),
+hb0456,흉배,dcterms:identifier,소장처 유물번호,53.60.13,텍스트,recordStated,메트로폴리탄-YMETH018,소장처유물번호,Met 53.60.13,앞의 기관 약칭(Met)을 뗌
+hb0456,흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,메트로폴리탄-YMETH018,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0456,흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-met,기관 링크,recordStated,메트로폴리탄-YMETH018,소장처,메트로폴리탄 미술관,
+hb0456,흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,메트로폴리탄-YMETH018,culture,Korea,국적 규칙
+hb0456,흉배,dcterms:temporal,시기,hanbokc:c19late,개념 링크,ruleDerived,메트로폴리탄-YMETH018,date,late 19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0456,흉배,schema:height,세로,19.7,숫자(cm),ruleDerived,메트로폴리탄-YMETH018,dimensions,7 3/4 x 7 in. (19.7 x 17.8 cm),크기 규칙
+hb0456,흉배,schema:width,가로,17.8,숫자(cm),ruleDerived,메트로폴리탄-YMETH018,dimensions,7 3/4 x 7 in. (19.7 x 17.8 cm),크기 규칙
+hb0456,흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,메트로폴리탄-YMETH018,license_note,Met Open Access (CC0),이용조건 규칙
+hb0456,흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_13-001.jpg,URI,recordStated,메트로폴리탄-YMETH018,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_13-001.jpg,
+hb0456,흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_13-002.jpg,URI,recordStated,메트로폴리탄-YMETH018,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_13-002.jpg,
+hb0462,흉배,dcterms:title,명칭,흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(기관 기록에 한글명 없음)
+hb0462,흉배,dcterms:title,명칭,Civil-Official Hyungbae (Rank Badge)@en,텍스트,recordStated,메트로폴리탄-YMETH024,영어명,Civil-Official Hyungbae (Rank Badge),
+hb0462,흉배,dcterms:identifier,소장처 유물번호,53.60.23,텍스트,recordStated,메트로폴리탄-YMETH024,소장처유물번호,Met 53.60.23,앞의 기관 약칭(Met)을 뗌
+hb0462,흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,메트로폴리탄-YMETH024,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0462,흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-met,기관 링크,recordStated,메트로폴리탄-YMETH024,소장처,메트로폴리탄 미술관,
+hb0462,흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,메트로폴리탄-YMETH024,culture,Korea,국적 규칙
+hb0462,흉배,dcterms:temporal,시기,hanbokc:c19late,개념 링크,ruleDerived,메트로폴리탄-YMETH024,date,late 19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0462,흉배,schema:height,세로,23.5,숫자(cm),ruleDerived,메트로폴리탄-YMETH024,dimensions,9 1/4 x 8 in. (23.5 x 20.3 cm),크기 규칙
+hb0462,흉배,schema:width,가로,20.3,숫자(cm),ruleDerived,메트로폴리탄-YMETH024,dimensions,9 1/4 x 8 in. (23.5 x 20.3 cm),크기 규칙
+hb0462,흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,메트로폴리탄-YMETH024,license_note,Met Open Access (CC0),이용조건 규칙
+hb0462,흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/155309.jpg,URI,recordStated,메트로폴리탄-YMETH024,image_urls,https://images.metmuseum.org/CRDImages/as/original/155309.jpg,
+hb0463,흉배,dcterms:title,명칭,흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(기관 기록에 한글명 없음)
+hb0463,흉배,dcterms:title,명칭,Civil-Official Hyungbae (Rank Badge)@en,텍스트,recordStated,메트로폴리탄-YMETH025,영어명,Civil-Official Hyungbae (Rank Badge),
+hb0463,흉배,dcterms:identifier,소장처 유물번호,53.60.24,텍스트,recordStated,메트로폴리탄-YMETH025,소장처유물번호,Met 53.60.24,앞의 기관 약칭(Met)을 뗌
+hb0463,흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,메트로폴리탄-YMETH025,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0463,흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-met,기관 링크,recordStated,메트로폴리탄-YMETH025,소장처,메트로폴리탄 미술관,
+hb0463,흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,메트로폴리탄-YMETH025,culture,Korea,국적 규칙
+hb0463,흉배,dcterms:temporal,시기,hanbokc:c19late,개념 링크,ruleDerived,메트로폴리탄-YMETH025,date,late 19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0463,흉배,schema:height,세로,23.5,숫자(cm),ruleDerived,메트로폴리탄-YMETH025,dimensions,9 1/4 x 8 in. (23.5 x 20.3 cm),크기 규칙
+hb0463,흉배,schema:width,가로,20.3,숫자(cm),ruleDerived,메트로폴리탄-YMETH025,dimensions,9 1/4 x 8 in. (23.5 x 20.3 cm),크기 규칙
+hb0463,흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,메트로폴리탄-YMETH025,license_note,Met Open Access (CC0),이용조건 규칙
+hb0463,흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/155310.jpg,URI,recordStated,메트로폴리탄-YMETH025,image_urls,https://images.metmuseum.org/CRDImages/as/original/155310.jpg,
+hb0463,흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/53_60_24,URI,recordStated,메트로폴리탄-YMETH025,image_urls,https://images.metmuseum.org/CRDImages/as/original/53_60_24,
+hb0644,표범 흉배,dcterms:title,명칭,표범 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「표범」 + 흉배)
+hb0644,표범 흉배,dcterms:title,명칭,Rank Badge with Leopard@en,텍스트,recordStated,메트로폴리탄-YMETH206,영어명,Rank Badge with Leopard,
+hb0644,표범 흉배,dcterms:identifier,소장처 유물번호,53.60.1,텍스트,recordStated,메트로폴리탄-YMETH206,소장처유물번호,Met 53.60.1,앞의 기관 약칭(Met)을 뗌
+hb0644,표범 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,메트로폴리탄-YMETH206,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0644,표범 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:pyobeom,개념 링크,ruleDerived,메트로폴리탄-YMETH206,영어명,Rank Badge with Leopard,명칭에서 주문양을 찾음(문양 규칙)
+hb0644,표범 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-met,기관 링크,recordStated,메트로폴리탄-YMETH206,소장처,메트로폴리탄 미술관,
+hb0644,표범 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,메트로폴리탄-YMETH206,culture,Korea,국적 규칙
+hb0644,표범 흉배,dcterms:temporal,시기,hanbokc:c19late,개념 링크,ruleDerived,메트로폴리탄-YMETH206,date,late 19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0644,표범 흉배,schema:height,세로,22.9,숫자(cm),ruleDerived,메트로폴리탄-YMETH206,dimensions,9 x 8 1/2 in. (22.86 x 21.59 cm),크기 규칙
+hb0644,표범 흉배,schema:width,가로,21.6,숫자(cm),ruleDerived,메트로폴리탄-YMETH206,dimensions,9 x 8 1/2 in. (22.86 x 21.59 cm),크기 규칙
+hb0644,표범 흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,메트로폴리탄-YMETH206,license_note,Met Open Access (CC0),이용조건 규칙
+hb0644,표범 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_1-001.jpg,URI,recordStated,메트로폴리탄-YMETH206,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_1-001.jpg,
+hb0644,표범 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_1-002.jpg,URI,recordStated,메트로폴리탄-YMETH206,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_1-002.jpg,
+hb0645,학 흉배,dcterms:title,명칭,학 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「학」 + 흉배)
+hb0645,학 흉배,dcterms:title,명칭,Rank Badge with Crane@en,텍스트,recordStated,메트로폴리탄-YMETH207,영어명,Rank Badge with Crane,
+hb0645,학 흉배,dcterms:identifier,소장처 유물번호,53.60.2,텍스트,recordStated,메트로폴리탄-YMETH207,소장처유물번호,Met 53.60.2,앞의 기관 약칭(Met)을 뗌
+hb0645,학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,메트로폴리탄-YMETH207,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0645,학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hak,개념 링크,ruleDerived,메트로폴리탄-YMETH207,영어명,Rank Badge with Crane,명칭에서 주문양을 찾음(문양 규칙)
+hb0645,학 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-met,기관 링크,recordStated,메트로폴리탄-YMETH207,소장처,메트로폴리탄 미술관,
+hb0645,학 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,메트로폴리탄-YMETH207,culture,Korea,국적 규칙
+hb0645,학 흉배,dcterms:temporal,시기,hanbokc:c19late,개념 링크,ruleDerived,메트로폴리탄-YMETH207,date,late 19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0645,학 흉배,schema:height,세로,23.5,숫자(cm),ruleDerived,메트로폴리탄-YMETH207,dimensions,9 1/4 x 8 1/4 in. (23.50 x 20.95 cm),크기 규칙
+hb0645,학 흉배,schema:width,가로,20.9,숫자(cm),ruleDerived,메트로폴리탄-YMETH207,dimensions,9 1/4 x 8 1/4 in. (23.50 x 20.95 cm),크기 규칙
+hb0645,학 흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,메트로폴리탄-YMETH207,license_note,Met Open Access (CC0),이용조건 규칙
+hb0645,학 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_2-001.jpg,URI,recordStated,메트로폴리탄-YMETH207,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_2-001.jpg,
+hb0645,학 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_2-002.jpg,URI,recordStated,메트로폴리탄-YMETH207,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_2-002.jpg,
+hb0646,쌍학 흉배,dcterms:title,명칭,쌍학 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「쌍학」 + 흉배)
+hb0646,쌍학 흉배,dcterms:title,명칭,Rank Badge with Decoration of Two Cranes among Clouds@en,텍스트,recordStated,메트로폴리탄-YMETH208,영어명,Rank Badge with Decoration of Two Cranes among Clouds,
+hb0646,쌍학 흉배,dcterms:identifier,소장처 유물번호,53.60.5,텍스트,recordStated,메트로폴리탄-YMETH208,소장처유물번호,Met 53.60.5,앞의 기관 약칭(Met)을 뗌
+hb0646,쌍학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,메트로폴리탄-YMETH208,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0646,쌍학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:ssanghak,개념 링크,ruleDerived,메트로폴리탄-YMETH208,영어명,Rank Badge with Decoration of Two Cranes among Clouds,명칭에서 주문양을 찾음(문양 규칙)
+hb0646,쌍학 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-met,기관 링크,recordStated,메트로폴리탄-YMETH208,소장처,메트로폴리탄 미술관,
+hb0646,쌍학 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,메트로폴리탄-YMETH208,culture,Korea,국적 규칙
+hb0646,쌍학 흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,메트로폴리탄-YMETH208,date,19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0646,쌍학 흉배,schema:height,세로,19.1,숫자(cm),ruleDerived,메트로폴리탄-YMETH208,dimensions,7 1/2 x 6 1/2 in. (19.05 x 16.51 cm),크기 규칙
+hb0646,쌍학 흉배,schema:width,가로,16.5,숫자(cm),ruleDerived,메트로폴리탄-YMETH208,dimensions,7 1/2 x 6 1/2 in. (19.05 x 16.51 cm),크기 규칙
+hb0646,쌍학 흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,메트로폴리탄-YMETH208,license_note,Met Open Access (CC0),이용조건 규칙
+hb0646,쌍학 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/155291.jpg,URI,recordStated,메트로폴리탄-YMETH208,image_urls,https://images.metmuseum.org/CRDImages/as/original/155291.jpg,
+hb0646,쌍학 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/53_60_5,URI,recordStated,메트로폴리탄-YMETH208,image_urls,https://images.metmuseum.org/CRDImages/as/original/53_60_5,
+hb0647,쌍학 흉배,dcterms:title,명칭,쌍학 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「쌍학」 + 흉배)
+hb0647,쌍학 흉배,dcterms:title,명칭,Rank Badge with Decoration of Two Cranes among Clouds@en,텍스트,recordStated,메트로폴리탄-YMETH209,영어명,Rank Badge with Decoration of Two Cranes among Clouds,
+hb0647,쌍학 흉배,dcterms:identifier,소장처 유물번호,53.60.6,텍스트,recordStated,메트로폴리탄-YMETH209,소장처유물번호,Met 53.60.6,앞의 기관 약칭(Met)을 뗌
+hb0647,쌍학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,메트로폴리탄-YMETH209,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0647,쌍학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:ssanghak,개념 링크,ruleDerived,메트로폴리탄-YMETH209,영어명,Rank Badge with Decoration of Two Cranes among Clouds,명칭에서 주문양을 찾음(문양 규칙)
+hb0647,쌍학 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-met,기관 링크,recordStated,메트로폴리탄-YMETH209,소장처,메트로폴리탄 미술관,
+hb0647,쌍학 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,메트로폴리탄-YMETH209,culture,Korea,국적 규칙
+hb0647,쌍학 흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,메트로폴리탄-YMETH209,date,19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0647,쌍학 흉배,schema:height,세로,19.1,숫자(cm),ruleDerived,메트로폴리탄-YMETH209,dimensions,7 1/2 x 6 1/2 in. (19.05 x 16.51 cm),크기 규칙
+hb0647,쌍학 흉배,schema:width,가로,16.5,숫자(cm),ruleDerived,메트로폴리탄-YMETH209,dimensions,7 1/2 x 6 1/2 in. (19.05 x 16.51 cm),크기 규칙
+hb0647,쌍학 흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,메트로폴리탄-YMETH209,license_note,Met Open Access (CC0),이용조건 규칙
+hb0647,쌍학 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/155292.jpg,URI,recordStated,메트로폴리탄-YMETH209,image_urls,https://images.metmuseum.org/CRDImages/as/original/155292.jpg,
+hb0647,쌍학 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/53_60_6,URI,recordStated,메트로폴리탄-YMETH209,image_urls,https://images.metmuseum.org/CRDImages/as/original/53_60_6,
+hb0648,백학 흉배,dcterms:title,명칭,백학 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「백학」 + 흉배)
+hb0648,백학 흉배,dcterms:title,명칭,Rank Badge with White Crane@en,텍스트,recordStated,메트로폴리탄-YMETH210,영어명,Rank Badge with White Crane,
+hb0648,백학 흉배,dcterms:identifier,소장처 유물번호,53.60.7,텍스트,recordStated,메트로폴리탄-YMETH210,소장처유물번호,Met 53.60.7,앞의 기관 약칭(Met)을 뗌
+hb0648,백학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,메트로폴리탄-YMETH210,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0648,백학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:baekhak,개념 링크,ruleDerived,메트로폴리탄-YMETH210,영어명,Rank Badge with White Crane,명칭에서 주문양을 찾음(문양 규칙)
+hb0648,백학 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-met,기관 링크,recordStated,메트로폴리탄-YMETH210,소장처,메트로폴리탄 미술관,
+hb0648,백학 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,메트로폴리탄-YMETH210,culture,Korea,국적 규칙
+hb0648,백학 흉배,dcterms:temporal,시기,hanbokc:c19late,개념 링크,ruleDerived,메트로폴리탄-YMETH210,date,late 19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0648,백학 흉배,schema:height,세로,19.1,숫자(cm),ruleDerived,메트로폴리탄-YMETH210,dimensions,7 1/2 x 7 in. (19.05 x 17.78 cm),크기 규칙
+hb0648,백학 흉배,schema:width,가로,17.8,숫자(cm),ruleDerived,메트로폴리탄-YMETH210,dimensions,7 1/2 x 7 in. (19.05 x 17.78 cm),크기 규칙
+hb0648,백학 흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,메트로폴리탄-YMETH210,license_note,Met Open Access (CC0),이용조건 규칙
+hb0648,백학 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_7-001.jpg,URI,recordStated,메트로폴리탄-YMETH210,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_7-001.jpg,
+hb0648,백학 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_7-002.jpg,URI,recordStated,메트로폴리탄-YMETH210,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_7-002.jpg,
+hb0649,백학 흉배,dcterms:title,명칭,백학 흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(문양 「백학」 + 흉배)
+hb0649,백학 흉배,dcterms:title,명칭,Rank Badge with White Crane@en,텍스트,recordStated,메트로폴리탄-YMETH211,영어명,Rank Badge with White Crane,
+hb0649,백학 흉배,dcterms:identifier,소장처 유물번호,53.60.8,텍스트,recordStated,메트로폴리탄-YMETH211,소장처유물번호,Met 53.60.8,앞의 기관 약칭(Met)을 뗌
+hb0649,백학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,메트로폴리탄-YMETH211,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0649,백학 흉배,crm:P2_has_type,자료 구분·문양,hanbokc:baekhak,개념 링크,ruleDerived,메트로폴리탄-YMETH211,영어명,Rank Badge with White Crane,명칭에서 주문양을 찾음(문양 규칙)
+hb0649,백학 흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-met,기관 링크,recordStated,메트로폴리탄-YMETH211,소장처,메트로폴리탄 미술관,
+hb0649,백학 흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,메트로폴리탄-YMETH211,culture,Korea,국적 규칙
+hb0649,백학 흉배,dcterms:temporal,시기,hanbokc:c19late,개념 링크,ruleDerived,메트로폴리탄-YMETH211,date,late 19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0649,백학 흉배,schema:height,세로,19.1,숫자(cm),ruleDerived,메트로폴리탄-YMETH211,dimensions,7 1/2 x 7 in. (19.05 x 17.78 cm),크기 규칙
+hb0649,백학 흉배,schema:width,가로,17.8,숫자(cm),ruleDerived,메트로폴리탄-YMETH211,dimensions,7 1/2 x 7 in. (19.05 x 17.78 cm),크기 규칙
+hb0649,백학 흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,메트로폴리탄-YMETH211,license_note,Met Open Access (CC0),이용조건 규칙
+hb0649,백학 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_8-001.jpg,URI,recordStated,메트로폴리탄-YMETH211,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_8-001.jpg,
+hb0649,백학 흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_8-002.jpg,URI,recordStated,메트로폴리탄-YMETH211,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_8-002.jpg,
+hb0650,흉배,dcterms:title,명칭,흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(기관 기록에 한글명 없음)
+hb0650,흉배,dcterms:title,명칭,Civil-Official Hyungbae (Rank Badge)@en,텍스트,recordStated,메트로폴리탄-YMETH212,영어명,Civil-Official Hyungbae (Rank Badge),
+hb0650,흉배,dcterms:identifier,소장처 유물번호,53.60.14,텍스트,recordStated,메트로폴리탄-YMETH212,소장처유물번호,Met 53.60.14,앞의 기관 약칭(Met)을 뗌
+hb0650,흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,메트로폴리탄-YMETH212,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0650,흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-met,기관 링크,recordStated,메트로폴리탄-YMETH212,소장처,메트로폴리탄 미술관,
+hb0650,흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,메트로폴리탄-YMETH212,culture,Korea,국적 규칙
+hb0650,흉배,dcterms:temporal,시기,hanbokc:c19late,개념 링크,ruleDerived,메트로폴리탄-YMETH212,date,late 19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0650,흉배,schema:height,세로,21.6,숫자(cm),ruleDerived,메트로폴리탄-YMETH212,dimensions,8 1/2 x 8 in. (21.59 x 20.32 cm),크기 규칙
+hb0650,흉배,schema:width,가로,20.3,숫자(cm),ruleDerived,메트로폴리탄-YMETH212,dimensions,8 1/2 x 8 in. (21.59 x 20.32 cm),크기 규칙
+hb0650,흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,메트로폴리탄-YMETH212,license_note,Met Open Access (CC0),이용조건 규칙
+hb0650,흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_14-001.jpg,URI,recordStated,메트로폴리탄-YMETH212,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_14-001.jpg,
+hb0650,흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_14-002.jpg,URI,recordStated,메트로폴리탄-YMETH212,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_14-002.jpg,
+hb0651,흉배,dcterms:title,명칭,흉배@ko,텍스트,archiveAssigned,,,,기관 기록에 한글명이 없어 아카이브가 붙임(기관 기록에 한글명 없음)
+hb0651,흉배,dcterms:title,명칭,Civil-Official Hyungbae (Rank Badge)@en,텍스트,recordStated,메트로폴리탄-YMETH213,영어명,Civil-Official Hyungbae (Rank Badge),
+hb0651,흉배,dcterms:identifier,소장처 유물번호,53.60.15,텍스트,recordStated,메트로폴리탄-YMETH213,소장처유물번호,Met 53.60.15,앞의 기관 약칭(Met)을 뗌
+hb0651,흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,메트로폴리탄-YMETH213,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0651,흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-met,기관 링크,recordStated,메트로폴리탄-YMETH213,소장처,메트로폴리탄 미술관,
+hb0651,흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,메트로폴리탄-YMETH213,culture,Korea,국적 규칙
+hb0651,흉배,dcterms:temporal,시기,hanbokc:c19late,개념 링크,ruleDerived,메트로폴리탄-YMETH213,date,late 19th century,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0651,흉배,schema:height,세로,21.6,숫자(cm),ruleDerived,메트로폴리탄-YMETH213,dimensions,8 1/2 x 8 in. (21.59 x 20.32 cm),크기 규칙
+hb0651,흉배,schema:width,가로,20.3,숫자(cm),ruleDerived,메트로폴리탄-YMETH213,dimensions,8 1/2 x 8 in. (21.59 x 20.32 cm),크기 규칙
+hb0651,흉배,dcterms:license,이용조건,hanbokc:cc0,개념 링크,ruleDerived,메트로폴리탄-YMETH213,license_note,Met Open Access (CC0),이용조건 규칙
+hb0651,흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_15-001.jpg,URI,recordStated,메트로폴리탄-YMETH213,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_15-001.jpg,
+hb0651,흉배,foaf:depiction,이미지,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_15-002.jpg,URI,recordStated,메트로폴리탄-YMETH213,image_urls,https://images.metmuseum.org/CRDImages/as/original/LC_53_60_15-002.jpg,
+hb0656,쌍학흉배,dcterms:title,명칭,쌍학흉배@ko,텍스트,recordStated,국가유산포털-3,한글명,쌍학흉배,
+hb0656,쌍학흉배,dcterms:title,명칭,雙鶴胸背@ko-Hani,텍스트(한자),recordStated,국가유산포털-3,한자명,雙鶴胸背,
+hb0656,쌍학흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,국가유산포털-3,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0656,쌍학흉배,crm:P2_has_type,자료 구분·문양,hanbokc:ssanghak,개념 링크,ruleDerived,국가유산포털-3,한글명,쌍학흉배,명칭에서 주문양을 찾음(문양 규칙)
+hb0656,쌍학흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-k39,기관 링크,recordStated,국가유산포털-3,소장처,이＊＊＊,
+hb0656,쌍학흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,국가유산포털-3,시대,조선시대(18세기 중반),국적 규칙
+hb0656,쌍학흉배,dcterms:temporal,시기,hanbokc:c18,개념 링크,ruleDerived,국가유산포털-3,시대,조선시대(18세기 중반),시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0656,쌍학흉배,crm:P101_had_as_general_use,착용 맥락,hanbokc:gwanbok,개념 링크,ruleDerived,국가유산포털-3,내용,"조선시대 흉배(胸背)는 조선시대 흑단령의 가슴과 등에 부착하여 품계를 나타내는 표지(標識)이다. 해가 표현된 것이 가슴 쪽, 달이 표현된 것이 등쪽 흉배이다. 이 쌍학흉배는 현록색 운보문단(雲寶紋緞) 바탕천에 견사(絹絲)로 주문양인 학과 부문양인 구름, 해, 달, 물결, 파도, 괴석, 삼산 등이 자수(刺繡)되어 있으며, 상태가 전체적으로 양호하다. 학 두 마리가 위‧아래로 배치되어 있는데 입에 불로초가 없고, 해와 달은 표현되어 있다. 쌍학흉배는 조형적 특징으로 보아 18세기 중‧후반에 사용된 문관 당상관용 쌍학흉배로 추정되므로 그 역사적 가치가 인정된다. 다만, 단령에 부착된 상태 또는 단령과 함께 전해진 것이 아니라 단독으로 남아있다는 점에서 아쉬움이 남는다. 그럼에도 불구하고, 18세기 중ㆍ후반에 사용된 문관 당상관용 쌍학흉배의 조형 특성을 고찰할 수 있는 실증자료라는 점, 18세기 중․후반의 쌍학흉배에 표현된 자수의 색상과 기법을 볼 수 있는 전세 유물이라는 점 등에서 역사적․학술적 가치와 희소성이 인정되므로 부산광역시문화유산자료로 지정하여 보존할 가치가 있다.",착용 맥락 규칙
+hb0656,쌍학흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,국가유산포털-3,공공누리유형,확인요망,이용조건 규칙
+hb0656,쌍학흉배,foaf:depiction,이미지,http://www.khs.go.kr/unisearch/images/cultural_material/2024080913411600.PNG,URI,recordStated,국가유산포털-3,원본이미지URL(이미지_통합),http://www.khs.go.kr/unisearch/images/cultural_material/2024080913411600.PNG,
+hb0677,공작흉배,dcterms:title,명칭,공작흉배@ko,텍스트,recordStated,단국대-1,한글명,공작흉배,
+hb0677,공작흉배,dcterms:title,명칭,孔雀胸背@ko-Hani,텍스트(한자),recordStated,단국대-1,한자명,孔雀胸背,
+hb0677,공작흉배,dcterms:title,명칭,Gongjak-hyungbae(Peacock Insignia)@en,텍스트,recordStated,단국대-1,영어명,Gongjak-hyungbae(Peacock Insignia),
+hb0677,공작흉배,dcterms:identifier,소장처 유물번호,B007299,텍스트,recordStated,단국대-1,소장처유물번호,B007299,
+hb0677,공작흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,단국대-1,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0677,공작흉배,crm:P2_has_type,자료 구분·문양,hanbokc:gongjak,개념 링크,ruleDerived,단국대-1,한글명,공작흉배,명칭에서 주문양을 찾음(문양 규칙)
+hb0677,공작흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-dku,기관 링크,recordStated,단국대-1,소장처,단국대학교 석주선기념박물관,
+hb0677,공작흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,단국대-1,시대,조선,국적 규칙
+hb0677,공작흉배,dcterms:temporal,시기,hanbokc:c16,개념 링크,ruleDerived,단국대-1,시대상세,1508~1572,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0677,공작흉배,dcterms:date,연도,1508/1572,텍스트(EDTF),ruleDerived,단국대-1,시대상세,1508~1572,기관이 적은 연도를 EDTF로
+hb0677,공작흉배,schema:height,세로,39.0,숫자(cm),ruleDerived,단국대-1,크기,"가로 38, 세로 39",크기 규칙
+hb0677,공작흉배,schema:width,가로,38.0,숫자(cm),ruleDerived,단국대-1,크기,"가로 38, 세로 39",크기 규칙
+hb0677,공작흉배,crm:P101_had_as_general_use,착용 맥락,hanbokc:gwanbok,개념 링크,researcherConfirmed,단국대-1,내용,"조선 중기 판중추부사(判中樞府事)를 지낸 충정공(忠靖公) 정응두(丁應斗)의 묘에서 출토된 공장흉배 1쌍이다. 
+ 
+ 오색견사와 편금사(片金絲)를 사용하여 비단 바탕에 공작, 모란, 구름 무늬를 직조한 직금(織金) 흉배이다. 
+ 
+ 원래는 다채한 색상과 금사{金絲)로 직조된 것이었으나 현재 퇴색되어 있으며 테두리 부분에 금사가 미세하게 남아있다.
+ 
+ [문양 ]-공작, 모란, 구름 등
+ 
+ [재질]- 직금. 오색견사
+ 
+ [구성]-홑. 앞뒤 2점
+ 
+ [특징]-1988.10.25 경기도 고양군 지도읍 행신리 출토 / 정응두(1508~1572)와 배위 은진송씨(1509~1580) 합장 묘토 유물",11/3 샘플에서 연구자가 기관 설명을 읽고 판단
+hb0677,공작흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,단국대-1,공공누리유형,확인요망,이용조건 규칙
+hb0677,공작흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14876442/201703081323023521997061562/89d99786-dcf4-974e-01bf-d040eadb4513?version=1.0&t=1768262876755&imagePreview=1,URI,recordStated,단국대-1,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14876442/201703081323023521997061562/89d99786-dcf4-974e-01bf-d040eadb4513?version=1.0&t=1768262876755&imagePreview=1,
+hb0677,공작흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14876442/201703081323026342054319864/b96f12ed-89c9-8c5c-efad-971509da796b?version=1.0&t=1768633160027&imagePreview=1,URI,recordStated,단국대-1,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14876442/201703081323026342054319864/b96f12ed-89c9-8c5c-efad-971509da796b?version=1.0&t=1768633160027&imagePreview=1,
+hb0677,공작흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14876442/201703081323028062082949015/40ae22aa-2e10-21f3-f3a9-c3ae09595203?version=1.0&t=1768633160302&imagePreview=1,URI,recordStated,단국대-1,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14876442/201703081323028062082949015/40ae22aa-2e10-21f3-f3a9-c3ae09595203?version=1.0&t=1768633160302&imagePreview=1,
+hb0678,금사기린흉배,dcterms:title,명칭,금사기린흉배@ko,텍스트,recordStated,단국대-2,한글명,금사기린흉배,
+hb0678,금사기린흉배,dcterms:title,명칭,金絲麒麟胸背@ko-Hani,텍스트(한자),recordStated,단국대-2,한자명,金絲麒麟胸背,
+hb0678,금사기린흉배,dcterms:title,명칭,Girin-hyungbae (Giraffe Insignia)@en,텍스트,recordStated,단국대-2,영어명,Girin-hyungbae (Giraffe Insignia),
+hb0678,금사기린흉배,dcterms:identifier,소장처 유물번호,B002299,텍스트,recordStated,단국대-2,소장처유물번호,B002299,
+hb0678,금사기린흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,단국대-2,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0678,금사기린흉배,crm:P2_has_type,자료 구분·문양,hanbokc:girin,개념 링크,ruleDerived,단국대-2,한글명,금사기린흉배,명칭에서 주문양을 찾음(문양 규칙)
+hb0678,금사기린흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-dku,기관 링크,recordStated,단국대-2,소장처,단국대학교 석주선기념박물관,
+hb0678,금사기린흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,단국대-2,시대,조선,국적 규칙
+hb0678,금사기린흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,단국대-2,시대상세,1870,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0678,금사기린흉배,dcterms:date,연도,1870,텍스트(EDTF),ruleDerived,단국대-2,시대상세,1870,기관이 적은 연도를 EDTF로
+hb0678,금사기린흉배,schema:height,세로,19.0,숫자(cm),ruleDerived,단국대-2,크기,"가로 17.5, 세로 19",크기 규칙
+hb0678,금사기린흉배,schema:width,가로,17.5,숫자(cm),ruleDerived,단국대-2,크기,"가로 17.5, 세로 19",크기 규칙
+hb0678,금사기린흉배,crm:P101_had_as_general_use,착용 맥락,hanbokc:gwanbok,개념 링크,researcherConfirmed,단국대-2,내용,"흥선대원군의 자적단령에 부착된 흉배이다. 짙은 아청색 공단에 금사(金絲)와 은사(銀絲)를 이용해 징금수로 문양을 수 놓았다. 
+ 
+ 기린흉배는 1895년 이전까지 대군(大君)과 종친명부의 흉배로 사용되었으며 기린은 전설속의 동물로 매우 상서로운 동물로 알려져있다. 
+ 
+ 사슴의 몸에 소의 꼬리와 발굽을 가졌으며, 이마에는 한 개의 뿔이 달렸다.",11/3 샘플에서 연구자가 기관 설명을 읽고 판단
+hb0678,금사기린흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,단국대-2,공공누리유형,확인요망,이용조건 규칙
+hb0678,금사기린흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14889366/201508121444121061367866455/d842b26b-4818-9868-aabf-c1a8043865ea?version=1.0&t=1768320708509&imagePreview=1,URI,recordStated,단국대-2,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14889366/201508121444121061367866455/d842b26b-4818-9868-aabf-c1a8043865ea?version=1.0&t=1768320708509&imagePreview=1,
+hb0678,금사기린흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14889366/201508121444437561453753908/d7f6d048-e804-ef8e-9584-a9bacbf7fa5f?version=1.0&t=1768716125202&imagePreview=1,URI,recordStated,단국대-2,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14889366/201508121444437561453753908/d7f6d048-e804-ef8e-9584-a9bacbf7fa5f?version=1.0&t=1768716125202&imagePreview=1,
+hb0678,금사기린흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14889366/201508121445083431511012210/d0140b6b-86e5-3ba2-0dc5-678f3091f8c4?version=1.0&t=1768716127941&imagePreview=1,URI,recordStated,단국대-2,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14889366/201508121445083431511012210/d0140b6b-86e5-3ba2-0dc5-678f3091f8c4?version=1.0&t=1768716127941&imagePreview=1,
+hb0678,금사기린흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14889366/201508121445366101539641361/e9be7f3c-5c21-d253-572e-da10541374c5?version=1.0&t=1768716130866&imagePreview=1,URI,recordStated,단국대-2,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14889366/201508121445366101539641361/e9be7f3c-5c21-d253-572e-da10541374c5?version=1.0&t=1768716130866&imagePreview=1,
+hb0679,금사단학흉배,dcterms:title,명칭,금사단학흉배@ko,텍스트,recordStated,단국대-3,한글명,금사단학흉배,
+hb0679,금사단학흉배,dcterms:title,명칭,金絲單鶴胸背@ko-Hani,텍스트(한자),recordStated,단국대-3,한자명,金絲單鶴胸背,
+hb0679,금사단학흉배,dcterms:title,명칭,Hak-Hungbae(Crane Insignia)@en,텍스트,recordStated,단국대-3,영어명,Hak-Hungbae(Crane Insignia),
+hb0679,금사단학흉배,dcterms:identifier,소장처 유물번호,B001975,텍스트,recordStated,단국대-3,소장처유물번호,B001975,
+hb0679,금사단학흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,단국대-3,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0679,금사단학흉배,crm:P2_has_type,자료 구분·문양,hanbokc:danhak,개념 링크,ruleDerived,단국대-3,한글명,금사단학흉배,명칭에서 주문양을 찾음(문양 규칙)
+hb0679,금사단학흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-dku,기관 링크,recordStated,단국대-3,소장처,단국대학교 석주선기념박물관,
+hb0679,금사단학흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,단국대-3,시대,조선,국적 규칙
+hb0679,금사단학흉배,dcterms:temporal,시기,hanbokc:c18,개념 링크,ruleDerived,단국대-3,시대상세,1780,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0679,금사단학흉배,dcterms:date,연도,1780,텍스트(EDTF),ruleDerived,단국대-3,시대상세,1780,기관이 적은 연도를 EDTF로
+hb0679,금사단학흉배,schema:height,세로,19.5,숫자(cm),ruleDerived,단국대-3,크기,"가로 17.5, 세로 19.5",크기 규칙
+hb0679,금사단학흉배,schema:width,가로,17.5,숫자(cm),ruleDerived,단국대-3,크기,"가로 17.5, 세로 19.5",크기 규칙
+hb0679,금사단학흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,단국대-3,공공누리유형,확인요망,이용조건 규칙
+hb0679,금사단학흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14902642/20150817111901227-1003201096/73d87399-6259-a482-0297-6206a531ad49?version=1.0&t=1768375656687&imagePreview=1,URI,recordStated,단국대-3,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14902642/20150817111901227-1003201096/73d87399-6259-a482-0297-6206a531ad49?version=1.0&t=1768375656687&imagePreview=1,
+hb0679,금사단학흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14902642/20150817111901727-974571945/8c1fb9be-7faf-903d-22d5-d1f246b65cb2?version=1.0&t=1768633107679&imagePreview=1,URI,recordStated,단국대-3,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14902642/20150817111901727-974571945/8c1fb9be-7faf-903d-22d5-d1f246b65cb2?version=1.0&t=1768633107679&imagePreview=1,
+hb0680,금사봉흉배,dcterms:title,명칭,금사봉흉배@ko,텍스트,recordStated,단국대-4,한글명,금사봉흉배,
+hb0680,금사봉흉배,dcterms:title,명칭,金絲鳳胸背@ko-Hani,텍스트(한자),recordStated,단국대-4,한자명,金絲鳳胸背,
+hb0680,금사봉흉배,dcterms:title,명칭,Bonghwang-hyungbae (Insignia with Phoenixes)@en,텍스트,recordStated,단국대-4,영어명,Bonghwang-hyungbae (Insignia with Phoenixes),
+hb0680,금사봉흉배,dcterms:identifier,소장처 유물번호,B000287,텍스트,recordStated,단국대-4,소장처유물번호,B000287,
+hb0680,금사봉흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,단국대-4,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0680,금사봉흉배,crm:P2_has_type,자료 구분·문양,hanbokc:bonghwang,개념 링크,ruleDerived,단국대-4,영어명,Bonghwang-hyungbae (Insignia with Phoenixes),명칭에서 주문양을 찾음(문양 규칙)
+hb0680,금사봉흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-dku,기관 링크,recordStated,단국대-4,소장처,단국대학교 석주선기념박물관,
+hb0680,금사봉흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,단국대-4,시대,조선,국적 규칙
+hb0680,금사봉흉배,dcterms:temporal,시기,hanbokc:c17,개념 링크,ruleDerived,단국대-4,시대상세,1700,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0680,금사봉흉배,dcterms:date,연도,1700,텍스트(EDTF),ruleDerived,단국대-4,시대상세,1700,기관이 적은 연도를 EDTF로
+hb0680,금사봉흉배,schema:height,세로,23.0,숫자(cm),ruleDerived,단국대-4,크기,"가로 22, 세로 23",크기 규칙
+hb0680,금사봉흉배,schema:width,가로,22.0,숫자(cm),ruleDerived,단국대-4,크기,"가로 22, 세로 23",크기 규칙
+hb0680,금사봉흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,단국대-4,공공누리유형,확인요망,이용조건 규칙
+hb0680,금사봉흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14884217/20170404161947553-926352174/7e773337-9e04-6da8-da8b-6b42334d605d?version=1.0&t=1768285306211&imagePreview=1,URI,recordStated,단국대-4,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14884217/20170404161947553-926352174/7e773337-9e04-6da8-da8b-6b42334d605d?version=1.0&t=1768285306211&imagePreview=1,
+hb0680,금사봉흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14884217/20170404161948100-869125648/17ecd7bf-081f-e8dd-83f4-711952f7ba5b?version=1.0&t=1768285308226&imagePreview=1,URI,recordStated,단국대-4,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14884217/20170404161948100-869125648/17ecd7bf-081f-e8dd-83f4-711952f7ba5b?version=1.0&t=1768285308226&imagePreview=1,
+hb0680,금사봉흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14884217/20170404161948522-840496497/322a11d1-6038-4e56-9891-707cdcec0fd8?version=1.0&t=1768285308464&imagePreview=1,URI,recordStated,단국대-4,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14884217/20170404161948522-840496497/322a11d1-6038-4e56-9891-707cdcec0fd8?version=1.0&t=1768285308464&imagePreview=1,
+hb0680,금사봉흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14884217/20170404161948944-811867346/22b88fa4-9dc8-f14a-324d-5d851d8d55ce?version=1.0&t=1768285308697&imagePreview=1,URI,recordStated,단국대-4,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14884217/20170404161948944-811867346/22b88fa4-9dc8-f14a-324d-5d851d8d55ce?version=1.0&t=1768285308697&imagePreview=1,
+hb0681,단호흉배,dcterms:title,명칭,단호흉배@ko,텍스트,recordStated,단국대-5,한글명,단호흉배,
+hb0681,단호흉배,dcterms:title,명칭,單虎胸背@ko-Hani,텍스트(한자),recordStated,단국대-5,한자명,單虎胸背,
+hb0681,단호흉배,dcterms:title,명칭,Danho-Hungbae(Single Tiger insignia)@en,텍스트,recordStated,단국대-5,영어명,Danho-Hungbae(Single Tiger insignia),
+hb0681,단호흉배,dcterms:identifier,소장처 유물번호,B001171,텍스트,recordStated,단국대-5,소장처유물번호,B001171,
+hb0681,단호흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,단국대-5,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0681,단호흉배,crm:P2_has_type,자료 구분·문양,hanbokc:danho,개념 링크,ruleDerived,단국대-5,한글명,단호흉배,명칭에서 주문양을 찾음(문양 규칙)
+hb0681,단호흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-dku,기관 링크,recordStated,단국대-5,소장처,단국대학교 석주선기념박물관,
+hb0681,단호흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,단국대-5,시대,조선,국적 규칙
+hb0681,단호흉배,dcterms:temporal,시기,hanbokc:c18,개념 링크,ruleDerived,단국대-5,시대상세,1750,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0681,단호흉배,dcterms:date,연도,1750,텍스트(EDTF),ruleDerived,단국대-5,시대상세,1750,기관이 적은 연도를 EDTF로
+hb0681,단호흉배,schema:height,세로,19.5,숫자(cm),ruleDerived,단국대-5,크기,"가로 17.5, 세로 19.5",크기 규칙
+hb0681,단호흉배,schema:width,가로,17.5,숫자(cm),ruleDerived,단국대-5,크기,"가로 17.5, 세로 19.5",크기 규칙
+hb0681,단호흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,단국대-5,공공누리유형,확인요망,이용조건 규칙
+hb0681,단호흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14902705/20150817112657783-815382326/0180eebc-7075-bfce-5f85-e5c7369b608c?version=1.0&t=1768375669350&imagePreview=1,URI,recordStated,단국대-5,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14902705/20150817112657783-815382326/0180eebc-7075-bfce-5f85-e5c7369b608c?version=1.0&t=1768375669350&imagePreview=1,
+hb0681,단호흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14902705/20150817112658111-786753175/c465f25e-9fd9-e902-46b4-43aac9f19728?version=1.0&t=1768821743451&imagePreview=1,URI,recordStated,단국대-5,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14902705/20150817112658111-786753175/c465f25e-9fd9-e902-46b4-43aac9f19728?version=1.0&t=1768821743451&imagePreview=1,
+hb0682,백한흉배,dcterms:title,명칭,백한흉배@ko,텍스트,recordStated,단국대-6,한글명,백한흉배,
+hb0682,백한흉배,dcterms:title,명칭,白鹇胸背@ko-Hani,텍스트(한자),recordStated,단국대-6,한자명,白鹇胸背,
+hb0682,백한흉배,dcterms:title,명칭,Baekhan Hyungbae(silver pheasant insignia)@en,텍스트,recordStated,단국대-6,영어명,Baekhan Hyungbae(silver pheasant insignia),
+hb0682,백한흉배,dcterms:identifier,소장처 유물번호,B001329,텍스트,recordStated,단국대-6,소장처유물번호,B001329,
+hb0682,백한흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,단국대-6,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0682,백한흉배,crm:P2_has_type,자료 구분·문양,hanbokc:baekhan,개념 링크,ruleDerived,단국대-6,한글명,백한흉배,명칭에서 주문양을 찾음(문양 규칙)
+hb0682,백한흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-dku,기관 링크,recordStated,단국대-6,소장처,단국대학교 석주선기념박물관,
+hb0682,백한흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,단국대-6,시대,조선,국적 규칙
+hb0682,백한흉배,dcterms:temporal,시기,hanbokc:c15,개념 링크,ruleDerived,단국대-6,시대상세,1480,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0682,백한흉배,dcterms:date,연도,1480,텍스트(EDTF),ruleDerived,단국대-6,시대상세,1480,기관이 적은 연도를 EDTF로
+hb0682,백한흉배,schema:height,세로,30.5,숫자(cm),ruleDerived,단국대-6,크기,"가로 28.5, 세로 30.5",크기 규칙
+hb0682,백한흉배,schema:width,가로,28.5,숫자(cm),ruleDerived,단국대-6,크기,"가로 28.5, 세로 30.5",크기 규칙
+hb0682,백한흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,단국대-6,공공누리유형,확인요망,이용조건 규칙
+hb0682,백한흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14908493/20150824094335450-763710565/6cd007a1-876e-0b75-4e72-3341d0a77d3d?version=1.0&t=1768400673384&imagePreview=1,URI,recordStated,단국대-6,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14908493/20150824094335450-763710565/6cd007a1-876e-0b75-4e72-3341d0a77d3d?version=1.0&t=1768400673384&imagePreview=1,
+hb0682,백한흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14908493/20150824094335965-563306508/c808c41e-60b5-81d0-8c0f-fe4a4832a53c?version=1.0&t=1768821769150&imagePreview=1,URI,recordStated,단국대-6,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14908493/20150824094335965-563306508/c808c41e-60b5-81d0-8c0f-fe4a4832a53c?version=1.0&t=1768821769150&imagePreview=1,
+hb0683,쌍호흉배,dcterms:title,명칭,쌍호흉배@ko,텍스트,recordStated,단국대-7,한글명,쌍호흉배,
+hb0683,쌍호흉배,dcterms:title,명칭,雙虎胸背@ko-Hani,텍스트(한자),recordStated,단국대-7,한자명,雙虎胸背,
+hb0683,쌍호흉배,dcterms:title,명칭,Sanho- hyungbae(Twin Tiger Insignia)@en,텍스트,recordStated,단국대-7,영어명,Sanho- hyungbae(Twin Tiger Insignia),
+hb0683,쌍호흉배,dcterms:identifier,소장처 유물번호,B000741,텍스트,recordStated,단국대-7,소장처유물번호,B000741,
+hb0683,쌍호흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,단국대-7,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0683,쌍호흉배,crm:P2_has_type,자료 구분·문양,hanbokc:ssangho,개념 링크,ruleDerived,단국대-7,한글명,쌍호흉배,명칭에서 주문양을 찾음(문양 규칙)
+hb0683,쌍호흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-dku,기관 링크,recordStated,단국대-7,소장처,단국대학교 석주선기념박물관,
+hb0683,쌍호흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,단국대-7,시대,조선,국적 규칙
+hb0683,쌍호흉배,dcterms:temporal,시기,hanbokc:c18,개념 링크,ruleDerived,단국대-7,시대상세,1720,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0683,쌍호흉배,dcterms:date,연도,1720,텍스트(EDTF),ruleDerived,단국대-7,시대상세,1720,기관이 적은 연도를 EDTF로
+hb0683,쌍호흉배,schema:height,세로,28.0,숫자(cm),ruleDerived,단국대-7,크기,"가로 25.5, 세로 28",크기 규칙
+hb0683,쌍호흉배,schema:width,가로,25.5,숫자(cm),ruleDerived,단국대-7,크기,"가로 25.5, 세로 28",크기 규칙
+hb0683,쌍호흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,단국대-7,공공누리유형,확인요망,이용조건 규칙
+hb0683,쌍호흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14909244/201508171128324691748269204/82bd63fd-272a-3858-eeef-6166a60d546e?version=1.0&t=1768400748097&imagePreview=1,URI,recordStated,단국대-7,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14909244/201508171128324691748269204/82bd63fd-272a-3858-eeef-6166a60d546e?version=1.0&t=1768400748097&imagePreview=1,
+hb0683,쌍호흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14909244/201508171128328921834156657/a240ea41-9200-0b28-36b7-ef1a033becf8?version=1.0&t=1768821857280&imagePreview=1,URI,recordStated,단국대-7,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14909244/201508171128328921834156657/a240ea41-9200-0b28-36b7-ef1a033becf8?version=1.0&t=1768821857280&imagePreview=1,
+hb0684,운안흉배,dcterms:title,명칭,운안흉배@ko,텍스트,recordStated,단국대-8,한글명,운안흉배,
+hb0684,운안흉배,dcterms:title,명칭,雲雁胸背@ko-Hani,텍스트(한자),recordStated,단국대-8,한자명,雲雁胸背,
+hb0684,운안흉배,dcterms:title,명칭,Unan-hungbae(Wild Goose and cloud Insigia)@en,텍스트,recordStated,단국대-8,영어명,Unan-hungbae(Wild Goose and cloud Insigia),
+hb0684,운안흉배,dcterms:identifier,소장처 유물번호,B003166,텍스트,recordStated,단국대-8,소장처유물번호,B003166,
+hb0684,운안흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,단국대-8,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0684,운안흉배,crm:P2_has_type,자료 구분·문양,hanbokc:unan,개념 링크,ruleDerived,단국대-8,한글명,운안흉배,명칭에서 주문양을 찾음(문양 규칙)
+hb0684,운안흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-dku,기관 링크,recordStated,단국대-8,소장처,단국대학교 석주선기념박물관,
+hb0684,운안흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,단국대-8,시대,조선,국적 규칙
+hb0684,운안흉배,dcterms:temporal,시기,hanbokc:c17,개념 링크,ruleDerived,단국대-8,시대상세,1650,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0684,운안흉배,dcterms:date,연도,1650,텍스트(EDTF),ruleDerived,단국대-8,시대상세,1650,기관이 적은 연도를 EDTF로
+hb0684,운안흉배,schema:height,세로,36.0,숫자(cm),ruleDerived,단국대-8,크기,길이 36 (정방),크기 규칙
+hb0684,운안흉배,schema:width,가로,36.0,숫자(cm),ruleDerived,단국대-8,크기,길이 36 (정방),크기 규칙
+hb0684,운안흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,단국대-8,공공누리유형,확인요망,이용조건 규칙
+hb0684,운안흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14909464/20150817112216093-808009330/4fcfe38c-a5fd-0165-f9e8-ad15d3ae0df3?version=1.0&t=1768400767483&imagePreview=1,URI,recordStated,단국대-8,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14909464/20150817112216093-808009330/4fcfe38c-a5fd-0165-f9e8-ad15d3ae0df3?version=1.0&t=1768400767483&imagePreview=1,
+hb0684,운안흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14909464/20150817112216781-750751028/352830d1-fc87-afb7-5faf-60bdf4ca3303?version=1.0&t=1768633145165&imagePreview=1,URI,recordStated,단국대-8,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14909464/20150817112216781-750751028/352830d1-fc87-afb7-5faf-60bdf4ca3303?version=1.0&t=1768633145165&imagePreview=1,
+hb0685,은사쌍학흉배,dcterms:title,명칭,은사쌍학흉배@ko,텍스트,recordStated,단국대-9,한글명,은사쌍학흉배,
+hb0685,은사쌍학흉배,dcterms:title,명칭,銀絲雙鶴胸背@ko-Hani,텍스트(한자),recordStated,단국대-9,한자명,銀絲雙鶴胸背,
+hb0685,은사쌍학흉배,dcterms:title,명칭,SsangHak-Hungbae (Twin Crane Insignia)@en,텍스트,recordStated,단국대-9,영어명,SsangHak-Hungbae (Twin Crane Insignia),
+hb0685,은사쌍학흉배,dcterms:identifier,소장처 유물번호,B000224,텍스트,recordStated,단국대-9,소장처유물번호,B000224,
+hb0685,은사쌍학흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,단국대-9,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0685,은사쌍학흉배,crm:P2_has_type,자료 구분·문양,hanbokc:ssanghak,개념 링크,ruleDerived,단국대-9,한글명,은사쌍학흉배,명칭에서 주문양을 찾음(문양 규칙)
+hb0685,은사쌍학흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-dku,기관 링크,recordStated,단국대-9,소장처,단국대학교 석주선기념박물관,
+hb0685,은사쌍학흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,단국대-9,시대,조선,국적 규칙
+hb0685,은사쌍학흉배,dcterms:temporal,시기,hanbokc:c18,개념 링크,ruleDerived,단국대-9,시대상세,1780,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0685,은사쌍학흉배,dcterms:date,연도,1780,텍스트(EDTF),ruleDerived,단국대-9,시대상세,1780,기관이 적은 연도를 EDTF로
+hb0685,은사쌍학흉배,schema:height,세로,19.0,숫자(cm),ruleDerived,단국대-9,크기,"가로 18, 세로 19",크기 규칙
+hb0685,은사쌍학흉배,schema:width,가로,18.0,숫자(cm),ruleDerived,단국대-9,크기,"가로 18, 세로 19",크기 규칙
+hb0685,은사쌍학흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,단국대-9,공공누리유형,확인요망,이용조건 규칙
+hb0685,은사쌍학흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14909724/201703291150131871862414671/37e3700c-fa2d-ee6e-e79d-2f5387fb9b74?version=1.0&t=1768400786732&imagePreview=1,URI,recordStated,단국대-9,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14909724/201703291150131871862414671/37e3700c-fa2d-ee6e-e79d-2f5387fb9b74?version=1.0&t=1768400786732&imagePreview=1,
+hb0685,은사쌍학흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14909724/201703291150134681891043822/8fed0d69-2219-77da-0078-aa4442e977ff?version=1.0&t=1768821826468&imagePreview=1,URI,recordStated,단국대-9,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14909724/201703291150134681891043822/8fed0d69-2219-77da-0078-aa4442e977ff?version=1.0&t=1768821826468&imagePreview=1,
+hb0686,은사쌍학흉배,dcterms:title,명칭,은사쌍학흉배@ko,텍스트,recordStated,단국대-10,한글명,은사쌍학흉배,
+hb0686,은사쌍학흉배,dcterms:title,명칭,銀絲雙鶴胸背@ko-Hani,텍스트(한자),recordStated,단국대-10,한자명,銀絲雙鶴胸背,
+hb0686,은사쌍학흉배,dcterms:title,명칭,SsangHak-Hungbae (Twin Crane Insigni)@en,텍스트,recordStated,단국대-10,영어명,SsangHak-Hungbae (Twin Crane Insigni),
+hb0686,은사쌍학흉배,dcterms:identifier,소장처 유물번호,B004690,텍스트,recordStated,단국대-10,소장처유물번호,B004690,
+hb0686,은사쌍학흉배,crm:P2_has_type,자료 구분·문양,hanbokc:hyungbae,개념 링크,archiveAssigned,단국대-10,분류,흉배,수집 시트의 분류 칸(수집자가 붙인 값)
+hb0686,은사쌍학흉배,crm:P2_has_type,자료 구분·문양,hanbokc:ssanghak,개념 링크,ruleDerived,단국대-10,한글명,은사쌍학흉배,명칭에서 주문양을 찾음(문양 규칙)
+hb0686,은사쌍학흉배,crm:P50_has_current_keeper,소장처,hanboko:actor-dku,기관 링크,recordStated,단국대-10,소장처,단국대학교 석주선기념박물관,
+hb0686,은사쌍학흉배,dcterms:spatial,국적,hanbokc:korea,개념 링크,ruleDerived,단국대-10,시대,조선,국적 규칙
+hb0686,은사쌍학흉배,dcterms:temporal,시기,hanbokc:c19,개념 링크,ruleDerived,단국대-10,시대상세,1860,시기 규칙(기관 기재값을 시기 개념에 연결)
+hb0686,은사쌍학흉배,dcterms:date,연도,1860,텍스트(EDTF),ruleDerived,단국대-10,시대상세,1860,기관이 적은 연도를 EDTF로
+hb0686,은사쌍학흉배,schema:height,세로,21.0,숫자(cm),ruleDerived,단국대-10,크기,"가로 19, 세로 21",크기 규칙
+hb0686,은사쌍학흉배,schema:width,가로,19.0,숫자(cm),ruleDerived,단국대-10,크기,"가로 19, 세로 21",크기 규칙
+hb0686,은사쌍학흉배,dcterms:license,이용조건,hanbokc:licenseUnknown,개념 링크,ruleDerived,단국대-10,공공누리유형,확인요망,이용조건 규칙
+hb0686,은사쌍학흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14909734/20150902104414808-1774031628/6066c9ca-ed91-dfd7-3bce-55e62535f853?version=1.0&t=1768400787211&imagePreview=1,URI,recordStated,단국대-10,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14909734/20150902104414808-1774031628/6066c9ca-ed91-dfd7-3bce-55e62535f853?version=1.0&t=1768400787211&imagePreview=1,
+hb0686,은사쌍학흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14909734/201509221648212851073792579/1ff2b052-1906-2ce3-793d-44049589f7a3?version=1.0&t=1768829883357&imagePreview=1,URI,recordStated,단국대-10,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14909734/201509221648212851073792579/1ff2b052-1906-2ce3-793d-44049589f7a3?version=1.0&t=1768829883357&imagePreview=1,
+hb0686,은사쌍학흉배,foaf:depiction,이미지,https://museum.dankook.ac.kr/documents/14854941/14909734/201509221648214261131050881/d284d2c9-f86e-5c15-3dad-64aa99611d8b?version=1.0&t=1768829883803&imagePreview=1,URI,recordStated,단국대-10,원본이미지URL(이미지_통합),https://museum.dankook.ac.kr/documents/14854941/14909734/201509221648214261131050881/d284d2c9-f86e-5c15-3dad-64aa99611d8b?version=1.0&t=1768829883803&imagePreview=1,

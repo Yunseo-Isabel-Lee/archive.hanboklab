@@ -1,25 +1,112 @@
 """조선 흉배 아카이브 시제품 페이지 만들기 (정적, GitHub Pages용)
-사용: python3 make_archive_site.py <아카이브데이터.csv 폴더> <개념.csv 폴더> <출력 폴더>
+사용: python3 make_archive_site.py <데이터 폴더> <개념.csv 폴더> <출력 폴더>
+  데이터 폴더: 흉배58.csv(+ 흉배58_근거.csv) — 없으면 예전 형식 아카이브데이터.csv
+  출력: index.html, ask-guide.md(문장으로 묻기 Worker가 읽는 데이터 설명)
 """
-import csv, json, os, sys, shutil
+import csv, json, os, sys, collections
 src, cdir, out = sys.argv[1:4]
 os.makedirs(out, exist_ok=True)
-items = list(csv.DictReader(open(os.path.join(src, "아카이브데이터.csv"), encoding="utf-8-sig")))
-con = list(csv.DictReader(open(os.path.join(cdir, "개념.csv"), encoding="utf-8-sig")))
-split = lambda s: [x.strip() for x in s.split(";") if x.strip()]
+rd = lambda p: list(csv.DictReader(open(p, encoding="utf-8-sig")))
+data_p = next(os.path.join(src, f) for f in ("흉배58.csv", "아카이브데이터.csv") if os.path.exists(os.path.join(src, f)))
+items = rd(data_p)
+ev_p = os.path.join(src, "흉배58_근거.csv")
+evs = rd(ev_p) if os.path.exists(ev_p) else []
+con = rd(os.path.join(cdir, "개념.csv"))
+split = lambda s: [x.strip() for x in (s or "").split(";") if x.strip()]
 C = {}
 for r in con:
     C[r["conceptID"]] = {"id": r["conceptID"], "s": r["scheme"], "ko": r["prefLabel_ko"], "en": r["prefLabel_en"],
                         "alt": split(r["altLabels"]), "b": split(r["broader"]), "rel": split(r["related"]),
                         "note": r["scopeNote"]}
-KEEP = {"nmk": ["국립중앙박물관", "National Museum of Korea"], "met": ["메트로폴리탄 미술관", "The Metropolitan Museum of Art"]}
+OLD_KEEP = {"nmk": ["국립중앙박물관", "National Museum of Korea"], "met": ["메트로폴리탄 미술관", "The Metropolitan Museum of Art"]}
+KEEP = {}
+for r in items:
+    KEEP.setdefault(r["keeper"], [r.get("keeper_ko") or OLD_KEEP.get(r["keeper"], [r["keeper"]])[0],
+                                  r.get("keeper_en") or OLD_KEEP.get(r["keeper"], ["", ""])[1]])
+EV_T = {"recordStated": "기관 기재", "ruleDerived": "도출(규칙)", "archiveAssigned": "아카이브 부여",
+        "researcherConfirmed": "연구자 확인", "researcherRead": "연구자 판독"}
+EVI = collections.defaultdict(list)
+for e in evs:
+    v = e["값"]
+    if v.startswith("hanbokc:"):
+        v = C.get(v[8:], {}).get("ko", v[8:])
+    elif v.startswith("hanboko:actor-"):
+        v = KEEP.get(v[14:], [v])[0]
+    elif v.startswith("http"):
+        v = "이미지 주소"
+    else:
+        v = v.rsplit("@", 1)[0] if "@" in v[-8:] else v
+    EVI[e["objectID"]].append({"p": e["속성 라벨"], "v": v, "t": e["근거 유형"], "rec": e["근거 레코드"],
+                               "col": e["근거 칸"], "ex": e["근거 발췌"] if not e["근거 발췌"].startswith("imageId=") else "",
+                               "note": e["비고"]})
 I = []
 for r in items:
     I.append({"id": r["objectID"], "ko": r["title_ko"], "hani": r["title_hani"], "en": r["title_en"], "no": r["keeperNo"],
-              "motif": r["motif"], "period": split(r["period"]), "h": r["height"], "w": r["width"], "lic": r["license"],
+              "motif": r["motif"], "period": split(r["period"]), "date": r.get("date", ""), "h": r["height"], "w": r["width"],
+              "lic": r["license"], "use": r.get("wearingContext", ""),
               "img": [u.replace(" ", "%20") for u in split(r["images"])], "keeper": r["keeper"], "src": r["recordSource"],
-              "rec": r["recordID"], "o_period": r["원문_시대"], "o_size": r["원문_크기"], "o_lic": r["원문_이용조건"], "note": r["비고"]})
-DATA = json.dumps({"items": I, "concepts": C, "keepers": KEEP}, ensure_ascii=False)
+              "rec": r["recordID"], "o_period": r["원문_시대"], "o_size": r["원문_크기"], "o_lic": r["원문_이용조건"], "note": r["비고"],
+              "ev": EVI.get(r["objectID"], [])})
+DATA = json.dumps({"items": I, "concepts": C, "keepers": KEEP, "evtypes": EV_T}, ensure_ascii=False)
+
+# ── 문장으로 묻기: Worker가 읽어 가는 데이터 설명(데이터가 바뀌면 이 파일도 같이 바뀐다)
+lic_n = collections.Counter(r["license"] for r in items)
+dates = sorted({r.get("date", "") for r in items if r.get("date")})
+GUIDE = f"""# 조선 흉배 아카이브 — 데이터 설명 (문장으로 묻기용, 자동 생성)
+
+## 범위
+- 한국 흉배 실물 {len(items)}점, 소장처 {len(KEEP)}곳. 소장처가 시기를 적어 둔 유물만 실었다. 초상화 속 흉배·단령·중국 보자는 없다.
+- 값(문양·시기·크기·이용조건)은 소장처 기록에서 뽑아 정리했고, 값마다 근거 주석이 있다.
+- 이용조건: {", ".join(f"{C.get(k, {}).get('ko', k)} {n}점" for k, n in lic_n.most_common())}
+
+## PREFIX (쿼리에 모두 적는다)
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX hanbokc: <https://hanboklab.com/concept/>
+PREFIX hanboko: <https://hanboklab.com/object/>
+
+## 흉배 유물 ?item (IRI는 hanboko:hb0041 꼴)
+?item a crm:E22_Human-Made_Object ;
+  crm:P2_has_type hanbokc:hyungbae ;            # 자료 구분. 같은 속성에 주문양 개념도 붙는다(없을 수 있음)
+  dcterms:title "쌍학흉배"@ko , "雙鶴胸背"@ko-Hani , "…"@en ;
+  dcterms:identifier "공주53361" ;               # 소장처 유물번호(없을 수 있음)
+  dcterms:spatial hanbokc:korea ;               # 국적(모두 한국)
+  dcterms:temporal hanbokc:c19late ;            # 시기 개념, 가장 구체적인 것에만 연결(여러 개일 수 있음)
+  dcterms:date "1864/1892" ;                    # 소장처가 연도를 적은 경우만, EDTF 글자
+  schema:height 16.5 ; schema:width 15.5 ;      # 세로·가로 cm, xsd:decimal 숫자(없을 수 있음)
+  dcterms:license hanbokc:cc0 ;                 # 이용조건 개념(licenseUnknown = 확인 중)
+  crm:P101_had_as_general_use hanbokc:gwanbok ; # 착용 맥락(일부만)
+  crm:P50_has_current_keeper hanboko:actor-met ;
+  foaf:depiction <이미지 주소> .
+dcterms:date 실제 값: {", ".join(dates)}
+
+## 소장처 (rdfs:label 한글@ko)
+""" + "\n".join(f"hanboko:actor-{k} = {v[0]}" + (f" / {v[1]}" if v[1] else "") for k, v in KEEP.items()) + """
+
+## 기관 레코드(원문 기록)
+?rec a crm:E31_Document ; crm:P70_documents ?item ; dcterms:identifier "e뮤지엄-…" ; dcterms:publisher ?기관 ; dcterms:source <원 페이지> .
+
+## 값마다 붙은 근거 주석
+?ev a rdf:Statement ; rdf:subject ?item ; rdf:predicate dcterms:temporal ; rdf:object hanbokc:c19 ;
+    dcterms:type hanbokc:recordStated ;   # 근거 유형: recordStated 기관 기재 / ruleDerived 도출(규칙) / archiveAssigned 아카이브 부여 / researcherConfirmed 연구자 확인
+    prov:wasDerivedFrom ?rec ; prov:atLocation "국적/시대" ;   # 근거 칸(글자)
+    prov:value "한국-대한제국" ;          # 원문 발췌
+    skos:editorialNote "…" .              # 비고(있을 때만)
+
+## 개념
+개념 목록은 concepts.ttl(아래)에 있다. skos:prefLabel·altLabel(이칭·한자·'~문'·'~무늬'), skos:broader(상위), skos:related(경계가 겹침), skos:inScheme.
+- 문양은 상하 관계가 있다(쌍학·단학·운학·백학·선학 → 학 → 날짐승). "학 흉배"는 하위까지: hanbokc:hak ^skos:broader* ?m .
+- 시기도 상하 관계(19세기 후반 → 19세기). "조선 말기"처럼 경계가 겹치는 개념은 skos:related로 세기와 이어져 있다.
+- 이용조건은 상위로 묶여 있다: 공공누리1·3·CC0 → hanbokc:commercialOk(상업 이용 가능), 공공누리2·4·CC BY-NC → hanbokc:commercialNo.
+"""
+open(os.path.join(out, "ask-guide.md"), "w", encoding="utf-8").write(GUIDE)
 
 html = r"""<!doctype html>
 <html lang="ko">
@@ -27,7 +114,7 @@ html = r"""<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>조선 흉배 아카이브 · 시제품</title>
-<meta name="description" content="조선 흉배 아카이브 시제품 — 국립중앙박물관과 메트로폴리탄 미술관의 한국 흉배를 문양·시기·이용조건으로 찾는다.">
+<meta name="description" content="조선 흉배 아카이브 시제품 — 여러 소장처의 한국 흉배를 문양·시기·이용조건으로 찾고, 값마다 근거를 보여 준다.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Sans+KR:wght@300;400;500&family=Noto+Serif+KR:wght@200;300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -168,6 +255,15 @@ details.sparql{border:1px solid var(--line);margin-top:56px}
 details.sparql summary{padding:14px 18px;cursor:pointer;font-family:var(--serif);letter-spacing:.14em;font-size:13px}
 details.sparql pre{margin:0;padding:18px;background:#070605;color:#dfe5ee;font-family:var(--mono);font-size:12px;line-height:1.6;overflow-x:auto;white-space:pre}
 .note{font-size:12px;color:var(--muted);margin-top:14px}
+.evt{display:inline-block;font-size:10.5px;letter-spacing:.04em;padding:1px 7px;border:1px solid var(--line);color:var(--ink-2);margin-left:8px;vertical-align:1px;white-space:nowrap}
+.evt.recordStated{border-color:rgba(243,234,214,.55);color:var(--cream)} .evt.ruleDerived{border-color:rgba(196,154,108,.6);color:var(--gold)}
+table.ev-t td.ex{color:var(--ink-2)} table.ev-t td small{display:block;color:var(--muted);font-size:11.5px}
+.answer{font-family:var(--serif);font-weight:300;font-size:18px;line-height:1.8;letter-spacing:.02em;margin:30px 0 8px;max-width:820px}
+.status{font-size:13px;color:var(--ink-2);margin:28px 0}
+.status .dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--gold);margin-right:10px;animation:blink 1s infinite}
+@keyframes blink{50%{opacity:.2}}
+table.rows{width:100%;border-collapse:collapse;font-size:12px;margin-top:10px} table.rows th,table.rows td{text-align:left;padding:6px 10px 6px 0;border-bottom:1px solid var(--line-2);vertical-align:top}
+table.rows th{color:var(--muted);font-weight:400}
 /* 꼬리 */
 footer.site{border-top:1px solid var(--line);padding:34px 0 40px;font-size:12px;color:var(--muted)}
 footer.site .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
@@ -179,7 +275,7 @@ footer.site a{border-bottom:1px solid var(--line)}
 </style>
 </head>
 <body>
-<div class="proto">시제품 · 국립중앙박물관(공공누리 1유형)과 메트로폴리탄 미술관(CC0)의 한국 흉배만 담았습니다 · <a href="https://hanboklab.com/ontology/">데이터 구조</a> · <a href="https://hanboklab.com/">hanboklab.com</a></div>
+<div class="proto">시제품 · 비상업 연구·교육용 · 시기가 기록된 한국 흉배 <span id="protoN"></span>점 · 이미지와 기록은 각 소장처의 이용조건을 따릅니다 · <a href="https://hanboklab.com/ontology/">데이터 구조</a> · <a href="https://hanboklab.com/">hanboklab.com</a></div>
 <header class="site"><div class="wrap">
   <a class="logo" href="#/"><span class="seal">胸</span><b>조선 흉배 아카이브</b></a>
   <nav class="main" id="nav"><a href="#/motif">문양별 보기</a><a href="#/search">검색</a><a href="#/ask">문장으로 묻기</a><a href="#/about">소개·데이터</a></nav>
@@ -192,11 +288,14 @@ footer.site a{border-bottom:1px solid var(--line)}
 </div></footer>
 <script>
 const D = __DATA__;
-const I = D.items, C = D.concepts, K = D.keepers;
+const I = D.items, C = D.concepts, K = D.keepers, EVT = D.evtypes || {};
+document.getElementById("protoN").textContent = I.length;
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const HANJA = {ssanghak:"雙鶴",danhak:"單鶴",hak:"鶴",baekhak:"白鶴",unhak:"雲鶴",ssangho:"雙虎",danho:"單虎",horangi:"虎",hopyo:"虎豹",girin:"麒麟",naljimseung:"鳥",giljimseung:"獸"};
 const LIC_OK = id => (C[id]?.b || []).includes("commercialOk");
+const evTag = t => t ? `<span class="evt ${esc(t)}">${esc(EVT[t] || t)}</span>` : "";
+const evOf = (it, labels) => it.ev.filter(e => labels.includes(e.p));
 // 개념 계층
 const kids = {}; Object.values(C).forEach(c => c.b.forEach(b => (kids[b] = kids[b] || []).push(c.id)));
 const desc = id => [id, ...(kids[id] || []).flatMap(desc)];
@@ -251,13 +350,14 @@ function home(){
       <div class="stat"><b>${I.reduce((a,b)=>a+b.img.length,0)}</b><span>이미지</span></div></div>
     <div class="dark"><h4>자료와 이용</h4>
       <p>이미지와 소장처 기록은 각 소장처의 이용조건을 따릅니다. 이 아카이브가 덧붙인 문양·시기 연결과 정리 값은 CC BY 4.0으로 공개합니다.</p>
-      <p>전체 수집 자료는 56개 소장처, 흉배 344점이며, 이용조건을 확인한 소장처부터 차례로 공개합니다.</p>
+      <p>전체 수집 자료는 56개 소장처, 흉배 344점입니다. 지금은 소장처가 시기를 적어 둔 ${I.length}점을 싣고, 값마다 어디서 왔는지(근거)를 함께 보여 줍니다. 이용조건을 확인 중인 유물은 「확인 중」으로 표시했습니다.</p>
       <a class="btn" href="#/about">범위와 데이터 →</a></div>
   </div>`;
   $("#homefind").onsubmit = e => { e.preventDefault(); location.hash = "#/search?q=" + encodeURIComponent(e.target.querySelector("input").value); };
 }
 
 /* ── 검색 */
+const PTOP = Object.values(C).filter(c => c.s === "period" && !c.b.length && I.some(it => periodOf(it).includes(c.id))).map(c => c.id).sort((a,b) => (a[0]==="c"?a:"z"+a).localeCompare(b[0]==="c"?b:"z"+b));
 const FACETS = {motif:"문양", period:"시기", lic:"이용조건", keeper:"소장처"};
 function matchQ(it, q){
   if (!q) return true;
@@ -271,7 +371,7 @@ function filterItems(f){
     matchQ(it, f.q) &&
     (!f.motif || (f.motif === "none" ? !it.motif : motifOf(it).includes(f.motif))) &&
     (!f.period || (f.period === "none" ? !it.period.length : periodOf(it).includes(f.period))) &&
-    (!f.lic || (f.lic === "commercialOk" ? LIC_OK(it.lic) : it.lic === f.lic)) &&
+    (!f.lic || it.lic === f.lic || (C[it.lic]?.b || []).includes(f.lic)) &&
     (!f.keeper || it.keeper === f.keeper));
 }
 function search(params){
@@ -290,16 +390,15 @@ function search(params){
   <div class="layout">
     <aside>
       <div class="facet"><h5>문양</h5>${tree("naljimseung")}${tree("giljimseung")}${opt("motif","none","판독 전")}</div>
-      <div class="facet"><h5>시기</h5>${["c19"].map(id => opt("period", id, label(id)) + (kids[id]||[]).map(k => opt("period", k, label(k), "sub")).join("")).join("")}${opt("period","none","시기 미상")}
-        <div class="note">기관이 '조선'만 적은 유물은 시기를 비워 두었습니다</div></div>
-      <div class="facet"><h5>이용조건</h5>${opt("lic","commercialOk","상업 이용 가능")}${opt("lic","kogl1","공공누리 1유형","sub")}${opt("lic","cc0","CC0","sub")}</div>
+      <div class="facet"><h5>시기</h5>${PTOP.map(id => opt("period", id, label(id)) + (kids[id]||[]).filter(k => I.some(it => periodOf(it).includes(k))).map(k => opt("period", k, label(k), "sub")).join("")).join("")}</div>
+      <div class="facet"><h5>이용조건</h5>${["commercialOk","commercialNo"].map(g => opt("lic", g, label(g)) + (kids[g]||[]).filter(k => I.some(it => it.lic === k)).map(k => opt("lic", k, label(k), "sub")).join("")).join("")}${opt("lic","licenseUnknown",label("licenseUnknown"))}</div>
       <div class="facet"><h5>소장처</h5>${Object.keys(K).map(k => opt("keeper", k, K[k][0])).join("")}</div>
     </aside>
     <div>
       <div class="restop"><span class="count">${res.length}점</span>${chips}${chips?'<a class="chip" href="#/search">모두 지우기</a>':""}
         <select id="sort"><option value="motif">정렬: 문양</option><option value="size">정렬: 가로 큰 순</option><option value="keeper">정렬: 소장처</option></select></div>
       ${res.length ? `<div class="cards">${res.map(card).join("")}</div>` :
-      `<div class="zero-box"><h3>조건에 맞는 흉배가 없습니다</h3><p class="muted">조건을 하나 풀거나, 문양 이름의 다른 표기(이칭)로 찾아보세요. 이 시제품은 국립중앙박물관과 메트로폴리탄 미술관의 한국 흉배 ${I.length}점만 담고 있습니다.</p><a class="btn" href="#/search">조건 모두 풀기</a></div>`}
+      `<div class="zero-box"><h3>조건에 맞는 흉배가 없습니다</h3><p class="muted">조건을 하나 풀거나, 문양 이름의 다른 표기(이칭)로 찾아보세요. 이 시제품은 시기가 기록된 한국 흉배 ${I.length}점만 담고 있습니다.</p><a class="btn" href="#/search">조건 모두 풀기</a></div>`}
     </div>
   </div></div>`;
   $("#sort").value = sort;
@@ -327,19 +426,24 @@ function item(id){
       ${it.en?`<div class="orig">${esc(it.en)}</div>`:'<div style="height:18px"></div>'}
       <div class="path"><span class="muted">문양</span>${path.length ? path.map(p => `<a href="#/motif/${p}">${label(p)}</a>`).join('<span class="arr">→</span>') : '<span class="empty">판독 전 — 연구자가 이미지로 판독할 예정</span>'}</div>
       <dl class="meta">
-        <dt>시기</dt><dd>${it.period.length ? it.period.map(p => `<a class="chip" href="#/search?period=${p}">${label(p)}</a>`).join("") : '<span class="empty">시기 미상</span>'}<span class="raw">기관 기재: ${esc(it.o_period || "—")}</span></dd>
-        <dt>크기</dt><dd>${it.h ? `세로 ${esc(it.h)} cm × 가로 ${esc(it.w)} cm` : '<span class="empty">기재 없음</span>'}<span class="raw">기관 기재: ${esc(it.o_size || "—")}</span></dd>
-        <dt>소장처</dt><dd>${esc(K[it.keeper][0])} · ${esc(it.no)}${it.src ? ` · <a class="chip" href="${esc(it.src)}" target="_blank" rel="noopener">원 페이지 ↗</a>` : ""}</dd>
-        <dt>국적</dt><dd>한국</dd>
-        <dt>이용조건</dt><dd>${esc(label(it.lic))}<span class="raw">기관 기재: ${esc(it.o_lic || "—")} · 이 아카이브가 덧붙인 값은 CC BY 4.0</span></dd>
+        <dt>시기</dt><dd>${it.period.length ? it.period.map(p => `<a class="chip" href="#/search?period=${p}">${label(p)}</a>`).join("") : '<span class="empty">시기 미상</span>'}${evTag(evOf(it,["시기"])[0]?.t)}${it.date ? ` <span class="muted">· 연도 ${esc(it.date)}</span>` : ""}<span class="raw">기관 기재: ${esc(it.o_period || "—")}</span></dd>
+        <dt>크기</dt><dd>${it.h ? `세로 ${esc(it.h)} cm × 가로 ${esc(it.w)} cm` : '<span class="empty">기재 없음</span>'}${evTag(evOf(it,["세로"])[0]?.t)}<span class="raw">기관 기재: ${esc(it.o_size || "—")}</span></dd>
+        <dt>소장처</dt><dd>${esc(K[it.keeper][0])}${it.no ? " · " + esc(it.no) : ""}${it.src ? ` · <a class="chip" href="${esc(it.src)}" target="_blank" rel="noopener">원 페이지 ↗</a>` : ""}</dd>
+        <dt>국적</dt><dd>한국${evTag(evOf(it,["국적"])[0]?.t)}</dd>
+        ${it.use ? `<dt>착용 맥락</dt><dd>${esc(label(it.use))}${evTag(evOf(it,["착용 맥락"])[0]?.t)}</dd>` : ""}
+        <dt>이용조건</dt><dd>${esc(label(it.lic))}${evTag(evOf(it,["이용조건"])[0]?.t)}<span class="raw">기관 기재: ${esc(it.o_lic || "—")} · 이 아카이브가 덧붙인 값은 CC BY 4.0</span></dd>
         ${it.note ? `<dt>비고</dt><dd class="muted">${esc(it.note)}</dd>` : ""}
       </dl>
-      <div class="box"><h5>기관 기록과 아카이브 정리</h5>
+      ${it.ev.length ? `<div class="box"><h5>값마다 근거</h5>
+        <table class="orig-t ev-t"><tr><th>항목</th><th>아카이브 값</th><th>근거</th><th>원문 발췌</th></tr>
+        ${it.ev.filter(e => e.p !== "이미지").map(e => `<tr><th>${esc(e.p)}</th><td>${esc(e.v)}</td><td>${evTag(e.t).replace('margin-left:8px','')}${e.col ? `<small>${esc(e.col)}</small>` : ""}</td><td class="ex">${esc(e.ex || "—")}${e.note ? `<small>${esc(e.note)}</small>` : ""}</td></tr>`).join("")}</table>
+        <p class="note">기관 레코드 ${esc(it.rec)} · 기관 기재 = 소장처가 적은 값 그대로, 도출(규칙) = 기관 기재값에 정해진 규칙을 적용, 아카이브 부여 = 이 아카이브가 붙인 값.</p></div>` :
+      `<div class="box"><h5>기관 기록과 아카이브 정리</h5>
         <table class="orig-t"><tr><th></th><th>기관이 적은 값 (원문 그대로)</th><th>아카이브가 정리한 값</th></tr>
         <tr><th>시기</th><td>${esc(it.o_period||"—")}</td><td>${it.period.map(label).join(", ")||"비움"}</td></tr>
         <tr><th>크기</th><td>${esc(it.o_size||"—")}</td><td>${it.h?`세로 ${it.h} · 가로 ${it.w} cm`:"비움"}</td></tr>
         <tr><th>이용조건</th><td>${esc(it.o_lic||"—")}</td><td>${esc(label(it.lic))}</td></tr></table>
-        <p class="note">기관 레코드 ${esc(it.rec)} · 기관 기록은 원문 그대로 두고, 공통 칸으로 정리한 값을 따로 둡니다.</p></div>
+        <p class="note">기관 레코드 ${esc(it.rec)} · 기관 기록은 원문 그대로 두고, 공통 칸으로 정리한 값을 따로 둡니다.</p></div>`}
       <div class="tools"><a class="btn" href="data.ttl" download>데이터 TTL</a><a class="btn" href="https://hanboklab.com/ontology/">데이터 구조</a></div>
     </div>
   </div>
@@ -376,8 +480,8 @@ function motif(id){
   <div class="cards">${list.map(card).join("")}</div></div>`;
 }
 
-/* ── 문장으로 묻기 (개념 사전으로 조건을 찾는 시연) */
-const EX = ["상업적으로 쓸 수 있는 쌍학 흉배 보여줘","쌍학문 흉배","국립중앙박물관의 호랑이 흉배","19세기 후반 학 흉배","메트로폴리탄의 공공누리 흉배","가로 20cm 넘는 흉배","조선 말기 흉배"];
+/* ── 문장으로 묻기: 질문 → (Worker·Claude) SPARQL → 브라우저(Oxigraph)에서 실행 → 답변. Worker가 안 되면 개념 사전 방식으로 */
+const EX = ["상업적으로 쓸 수 있는 쌍학 흉배 보여줘","19세기 후반 학 흉배","소장처별로 몇 점씩 있어?","가로가 가장 큰 흉배 3점","조선 말기 흉배","1734년 이전 흉배","단국대 흉배의 시기는 어디서 왔어?"];
 function parse(q){
   const found = [], f = {};
   const norm = s => s.toLowerCase().replace(/\s+/g, "");
@@ -414,31 +518,112 @@ function runAsk(q){
   if (f.period) sp += rel ? `  hanbokc:${f.period} skos:related ?r . ?r ^skos:broader* ?p .   # 관련 개념으로 넓힘\n  ?item dcterms:temporal ?p .\n` : `  hanbokc:${f.period} ^skos:broader* ?p .\n  ?item dcterms:temporal ?p .\n`;
   if (f.lic) sp += f.lic==="commercialOk" ? `  ?item dcterms:license/skos:broader hanbokc:commercialOk .   # 상업 이용 가능\n` : `  ?item dcterms:license hanbokc:${f.lic} .\n`;
   if (f.keeper) sp += `  ?item crm:P50_has_current_keeper/rdfs:label "${K[f.keeper][0]}"@ko .\n`;
-  if (f.dim) sp += `  ?item crm:P43_has_dimension ?d . ?d crm:P2_has_type hanbokc:${f.dim[0]==="w"?"width":"height"} ; crm:P90_has_value ?v .\n  FILTER(?v > ${f.dim[1]})\n`;
+  if (f.dim) sp += `  ?item schema:${f.dim[0]==="w"?"width":"height"} ?v .\n  FILTER(?v > ${f.dim[1]})\n`;
   sp += `  FILTER(LANG(?title) = "ko")\n}`;
   return {res, found, sp, rel};
+}
+const ASK_URL = "https://hanbok-ask.lisabelys.workers.dev";
+const OX_URL = "https://cdn.jsdelivr.net/npm/oxigraph@0.5.13/web.js";
+let STORE = null, lastAsk = null;
+async function getStore(){
+  if (STORE) return STORE;
+  const ox = await import(OX_URL); await ox.default();
+  const st = new ox.Store();
+  for (const f of ["data.ttl", "concepts.ttl"]) st.load(await (await fetch(f)).text(), {format: "text/turtle"});
+  return (STORE = st);
+}
+async function callAsk(body){
+  const r = await fetch(ASK_URL, {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(body)});
+  let j = {}; try { j = await r.json(); } catch(e) {}
+  if (!r.ok) throw new Error(j.error || ("중계 서버 오류 " + r.status));
+  return j;
+}
+const OBJ = "https://hanboklab.com/object/", CON = "https://hanboklab.com/concept/";
+function termLabel(t){
+  if (!t) return "";
+  const v = t.value;
+  if (t.termType === "NamedNode") {
+    if (v.startsWith(CON)) return label(v.slice(CON.length));
+    if (v.startsWith(OBJ + "actor-")) return K[v.slice(OBJ.length + 6)]?.[0] || v;
+    if (v.startsWith(OBJ)) { const it = I.find(x => x.id === v.slice(OBJ.length)); return it ? it.ko : v.slice(OBJ.length); }
+    return v;
+  }
+  return v;
+}
+function runSparql(sp){
+  const res = STORE.query(sp);
+  if (!Array.isArray(res)) throw new Error("SELECT 질의가 아닙니다");
+  const vars = res.length ? [...res[0].keys()] : (sp.match(/SELECT\s+(DISTINCT\s+)?([\s\S]*?)\s+WHERE/i)?.[2].match(/\?\w+/g) || []).map(v => v.slice(1));
+  return {vars, rows: res};
+}
+function itemsOf(rows){
+  const ids = []; rows.forEach(m => m.forEach(t => { if (t.termType === "NamedNode" && /^https:\/\/hanboklab\.com\/object\/hb\d+$/.test(t.value)) { const id = t.value.slice(OBJ.length); if (!ids.includes(id)) ids.push(id); } }));
+  return ids.map(id => I.find(x => x.id === id)).filter(Boolean);
+}
+async function askLLM(q, step){
+  await getStore(); step("질문을 SPARQL로 바꾸는 중");
+  let j = await callAsk({mode: "sparql", question: q});
+  if (!j.sparql) return {none: j.note || "질문에서 흉배 조건을 찾지 못했습니다."};
+  let sp = j.sparql, out = null, tries = [], zeroChecked = false, fixed = 0;
+  for (let k = 0; k < 4; k++) {
+    try { step("지식그래프에서 찾는 중"); out = runSparql(sp); }
+    catch (e) {
+      tries.push({sparql: sp, error: String(e.message || e)});
+      if (tries.length > 2) throw new Error("SPARQL 실행 오류: " + e.message);
+      step("쿼리를 고치는 중"); j = await callAsk({mode: "sparql", question: q, prev_sparql: sp, error: String(e.message || e)});
+      if (!j.sparql) return {none: j.note}; sp = j.sparql; fixed++; continue;
+    }
+    if (!out.rows.length && !zeroChecked) {
+      zeroChecked = true; tries.push({sparql: sp, error: "결과 0건"});
+      step("0건이라 조건을 다시 검토하는 중");
+      j = await callAsk({mode: "sparql", question: q, prev_sparql: sp, error: "실행은 됐지만 결과가 0건이다. 개념 IRI·상하 관계·속성 이름을 다시 확인하고, 해석이 맞으면 같은 쿼리를 그대로 내라."});
+      if (j.sparql && j.sparql.trim() !== sp.trim()) { sp = j.sparql; fixed++; continue; }
+    }
+    break;
+  }
+  const items = itemsOf(out.rows);
+  const rowsL = out.rows.slice(0, 60).map(m => Object.fromEntries(out.vars.map(v => [v, termLabel(m.get(v))])));
+  step("답변을 쓰는 중");
+  let answer = "";
+  try { answer = (await callAsk({mode: "answer", question: q, sparql: sp, rows: rowsL, total: out.rows.length, items: I.length})).answer; } catch(e) { answer = ""; }
+  return {sp, out, items, rowsL, answer, tries, fixed};
 }
 function ask(params){
   setNav("ask");
   const q = params.get("q") || "";
-  const out = q ? runAsk(q) : null;
-  const schemeName = {motif:"문양", period:"시기", license:"이용조건", keeper:"소장처", dim:"크기"};
-  $("#app").innerHTML = `<div class="page ask">
-  <div class="crumb"><a href="#/">홈</a> › 문장으로 묻기</div>
+  const head = `<div class="crumb"><a href="#/">홈</a> › 문장으로 묻기</div>
   <form id="askf"><input value="${esc(q)}" placeholder="상업적으로 쓸 수 있는 쌍학 흉배 보여줘"></form>
-  <div class="examples">${EX.map(e => `<span data-q="${esc(e)}">${esc(e)}</span>`).join("")}</div>
-  ${out ? `
-  <div class="parsed"><span>질문에서 찾은 조건</span>${out.found.length ? out.found.map(([w,s,id]) => `<span><q>${esc(w)}</q> → <b style="font-weight:400">${schemeName[s]}: ${esc(s==="keeper"?K[id][0]:s==="dim"?id:label(id))}</b></span>`).join("") : '<span class="empty">아는 단어가 없습니다. 문양·시기·소장처·이용조건 이름으로 물어보세요</span>'}${out.rel?'<span class="lic">관련 개념으로 넓혀 찾음</span>':""}</div>
-  <div class="restop"><span class="count">${out.res.length}점</span></div>
-  ${out.res.length ? `<div class="cards">${out.res.map(card).join("")}</div>` : `<div class="zero-box"><h3>조건에 맞는 흉배가 없습니다</h3><p class="muted">이 시제품은 ${I.length}점만 담고 있습니다. 조건을 줄여 다시 물어보세요.</p></div>`}
-  <details class="sparql" open><summary>만들어진 SPARQL</summary><pre>${esc(out.sp)}</pre></details>
-  <p class="note">시제품에서는 질문 속 단어를 통제어휘의 이름·이칭과 맞춰 조건을 찾습니다. 실제 서비스에서는 이 어휘와 데이터 구조를 근거로 LLM이 SPARQL을 짭니다.</p>` :
-  `<p class="note" style="margin-top:30px">문양·시기·소장처·이용조건·크기를 섞어 물어보세요. 문양은 한자나 '~문', '~무늬' 같은 다른 표기로도 알아듣습니다.</p>`}
-  </div>`;
-  $("#askf").onsubmit = e => { e.preventDefault(); location.hash = "#/ask?q=" + encodeURIComponent(e.target.querySelector("input").value); };
-  document.querySelectorAll(".examples span").forEach(s => s.onclick = () => location.hash = "#/ask?q=" + encodeURIComponent(s.dataset.q));
+  <div class="examples">${EX.map(e => `<span data-q="${esc(e)}">${esc(e)}</span>`).join("")}</div>`;
+  const wire = () => {
+    $("#askf").onsubmit = e => { e.preventDefault(); location.hash = "#/ask?q=" + encodeURIComponent(e.target.querySelector("input").value); };
+    document.querySelectorAll(".examples span").forEach(s => s.onclick = () => location.hash = "#/ask?q=" + encodeURIComponent(s.dataset.q));
+  };
+  const render = body => { $("#app").innerHTML = `<div class="page ask">${head}${body}</div>`; wire(); };
+  if (!q) { render(`<p class="note" style="margin-top:30px">문양·시기·소장처·이용조건·크기·근거를 섞어 자유롭게 물어보세요. 질문은 Claude가 SPARQL로 바꾸고, 이 페이지가 공개 데이터(data.ttl·concepts.ttl)에서 직접 실행합니다.</p>`); return; }
+  const show = r => {
+    if (r.none) { render(`<div class="zero-box"><h3>질문을 이해하지 못했습니다</h3><p class="muted">${esc(r.none)}</p></div>`); return; }
+    const cols = r.out.vars;
+    render(`${r.answer ? `<div class="answer">${esc(r.answer)}</div>` : ""}
+    <div class="restop" style="margin-top:26px">${r.items.length ? `<span class="count">${r.items.length}점</span>` : ""}<span class="muted">결과 ${r.out.rows.length}행</span></div>
+    ${r.items.length ? `<div class="cards">${r.items.map(card).join("")}</div>` : ""}
+    ${r.out.rows.length && (!r.items.length || cols.length > 2) ? `<details class="sparql" ${r.items.length?"":"open"}><summary>결과 표</summary><div style="padding:6px 18px 18px;overflow-x:auto"><table class="rows"><tr>${cols.map(c => `<th>${esc(c)}</th>`).join("")}</tr>${r.rowsL.map(row => `<tr>${cols.map(c => `<td>${esc(row[c])}</td>`).join("")}</tr>`).join("")}</table></div></details>` : ""}
+    ${!r.out.rows.length ? `<div class="zero-box"><h3>조건에 맞는 흉배가 없습니다</h3><p class="muted">이 시제품은 시기가 기록된 흉배 ${I.length}점만 담고 있습니다. 조건을 줄여 다시 물어보세요.</p></div>` : ""}
+    <details class="sparql" open><summary>실행한 SPARQL${r.fixed ? ` · 고쳐 쓴 횟수 ${r.fixed}` : ""}</summary><pre>${esc(r.sp)}</pre></details>
+    <p class="note">질문 → Claude가 SPARQL 작성 → 이 페이지가 공개 데이터에서 실행 → 결과만 근거로 답변. 답변 문장은 AI가 쓴 것이니 결과 카드와 근거를 함께 확인하세요.</p>`);
+  };
+  if (lastAsk && lastAsk.q === q && lastAsk.r) { show(lastAsk.r); return; }
+  render(`<div class="status" id="st"><span class="dot"></span><span id="stt">준비 중</span></div>`);
+  const step = t => { const el = document.getElementById("stt"); if (el) el.textContent = t; };
+  askLLM(q, step).then(r => { lastAsk = {q, r}; if ((location.hash.split("q=")[1] || "") === encodeURIComponent(q) || decodeURIComponent(location.hash.split("q=")[1] || "") === q) show(r); })
+  .catch(e => {
+    const out = runAsk(q);
+    render(`<div class="zero-box" style="padding:18px 0"><p class="muted">AI 변환을 쓰지 못해(${esc(e.message || e)}) 개념 사전으로 조건을 찾았습니다.</p></div>
+    <div class="parsed"><span>질문에서 찾은 조건</span>${out.found.length ? out.found.map(([w,s,id]) => `<span><q>${esc(w)}</q> → <b style="font-weight:400">${({motif:"문양", period:"시기", license:"이용조건", keeper:"소장처", dim:"크기"})[s]}: ${esc(s==="keeper"?K[id][0]:s==="dim"?id:label(id))}</b></span>`).join("") : '<span class="empty">아는 단어가 없습니다</span>'}</div>
+    <div class="restop"><span class="count">${out.res.length}점</span></div>
+    ${out.res.length ? `<div class="cards">${out.res.map(card).join("")}</div>` : ""}
+    <details class="sparql"><summary>만들어진 SPARQL</summary><pre>${esc(out.sp)}</pre></details>`);
+  });
 }
-
 /* ── 소개·데이터 */
 function about(){
   setNav("about");
@@ -447,13 +632,16 @@ function about(){
   <div class="kick">About</div><h1 style="font-size:34px;letter-spacing:.18em;margin-bottom:26px">범위와 데이터</h1>
   <p>조선 흉배 아카이브는 여러 소장처에 흩어진 흉배 실물을 모아 문양·시기·이용조건 같은 공통 개념으로 잇는 아카이브입니다. 이 페이지는 데이터 구조를 시험하는 <b style="font-weight:500">시제품</b>입니다.</p>
   <div class="box"><h5>이 시제품에 담은 것</h5>
-    <p class="muted">이용조건이 확인된 두 소장처의 한국 흉배 실물만 담았습니다. 국립중앙박물관 ${by("nmk")}점(공공누리 1유형), 메트로폴리탄 미술관 ${by("met")}점(CC0). 단령·초상화 속 흉배와 중국 흉배는 넣지 않았습니다.</p>
-    <p class="muted">명칭과 사진이 맞지 않는 국립중앙박물관 남산245는 확인 전까지 뺐습니다. 메트로폴리탄 유물의 한글명은 아카이브가 붙였고, 문양이 제목에 없는 ${I.filter(i=>!i.motif).length}점은 이미지 판독 전입니다.</p></div>
+    <p class="muted">여러 소장처의 한국 흉배 실물 중 소장처가 시기를 적어 둔 ${I.length}점을 담았습니다(소장처 ${Object.keys(K).length}곳). ${Object.entries(K).map(([k,[ko]]) => `${ko} ${by(k)}점`).join(", ")}. 단령·초상화 속 흉배와 중국 흉배는 넣지 않았습니다.</p>
+    <p class="muted">비상업 연구·교육 목적의 시제품입니다. 이미지와 소장처 기록은 각 소장처의 이용조건을 따르며, 이용조건을 아직 확인하지 못한 ${I.filter(i => i.lic === "licenseUnknown").length}점은 「확인 중」으로 표시했습니다. 이미지는 소장처 주소에서 바로 불러옵니다.</p>
+    <p class="muted">문양이 이름에 없는 ${I.filter(i=>!i.motif).length}점은 이미지 판독 전입니다.</p></div>
+  <div class="box"><h5>근거</h5>
+    <p class="muted">유물 화면의 값마다 근거 유형(기관 기재·도출(규칙)·아카이브 부여·연구자 확인)과 근거가 된 기관 기록의 칸·원문 발췌를 붙였습니다. 데이터에서는 값마다 rdf:Statement로 적혀 있어 SPARQL로도 물을 수 있습니다.</p></div>
   <div class="box"><h5>기록 원칙</h5>
     <p class="muted">기관이 적은 값은 원문 그대로 두고, 공통 칸으로 정리한 값을 따로 둡니다. 시기는 숫자로 바꾸지 않고 시기 개념에 연결만 하며, 기관이 '조선'만 적은 경우는 비워 둡니다. 문양은 주문양 하나만 연결합니다.</p></div>
   <div class="box"><h5>데이터 내려받기</h5>
-    <div class="tools" style="margin-top:6px"><a class="btn" href="data.ttl" download>유물 데이터 (TTL)</a><a class="btn" href="data.csv" download>유물 데이터 (CSV)</a><a class="btn" href="concepts.ttl" download>통제어휘 (TTL)</a><a class="btn" href="https://hanboklab.com/ontology/">기술규칙·어휘설명</a></div>
-    <p class="note">데이터는 기술규칙(SHACL) 검사를 통과한 것입니다. 이 아카이브가 덧붙인 값은 CC BY 4.0, 이미지와 소장처 기록은 각 소장처의 이용조건(공공누리 1유형 출처표시, CC0)을 따릅니다.</p></div>
+    <div class="tools" style="margin-top:6px"><a class="btn" href="data.ttl" download>유물 데이터 (TTL)</a><a class="btn" href="data.csv" download>유물 데이터 (CSV)</a><a class="btn" href="concepts.ttl" download>통제어휘 (TTL)</a><a class="btn" href="evidence.csv" download>값별 근거 (CSV)</a><a class="btn" href="https://hanboklab.com/ontology/">기술규칙·어휘설명</a></div>
+    <p class="note">데이터는 기술규칙(SHACL) 검사를 통과한 것입니다. 이 아카이브가 덧붙인 값은 CC BY 4.0, 이미지와 소장처 기록은 각 소장처의 이용조건을 따릅니다.</p></div>
   <div class="box"><h5>인용</h5><p class="muted">이윤서, 「조선 흉배 아카이브(시제품)」, https://archive.hanboklab.com/hyungbae/ (CC BY 4.0)</p></div>
   </div>`;
 }
@@ -473,7 +661,10 @@ window.addEventListener("hashchange", route); route();
 </body>
 </html>"""
 open(os.path.join(out, "index.html"), "w", encoding="utf-8").write(html.replace("__DATA__", DATA))
-shutil.copy(os.path.join(src, "아카이브데이터.ttl"), os.path.join(out, "data.ttl"))
-shutil.copy(os.path.join(src, "아카이브데이터.csv"), os.path.join(out, "data.csv"))
-shutil.copy(os.path.join(src, "개념.ttl"), os.path.join(out, "concepts.ttl"))
+import shutil
+base = os.path.splitext(data_p)[0]
+shutil.copy(base + ".ttl", os.path.join(out, "data.ttl"))
+shutil.copy(data_p, os.path.join(out, "data.csv"))
+if evs: shutil.copy(ev_p, os.path.join(out, "evidence.csv"))
+shutil.copy(next(p for p in (os.path.join(src, "개념.ttl"), os.path.join(cdir, "개념.ttl")) if os.path.exists(p)), os.path.join(out, "concepts.ttl"))
 print("ok", out, len(I))

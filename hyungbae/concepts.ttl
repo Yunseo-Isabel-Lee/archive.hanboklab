@@ -2,6 +2,16 @@
 @prefix hanbokc: <https://hanboklab.com/concept/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
+hanbokc:archiveAssigned a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "수집 분류"@ko,
+        "아카이브가 붙임"@ko ;
+    skos:inScheme hanbokc:evidence ;
+    skos:prefLabel "assigned by the archive"@en,
+        "아카이브 부여"@ko ;
+    skos:scopeNote "기관 기록에 없어 아카이브가 붙인 값(한글명 등) 또는 수집 시트의 분류"@ko ;
+    skos:topConceptOf hanbokc:evidence .
+
 hanbokc:baekhak a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "白鶴"@ko,
@@ -192,17 +202,6 @@ hanbokc:chosang a crm:E55_Type,
     skos:scopeNote "2차 범위"@ko ;
     skos:topConceptOf hanbokc:objectType .
 
-hanbokc:cm a crm:E55_Type,
-        crm:E58_Measurement_Unit,
-        skos:Concept ;
-    skos:altLabel "㎝"@ko,
-        "센티미터"@ko ;
-    skos:inScheme hanbokc:measurement ;
-    skos:prefLabel "centimetre"@en,
-        "cm"@ko ;
-    skos:scopeNote "crm:E58_Measurement_Unit을 겸한다"@ko ;
-    skos:topConceptOf hanbokc:measurement .
-
 hanbokc:dallyeong a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "round-collared robe"@en,
@@ -254,6 +253,17 @@ hanbokc:geobuk a crm:E55_Type,
     skos:scopeNote "날짐승·길짐승 어디에도 넣지 않은 문양"@ko ;
     skos:topConceptOf hanbokc:motif .
 
+hanbokc:geumgye a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "golden pheasant"@en,
+        "錦鷄"@ko,
+        "금계문"@ko ;
+    skos:broader hanbokc:naljimseung ;
+    skos:inScheme hanbokc:motif ;
+    skos:prefLabel "golden pheasant"@en,
+        "금계"@ko ;
+    skos:scopeNote "중국 2품 문관 보자"@ko .
+
 hanbokc:girin a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "kirin"@en,
@@ -266,6 +276,17 @@ hanbokc:girin a crm:E55_Type,
     skos:inScheme hanbokc:motif ;
     skos:prefLabel "qilin"@en,
         "기린"@ko .
+
+hanbokc:gom a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "bear"@en,
+        "熊"@ko,
+        "熊羆"@ko,
+        "웅비"@ko ;
+    skos:broader hanbokc:giljimseung ;
+    skos:inScheme hanbokc:motif ;
+    skos:prefLabel "bear"@en,
+        "곰"@ko .
 
 hanbokc:gongjak a crm:E55_Type,
         skos:Concept ;
@@ -290,6 +311,16 @@ hanbokc:gwanbok a crm:E55_Type,
     skos:scopeNote "관원이 관직 생활에서 입은 단령 등에 단 흉배"@ko ;
     skos:topConceptOf hanbokc:wearingContext .
 
+hanbokc:gyechik a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "mandarin duck"@en,
+        "鸂鶒"@ko,
+        "계칙문"@ko ;
+    skos:broader hanbokc:naljimseung ;
+    skos:inScheme hanbokc:motif ;
+    skos:prefLabel "mandarin duck"@en,
+        "계칙"@ko .
+
 hanbokc:haechi a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "haetae"@en,
@@ -302,16 +333,15 @@ hanbokc:haechi a crm:E55_Type,
     skos:prefLabel "haechi"@en,
         "해치"@ko .
 
-hanbokc:height a crm:E55_Type,
+hanbokc:haema a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel "H"@en,
-        "L"@en,
-        "길이"@ko,
-        "높이"@ko ;
-    skos:inScheme hanbokc:measurement ;
-    skos:prefLabel "height"@en,
-        "세로"@ko ;
-    skos:topConceptOf hanbokc:measurement .
+    skos:altLabel "sea horse"@en,
+        "海馬"@ko,
+        "해마흉배"@ko ;
+    skos:broader hanbokc:giljimseung ;
+    skos:inScheme hanbokc:motif ;
+    skos:prefLabel "sea horse"@en,
+        "해마"@ko .
 
 hanbokc:honryebok a crm:E55_Type,
         skos:Concept ;
@@ -346,6 +376,15 @@ hanbokc:hyungbae a crm:E55_Type,
         "흉배"@ko ;
     skos:scopeNote "관복의 가슴과 등에 다는 네모난 표장. 이번 범위의 자료 구분"@ko ;
     skos:topConceptOf hanbokc:objectType .
+
+hanbokc:japan a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Japanese"@en ;
+    skos:inScheme hanbokc:nationality ;
+    skos:prefLabel "Japan"@en,
+        "일본"@ko ;
+    skos:scopeNote "이번 범위 밖"@ko ;
+    skos:topConceptOf hanbokc:nationality .
 
 hanbokc:kogl1 a crm:E55_Type,
         skos:Concept ;
@@ -407,6 +446,16 @@ hanbokc:licenseUnknown a crm:E55_Type,
     skos:scopeNote "출처 사이트에 이용조건 표시가 없거나 아직 확인하지 않음"@ko ;
     skos:topConceptOf hanbokc:license .
 
+hanbokc:mechuragi a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "quail"@en,
+        "鵪鶉"@ko,
+        "암순"@ko ;
+    skos:broader hanbokc:naljimseung ;
+    skos:inScheme hanbokc:motif ;
+    skos:prefLabel "quail"@en,
+        "메추라기"@ko .
+
 hanbokc:nc a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "NC"@en,
@@ -415,6 +464,68 @@ hanbokc:nc a crm:E55_Type,
     skos:inScheme hanbokc:license ;
     skos:prefLabel "CC BY-NC"@en,
         "CC BY-NC"@ko .
+
+hanbokc:nosa a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "egret"@en,
+        "white egret"@en,
+        "鷺"@ko,
+        "鷺鷥"@ko,
+        "노사문"@ko,
+        "백로"@ko,
+        "해오라기"@ko ;
+    skos:broader hanbokc:naljimseung ;
+    skos:inScheme hanbokc:motif ;
+    skos:prefLabel "egret"@en,
+        "노사"@ko .
+
+hanbokc:pyobeom a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "leopard"@en,
+        "豹"@ko,
+        "표범문"@ko ;
+    skos:broader hanbokc:giljimseung ;
+    skos:inScheme hanbokc:motif ;
+    skos:prefLabel "leopard"@en,
+        "표범"@ko .
+
+hanbokc:recordStated a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "기관 원문"@ko,
+        "원문"@ko ;
+    skos:inScheme hanbokc:evidence ;
+    skos:prefLabel "stated in institutional record"@en,
+        "기관 기재"@ko ;
+    skos:scopeNote "기관 레코드의 칸에 적힌 값을 그대로 옮김"@ko ;
+    skos:topConceptOf hanbokc:evidence .
+
+hanbokc:researcherConfirmed a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "연구자 검토"@ko ;
+    skos:inScheme hanbokc:evidence ;
+    skos:prefLabel "confirmed by researcher"@en,
+        "연구자 확인"@ko ;
+    skos:scopeNote "연구자가 기관 설명을 읽고 판단한 값"@ko ;
+    skos:topConceptOf hanbokc:evidence .
+
+hanbokc:researcherRead a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "이미지 판독"@ko ;
+    skos:inScheme hanbokc:evidence ;
+    skos:prefLabel "read by researcher from image"@en,
+        "연구자 판독"@ko ;
+    skos:scopeNote "연구자가 이미지를 보고 판독한 값(예정)"@ko ;
+    skos:topConceptOf hanbokc:evidence .
+
+hanbokc:ruleDerived a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "규칙 도출"@ko,
+        "자동 추출"@ko ;
+    skos:inScheme hanbokc:evidence ;
+    skos:prefLabel "derived by rule"@en,
+        "도출(규칙)"@ko ;
+    skos:scopeNote "기관 기재값을 정해 둔 규칙으로 개념·숫자에 연결함(문양·시기·국적·크기·이용조건). 연구자 검토 전"@ko ;
+    skos:topConceptOf hanbokc:evidence .
 
 hanbokc:saja a crm:E55_Type,
         skos:Concept ;
@@ -427,6 +538,18 @@ hanbokc:saja a crm:E55_Type,
     skos:inScheme hanbokc:motif ;
     skos:prefLabel "lion"@en,
         "사자"@ko .
+
+hanbokc:seonhak a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Manchurian crane"@en,
+        "仙鶴"@ko,
+        "선학문"@ko,
+        "선학흉배"@ko ;
+    skos:broader hanbokc:hak ;
+    skos:inScheme hanbokc:motif ;
+    skos:prefLabel "red-crowned crane"@en,
+        "선학"@ko ;
+    skos:scopeNote "중국 1품 문관 보자의 학"@ko .
 
 hanbokc:ssanghak a crm:E55_Type,
         skos:Concept ;
@@ -459,6 +582,15 @@ hanbokc:ssangho a crm:E55_Type,
         "쌍호"@ko ;
     skos:scopeNote "호랑이 두 마리"@ko .
 
+hanbokc:sutak a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "rooster"@en,
+        "수탉흉배"@ko ;
+    skos:broader hanbokc:naljimseung ;
+    skos:inScheme hanbokc:motif ;
+    skos:prefLabel "rooster"@en,
+        "수탉"@ko .
+
 hanbokc:unan a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "wild goose"@en,
@@ -483,6 +615,16 @@ hanbokc:unhak a crm:E55_Type,
         "운학"@ko ;
     skos:scopeNote "구름 속의 학"@ko .
 
+hanbokc:vietnam a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "Vietnamese"@en,
+        "아시아-베트남"@ko ;
+    skos:inScheme hanbokc:nationality ;
+    skos:prefLabel "Vietnam"@en,
+        "베트남"@ko ;
+    skos:scopeNote "이번 범위 밖"@ko ;
+    skos:topConceptOf hanbokc:nationality .
+
 hanbokc:wearingUnknown a crm:E55_Type,
         skos:Concept ;
     skos:inScheme hanbokc:wearingContext ;
@@ -490,15 +632,49 @@ hanbokc:wearingUnknown a crm:E55_Type,
         "미상"@ko ;
     skos:topConceptOf hanbokc:wearingContext .
 
-hanbokc:width a crm:E55_Type,
+hanbokc:yeonjak a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel "W"@en,
-        "너비"@ko,
-        "폭"@ko ;
-    skos:inScheme hanbokc:measurement ;
-    skos:prefLabel "width"@en,
-        "가로"@ko ;
-    skos:topConceptOf hanbokc:measurement .
+    skos:altLabel "paradise flycatcher"@en,
+        "練雀"@ko,
+        "연작문"@ko ;
+    skos:broader hanbokc:naljimseung ;
+    skos:inScheme hanbokc:motif ;
+    skos:prefLabel "paradise flycatcher"@en,
+        "연작"@ko .
+
+hanbokc:yong a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "douniu"@en,
+        "dragon"@en,
+        "龍"@ko,
+        "두우"@ko,
+        "용문"@ko ;
+    skos:inScheme hanbokc:motif ;
+    skos:prefLabel "dragon"@en,
+        "용"@ko ;
+    skos:scopeNote "날짐승·길짐승 어디에도 넣지 않은 문양. 왕실·종친 보"@ko ;
+    skos:topConceptOf hanbokc:motif .
+
+hanbokc:c21 a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "21C"@en,
+        "2000년 이후"@ko ;
+    skos:inScheme hanbokc:period ;
+    skos:prefLabel "21st century"@en,
+        "21세기"@ko ;
+    skos:related hanbokc:gwangbokAfter ;
+    skos:topConceptOf hanbokc:period .
+
+hanbokc:iljegangjeom a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "일제강점"@ko,
+        "일제시대"@ko ;
+    skos:inScheme hanbokc:period ;
+    skos:prefLabel "Japanese colonial period"@en,
+        "일제강점기"@ko ;
+    skos:related hanbokc:c20 ;
+    skos:scopeNote "이 시기로 적힌 흉배는 재현품·시대 불확실로 이번 범위에서 뺀다"@ko ;
+    skos:topConceptOf hanbokc:period .
 
 hanbokc:daehan a crm:E55_Type,
         skos:Concept ;
@@ -509,6 +685,31 @@ hanbokc:daehan a crm:E55_Type,
         "대한제국"@ko ;
     skos:related hanbokc:c19,
         hanbokc:c20 ;
+    skos:topConceptOf hanbokc:period .
+
+hanbokc:geunhyeondae a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "근대"@ko,
+        "현대"@ko ;
+    skos:inScheme hanbokc:period ;
+    skos:prefLabel "modern period"@en,
+        "근현대"@ko ;
+    skos:related hanbokc:c19,
+        hanbokc:c20 ;
+    skos:scopeNote "기관이 '근현대'로 분류한 것. 재현품인지 확인 필요"@ko ;
+    skos:topConceptOf hanbokc:period .
+
+hanbokc:gwangbokAfter a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "1945년 이후"@ko,
+        "광복이후"@ko,
+        "현대"@ko ;
+    skos:inScheme hanbokc:period ;
+    skos:prefLabel "after 1945"@en,
+        "광복 이후"@ko ;
+    skos:related hanbokc:c20,
+        hanbokc:c21 ;
+    skos:scopeNote "재현품. 이번 범위에서 뺀다"@ko ;
     skos:topConceptOf hanbokc:period .
 
 hanbokc:horangi a crm:E55_Type,
@@ -619,9 +820,6 @@ hanbokc:joseonLate a crm:E55_Type,
         hanbokc:c18,
         hanbokc:c19 .
 
-hanbokc:nationality skos:hasTopConcept hanbokc:china,
-        hanbokc:korea .
-
 hanbokc:c16 a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "16C"@en,
@@ -648,34 +846,6 @@ hanbokc:c17 a crm:E55_Type,
         hanbokc:joseonMid ;
     skos:topConceptOf hanbokc:period .
 
-hanbokc:c20 a crm:E55_Type,
-        skos:Concept ;
-    skos:altLabel "20C"@en,
-        "20th c."@en ;
-    skos:inScheme hanbokc:period ;
-    skos:narrower hanbokc:c20early,
-        hanbokc:c20late ;
-    skos:prefLabel "20th century"@en,
-        "20세기"@ko ;
-    skos:related hanbokc:daehan,
-        hanbokc:joseonEnd ;
-    skos:topConceptOf hanbokc:period .
-
-hanbokc:hak a crm:E55_Type,
-        skos:Concept ;
-    skos:altLabel "crane"@en,
-        "鶴"@ko,
-        "학무늬"@ko,
-        "학문"@ko ;
-    skos:broader hanbokc:naljimseung ;
-    skos:inScheme hanbokc:motif ;
-    skos:narrower hanbokc:baekhak,
-        hanbokc:danhak,
-        hanbokc:ssanghak,
-        hanbokc:unhak ;
-    skos:prefLabel "crane"@en,
-        "학"@ko .
-
 hanbokc:joseon a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "Joseon"@en,
@@ -691,6 +861,30 @@ hanbokc:joseon a crm:E55_Type,
     skos:scopeNote "기관이 '조선'만 적은 경우는 이 개념에 연결하지 않고 비운다(기술규칙)"@ko ;
     skos:topConceptOf hanbokc:period .
 
+hanbokc:hak a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "crane"@en,
+        "鶴"@ko,
+        "학무늬"@ko,
+        "학문"@ko ;
+    skos:broader hanbokc:naljimseung ;
+    skos:inScheme hanbokc:motif ;
+    skos:narrower hanbokc:baekhak,
+        hanbokc:danhak,
+        hanbokc:seonhak,
+        hanbokc:ssanghak,
+        hanbokc:unhak ;
+    skos:prefLabel "crane"@en,
+        "학"@ko .
+
+hanbokc:objectType skos:hasTopConcept hanbokc:chosang,
+        hanbokc:dallyeong,
+        hanbokc:hyungbae .
+
+hanbokc:wearingContext skos:hasTopConcept hanbokc:gwanbok,
+        hanbokc:honryebok,
+        hanbokc:wearingUnknown .
+
 hanbokc:c19 a crm:E55_Type,
         skos:Concept ;
     skos:altLabel "19C"@en,
@@ -701,36 +895,37 @@ hanbokc:c19 a crm:E55_Type,
     skos:prefLabel "19th century"@en,
         "19세기"@ko ;
     skos:related hanbokc:daehan,
+        hanbokc:geunhyeondae,
         hanbokc:joseonEnd,
         hanbokc:joseonLate ;
     skos:topConceptOf hanbokc:period .
 
-hanbokc:measurement skos:hasTopConcept hanbokc:cm,
-        hanbokc:height,
-        hanbokc:width .
-
-hanbokc:naljimseung a crm:E55_Type,
+hanbokc:c20 a crm:E55_Type,
         skos:Concept ;
-    skos:altLabel "새"@ko,
-        "조류"@ko ;
-    skos:inScheme hanbokc:motif ;
-    skos:narrower hanbokc:baekhan,
-        hanbokc:bonghwang,
-        hanbokc:gongjak,
-        hanbokc:hak,
-        hanbokc:unan ;
-    skos:prefLabel "birds"@en,
-        "날짐승"@ko ;
-    skos:scopeNote "날짐승 문양의 부류"@ko ;
-    skos:topConceptOf hanbokc:motif .
+    skos:altLabel "20C"@en,
+        "20th c."@en ;
+    skos:inScheme hanbokc:period ;
+    skos:narrower hanbokc:c20early,
+        hanbokc:c20late ;
+    skos:prefLabel "20th century"@en,
+        "20세기"@ko ;
+    skos:related hanbokc:daehan,
+        hanbokc:geunhyeondae,
+        hanbokc:gwangbokAfter,
+        hanbokc:iljegangjeom,
+        hanbokc:joseonEnd ;
+    skos:topConceptOf hanbokc:period .
 
-hanbokc:objectType skos:hasTopConcept hanbokc:chosang,
-        hanbokc:dallyeong,
-        hanbokc:hyungbae .
+hanbokc:nationality skos:hasTopConcept hanbokc:china,
+        hanbokc:japan,
+        hanbokc:korea,
+        hanbokc:vietnam .
 
-hanbokc:wearingContext skos:hasTopConcept hanbokc:gwanbok,
-        hanbokc:honryebok,
-        hanbokc:wearingUnknown .
+hanbokc:evidence skos:hasTopConcept hanbokc:archiveAssigned,
+        hanbokc:recordStated,
+        hanbokc:researcherConfirmed,
+        hanbokc:researcherRead,
+        hanbokc:ruleDerived .
 
 hanbokc:giljimseung a crm:E55_Type,
         skos:Concept ;
@@ -739,9 +934,12 @@ hanbokc:giljimseung a crm:E55_Type,
     skos:inScheme hanbokc:motif ;
     skos:narrower hanbokc:baektaek,
         hanbokc:girin,
+        hanbokc:gom,
         hanbokc:haechi,
+        hanbokc:haema,
         hanbokc:hopyo,
         hanbokc:horangi,
+        hanbokc:pyobeom,
         hanbokc:saja ;
     skos:prefLabel "beasts"@en,
         "길짐승"@ko ;
@@ -752,9 +950,31 @@ hanbokc:license skos:hasTopConcept hanbokc:commercialNo,
         hanbokc:commercialOk,
         hanbokc:licenseUnknown .
 
+hanbokc:naljimseung a crm:E55_Type,
+        skos:Concept ;
+    skos:altLabel "새"@ko,
+        "조류"@ko ;
+    skos:inScheme hanbokc:motif ;
+    skos:narrower hanbokc:baekhan,
+        hanbokc:bonghwang,
+        hanbokc:geumgye,
+        hanbokc:gongjak,
+        hanbokc:gyechik,
+        hanbokc:hak,
+        hanbokc:mechuragi,
+        hanbokc:nosa,
+        hanbokc:sutak,
+        hanbokc:unan,
+        hanbokc:yeonjak ;
+    skos:prefLabel "birds"@en,
+        "날짐승"@ko ;
+    skos:scopeNote "날짐승 문양의 부류"@ko ;
+    skos:topConceptOf hanbokc:motif .
+
 hanbokc:motif skos:hasTopConcept hanbokc:geobuk,
         hanbokc:giljimseung,
-        hanbokc:naljimseung .
+        hanbokc:naljimseung,
+        hanbokc:yong .
 
 hanbokc:period skos:hasTopConcept hanbokc:c15,
         hanbokc:c16,
@@ -762,6 +982,10 @@ hanbokc:period skos:hasTopConcept hanbokc:c15,
         hanbokc:c18,
         hanbokc:c19,
         hanbokc:c20,
+        hanbokc:c21,
         hanbokc:daehan,
+        hanbokc:geunhyeondae,
+        hanbokc:gwangbokAfter,
+        hanbokc:iljegangjeom,
         hanbokc:joseon .
 
