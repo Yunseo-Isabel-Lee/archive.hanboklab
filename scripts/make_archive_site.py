@@ -583,9 +583,13 @@ async function askLLM(q, step){
   }
   const items = itemsOf(out.rows);
   const rowsL = out.rows.slice(0, 60).map(m => Object.fromEntries(out.vars.map(v => [v, termLabel(m.get(v))])));
+  // 답변용: 결과 행에 유물 정보(소장처·문양·시기·크기·이용조건)를 붙여 보낸다
+  const info = it => ({"명칭": it.ko, "소장처": K[it.keeper][0], "문양": it.motif ? label(it.motif) : "판독 전", "시기": it.period.map(label).join(", ") || "미상",
+    ...(it.date ? {"연도": it.date} : {}), ...(it.h ? {"크기": `세로 ${it.h} × 가로 ${it.w} cm`} : {}), "이용조건": label(it.lic)});
+  const rowsA = out.rows.slice(0, 60).map((m, i) => { const o = {...rowsL[i]}; m.forEach(t => { if (t.termType === "NamedNode" && t.value.startsWith(OBJ + "hb")) { const it = I.find(x => x.id === t.value.slice(OBJ.length)); if (it) Object.assign(o, info(it)); } }); return o; });
   step("답변을 쓰는 중");
   let answer = "";
-  try { answer = (await callAsk({mode: "answer", question: q, sparql: sp, rows: rowsL, total: out.rows.length, items: I.length})).answer; } catch(e) { answer = ""; }
+  try { answer = (await callAsk({mode: "answer", question: q, sparql: sp, rows: rowsA, total: out.rows.length, items: I.length})).answer; } catch(e) { answer = "(답변 문장을 만들지 못했습니다: " + (e.message || e) + ") 아래 결과를 확인하세요."; }
   return {sp, out, items, rowsL, answer, tries, fixed};
 }
 function ask(params){
