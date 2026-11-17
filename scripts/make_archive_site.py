@@ -589,7 +589,7 @@ async function askLLM(q, step){
   const rowsA = out.rows.slice(0, 60).map((m, i) => { const o = {...rowsL[i]}; m.forEach(t => { if (t.termType === "NamedNode" && t.value.startsWith(OBJ + "hb")) { const it = I.find(x => x.id === t.value.slice(OBJ.length)); if (it) Object.assign(o, info(it)); } }); return o; });
   step("답변을 쓰는 중");
   let answer = "";
-  try { answer = (await callAsk({mode: "answer", question: q, sparql: sp, rows: rowsA, total: out.rows.length, items: I.length})).answer; } catch(e) { answer = "(답변 문장을 만들지 못했습니다: " + (e.message || e) + ") 아래 결과를 확인하세요."; }
+  try { answer = (await callAsk({mode: "answer", question: q, sparql: sp, rows: rowsA, total: out.rows.length, items: I.length})).answer || "(답변 문장이 비어 왔습니다) 아래 결과를 확인하세요."; } catch(e) { answer = "(답변 문장을 만들지 못했습니다: " + (e.message || e) + ") 아래 결과를 확인하세요."; }
   return {sp, out, items, rowsL, answer, tries, fixed};
 }
 function ask(params){
